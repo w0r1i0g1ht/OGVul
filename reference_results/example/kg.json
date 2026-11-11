@@ -1,0 +1,253 @@
+[
+  {
+    "sample_id": "Sample_DemoBuffer_vuln",
+    "source_type": "synthetic_vuln",
+    "ground_truth_label": "vulnerable",
+    "ground_truth_cwe": "CWE-787",
+    "pipeline_mode": "kg_rag",
+    "extraction": {
+      "entities": [
+        {
+          "name": "telemetryframe",
+          "type": "System",
+          "importance": "High"
+        },
+        {
+          "name": "memcpy",
+          "type": "FunctionCall",
+          "importance": "High"
+        },
+        {
+          "name": "payload",
+          "type": "Variable",
+          "importance": "High"
+        }
+      ],
+      "semantic_summary": "This code copies input data into a telemetry frame buffer.",
+      "domain": "System",
+      "context_possible_cwes": [
+        "CWE-121",
+        "CWE-125"
+      ]
+    },
+    "graph_warnings": [
+      {
+        "entity": "memcpy",
+        "warning": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks.",
+        "cwe_id": "CWE-787",
+        "verification_contract": "      - Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length."
+      },
+      {
+        "entity": "payload",
+        "warning": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks.",
+        "cwe_id": "CWE-787",
+        "verification_contract": "      - Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length."
+      },
+      {
+        "entity": "TelemetryFrame",
+        "warning": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks.",
+        "cwe_id": "CWE-787",
+        "verification_contract": "      - Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length."
+      }
+    ],
+    "assembled_prompt_preview": "## Knowledge Graph Security Warnings\nThe following security warnings related to this code were retrieved from the Oil & Gas Industrial Knowledge Graph:\n  1. [memcpy]: An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks.\n     * Verification Contract (Defense Requirements): - Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length.\n  2. [payload]: An externally sup",
+    "diagnosis": {
+      "graph_warning_critique": "All three warnings are valid and not noise. The code lacks destination-capacity checks for memcpy, payload, and TelemetryFrame. The null checks alone do not bound the copy length as required by the verification contracts.",
+      "code_logic_analysis": "The code does not validate the length parameter against the fixed-size 32-byte payload buffer. memcpy is called with unbounded input length, allowing buffer overflow if length exceeds 32 bytes.",
+      "is_vulnerable": true,
+      "confidence": 0.95,
+      "cwe_id": "CWE-121",
+      "vulnerability_type": "Stack-based Buffer Overflow",
+      "explanation": "该代码未对传入的length参数进行有效性检查，直接使用其作为memcpy的复制长度，可能导致栈溢出（CWE-121）。",
+      "affected_lines": [
+        "std::memcpy(frame->payload, input, length);"
+      ]
+    },
+    "status": "success",
+    "error_message": ""
+  },
+  {
+    "sample_id": "Sample_DemoRelease_vuln",
+    "source_type": "synthetic_vuln",
+    "ground_truth_label": "vulnerable",
+    "ground_truth_cwe": "CWE-415",
+    "pipeline_mode": "kg_rag",
+    "extraction": {
+      "entities": [
+        {
+          "name": "valvestate",
+          "type": "Variable",
+          "importance": "High"
+        },
+        {
+          "name": "std::malloc",
+          "type": "FunctionCall",
+          "importance": "High"
+        },
+        {
+          "name": "std::free",
+          "type": "FunctionCall",
+          "importance": "High"
+        }
+      ],
+      "semantic_summary": "This code manages memory allocation and deallocation for a valve state structure.",
+      "domain": "System",
+      "context_possible_cwes": [
+        "CWE-415",
+        "CWE-79"
+      ]
+    },
+    "graph_warnings": [
+      {
+        "entity": "ValveState",
+        "warning": "Multiple cleanup paths may release one heap allocation more than once. Verify ownership and control-flow exits in the source.",
+        "cwe_id": "CWE-415",
+        "verification_contract": "      - Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path."
+      }
+    ],
+    "assembled_prompt_preview": "## Knowledge Graph Security Warnings\nThe following security warnings related to this code were retrieved from the Oil & Gas Industrial Knowledge Graph:\n  1. [ValveState]: Multiple cleanup paths may release one heap allocation more than once. Verify ownership and control-flow exits in the source.\n     * Verification Contract (Defense Requirements): - Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path.\n\n## C/C++ Source Code for A",
+    "diagnosis": {
+      "graph_warning_critique": "The [ValveState] warning is valid. The code has two std::free(state) calls in the drop_cache path, leading to a double free. The verification contract requires counting releases and ensuring no return after a release prevents later cleanup. The code does not satisfy this as the second free occurs regardless of drop_cache value.",
+      "code_logic_analysis": "The function always frees 'state' once, but when drop_cache is true, it frees the same pointer twice. This results in a double free vulnerability. No ownership tracking or cleanup path validation is implemented.",
+      "is_vulnerable": true,
+      "confidence": 0.95,
+      "cwe_id": "CWE-415",
+      "vulnerability_type": "Double Free or Delete",
+      "explanation": "该代码在drop_cache为真时提前释放内存，随后再次释放同一指针，导致双重释放漏洞。",
+      "affected_lines": [
+        "if (drop_cache) { std::free(state); }",
+        "std::free(state);"
+      ]
+    },
+    "status": "success",
+    "error_message": ""
+  },
+  {
+    "sample_id": "Sample_DemoBuffer_safe",
+    "source_type": "synthetic_safe",
+    "ground_truth_label": "safe",
+    "ground_truth_cwe": "CWE-787",
+    "pipeline_mode": "kg_rag",
+    "extraction": {
+      "entities": [
+        {
+          "name": "telemetryframe",
+          "type": "System",
+          "importance": "High"
+        },
+        {
+          "name": "receive_telemetry",
+          "type": "FunctionCall",
+          "importance": "High"
+        },
+        {
+          "name": "memcpy",
+          "type": "FunctionCall",
+          "importance": "High"
+        }
+      ],
+      "semantic_summary": "This code receives telemetry data and copies it into a buffer.",
+      "domain": "System",
+      "context_possible_cwes": [
+        "CWE-120",
+        "CWE-121",
+        "CWE-125",
+        "CWE-787"
+      ]
+    },
+    "graph_warnings": [
+      {
+        "entity": "receive_telemetry",
+        "warning": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks.",
+        "cwe_id": "CWE-787",
+        "verification_contract": "      - Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length."
+      },
+      {
+        "entity": "memcpy",
+        "warning": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks.",
+        "cwe_id": "CWE-787",
+        "verification_contract": "      - Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length."
+      },
+      {
+        "entity": "TelemetryFrame",
+        "warning": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks.",
+        "cwe_id": "CWE-787",
+        "verification_contract": "      - Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length."
+      }
+    ],
+    "assembled_prompt_preview": "## Knowledge Graph Security Warnings\nThe following security warnings related to this code were retrieved from the Oil & Gas Industrial Knowledge Graph:\n  1. [receive_telemetry]: An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks.\n     * Verification Contract (Defense Requirements): - Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length.\n  2. [memcpy]: An exte",
+    "diagnosis": {
+      "graph_warning_critique": "All three warnings are satisfied. The code includes a length check (length > sizeof(frame->payload)) before memcpy, which bounds the copy length to the fixed destination buffer capacity. Null checks are not the sole defense as required.",
+      "code_logic_analysis": "The code validates the input length against the fixed-size payload buffer (32 bytes) before performing memcpy. The length check directly prevents buffer overflow by ensuring the copy size cannot exceed the destination capacity. No other logical flaws or memory safety issues detected.",
+      "is_vulnerable": false,
+      "confidence": 0.98,
+      "cwe_id": "",
+      "vulnerability_type": "",
+      "explanation": "该代码在调用memcpy前明确检查了输入长度是否超过目标缓冲区大小，有效防止了缓冲区溢出攻击。",
+      "affected_lines": []
+    },
+    "status": "success",
+    "error_message": ""
+  },
+  {
+    "sample_id": "Sample_DemoRelease_safe",
+    "source_type": "synthetic_safe",
+    "ground_truth_label": "safe",
+    "ground_truth_cwe": "CWE-415",
+    "pipeline_mode": "kg_rag",
+    "extraction": {
+      "entities": [
+        {
+          "name": "valvestate",
+          "type": "Variable",
+          "importance": "High"
+        },
+        {
+          "name": "malloc",
+          "type": "FunctionCall",
+          "importance": "High"
+        },
+        {
+          "name": "free",
+          "type": "FunctionCall",
+          "importance": "High"
+        }
+      ],
+      "semantic_summary": "This code manages memory allocation and deallocation for a valve state structure.",
+      "domain": "System",
+      "context_possible_cwes": [
+        "CWE-120",
+        "CWE-415",
+        "CWE-416",
+        "CWE-787"
+      ]
+    },
+    "graph_warnings": [
+      {
+        "entity": "free",
+        "warning": "Multiple cleanup paths may release one heap allocation more than once. Verify ownership and control-flow exits in the source.",
+        "cwe_id": "CWE-415",
+        "verification_contract": "      - Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path."
+      },
+      {
+        "entity": "ValveState",
+        "warning": "Multiple cleanup paths may release one heap allocation more than once. Verify ownership and control-flow exits in the source.",
+        "cwe_id": "CWE-415",
+        "verification_contract": "      - Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path."
+      }
+    ],
+    "assembled_prompt_preview": "## Knowledge Graph Security Warnings\nThe following security warnings related to this code were retrieved from the Oil & Gas Industrial Knowledge Graph:\n  1. [free]: Multiple cleanup paths may release one heap allocation more than once. Verify ownership and control-flow exits in the source.\n     * Verification Contract (Defense Requirements): - Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path.\n  2. [ValveState]: Multiple clean",
+    "diagnosis": {
+      "graph_warning_critique": "Both warnings are false positives. The code only frees the allocated memory once regardless of the drop_cache parameter. The single 'std::free(state)' call is executed exactly once in all control flow paths, satisfying the verification contract requirements.",
+      "code_logic_analysis": "The code properly checks for null after malloc() and ensures memory is freed exactly once. No double-free, use-after-free, or memory leak vulnerabilities detected. The function correctly handles both success and failure paths.",
+      "is_vulnerable": false,
+      "confidence": 0.95,
+      "cwe_id": "",
+      "vulnerability_type": "",
+      "explanation": "该代码中无论drop_cache参数如何，state指针均被释放一次且仅一次，不存在重复释放问题。",
+      "affected_lines": []
+    },
+    "status": "success",
+    "error_message": ""
+  }
+]

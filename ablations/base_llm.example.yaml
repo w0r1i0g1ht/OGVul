@@ -1,0 +1,32 @@
+# Copy to kg/config.base_llm.yaml and edit paths before running.
+llm:
+  extraction:
+    backend: vllm
+    model_path: /path/to/Qwen3-8B
+    vllm_port: 8100
+    gpu_memory_utilization: 0.8
+    tensor_parallel_size: 1
+    max_model_len: 8192
+    temperature: 0.0
+    max_tokens: 1024
+  diagnosis:
+    backend: vllm
+    model_path: /path/to/Qwen3-8B
+    vllm_port: 8100
+    gpu_memory_utilization: 0.8
+    tensor_parallel_size: 1
+    max_model_len: 8192
+    temperature: 0.0
+    max_tokens: 4096
+paths:
+  cve_dir: /path/to/vuln_samples
+  synthetic_dir: /path/to/vuln_samples
+  output_dir: outputs/ablations/base_llm/run-001
+experiment:
+  pipeline_mode: base_llm
+runtime:
+  max_workers: 1
+  retry_max_attempts: 3
+  retry_wait_seconds: 5
+  result_file: detection_results.json
+  test_sample_count: 100

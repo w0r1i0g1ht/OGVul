@@ -1,0 +1,3158 @@
+{
+  "annotation_normalization": {
+    "affected_samples": {
+      "CVE-2024-31504": {
+        "inventory_cwe_id": [
+          "CWE-120",
+          "CWE-121"
+        ],
+        "loader_value_used": "",
+        "original_cwe_id": [
+          "CWE-120",
+          "CWE-121"
+        ]
+      },
+      "CVE-2025-13790": {
+        "inventory_cwe_id": [
+          "CWE-352",
+          "CWE-862"
+        ],
+        "loader_value_used": "",
+        "original_cwe_id": [
+          "CWE-352",
+          "CWE-862"
+        ]
+      },
+      "CVE-2025-34226": {
+        "inventory_cwe_id": [
+          "CWE-664",
+          "CWE-20"
+        ],
+        "loader_value_used": "",
+        "original_cwe_id": [
+          "CWE-664",
+          "CWE-20"
+        ]
+      },
+      "CVE-2025-9139": {
+        "inventory_cwe_id": [
+          "CWE-200",
+          "CWE-284"
+        ],
+        "loader_value_used": "",
+        "original_cwe_id": [
+          "CWE-200",
+          "CWE-284"
+        ]
+      }
+    },
+    "enabled": true,
+    "multiple_value_rule": "A multi-item cwe_id list is retained verbatim; no CWE is selected. An empty private loader value is used only to enumerate the sample.",
+    "purpose": "inventory only; source annotations were not modified",
+    "single_value_rule": "A one-item cwe_id list is unwrapped only for the loader boundary."
+  },
+  "counts": {
+    "cve_fixed": 25,
+    "cve_vuln": 55,
+    "synthetic_safe": 100,
+    "synthetic_vuln": 100
+  },
+  "load_order": [
+    "CVE-2018-20818",
+    "CVE-2019-10242",
+    "CVE-2019-10243",
+    "CVE-2019-10244",
+    "CVE-2019-14462",
+    "CVE-2019-14463",
+    "CVE-2020-36429",
+    "CVE-2021-26828",
+    "CVE-2021-26829",
+    "CVE-2021-31630",
+    "CVE-2021-45844",
+    "CVE-2021-45845",
+    "CVE-2022-0367",
+    "CVE-2022-25761",
+    "CVE-2022-31860",
+    "CVE-2022-44153",
+    "CVE-2024-10918",
+    "CVE-2024-3046",
+    "CVE-2024-31504",
+    "CVE-2024-34026",
+    "CVE-2024-36843",
+    "CVE-2024-36844",
+    "CVE-2024-36845",
+    "CVE-2024-36980",
+    "CVE-2024-36981",
+    "CVE-2024-37741",
+    "CVE-2024-39589",
+    "CVE-2024-39590",
+    "CVE-2024-47221",
+    "CVE-2025-10234",
+    "CVE-2025-10235",
+    "CVE-2025-1066",
+    "CVE-2025-13790",
+    "CVE-2025-13791",
+    "CVE-2025-13970",
+    "CVE-2025-34226",
+    "CVE-2025-46613",
+    "CVE-2025-51986",
+    "CVE-2025-53476",
+    "CVE-2025-54811",
+    "CVE-2025-54962",
+    "CVE-2025-61982",
+    "CVE-2025-7728",
+    "CVE-2025-7729",
+    "CVE-2025-8743",
+    "CVE-2025-9137",
+    "CVE-2025-9139",
+    "CVE-2025-9143",
+    "CVE-2025-9144",
+    "CVE-2025-9145",
+    "CVE-2025-9233",
+    "CVE-2025-9234",
+    "CVE-2025-9235",
+    "CVE-2025-9388",
+    "CVE-2025-9404",
+    "CVE-2019-10242-fixed",
+    "CVE-2019-10243-fixed",
+    "CVE-2019-10244-fixed",
+    "CVE-2019-14462-fixed",
+    "CVE-2019-14463-fixed",
+    "CVE-2020-36429-fixed",
+    "CVE-2021-45844-fixed",
+    "CVE-2021-45845-fixed",
+    "CVE-2022-0367-fixed",
+    "CVE-2022-25761-fixed",
+    "CVE-2022-31860-fixed",
+    "CVE-2024-10918-fixed",
+    "CVE-2024-34026-fixed",
+    "CVE-2024-36843-fixed",
+    "CVE-2024-36844-fixed",
+    "CVE-2024-36845-fixed",
+    "CVE-2024-36981-fixed",
+    "CVE-2024-39589-fixed",
+    "CVE-2024-39590-fixed",
+    "CVE-2024-47221-fixed",
+    "CVE-2025-1066-fixed",
+    "CVE-2025-13970-fixed",
+    "CVE-2025-34226-fixed",
+    "CVE-2025-46613-fixed",
+    "CVE-2025-54811-fixed",
+    "Sample_CWE125_001_vuln",
+    "Sample_CWE125_002_vuln",
+    "Sample_CWE125_003_vuln",
+    "Sample_CWE125_004_vuln",
+    "Sample_CWE125_005_vuln",
+    "Sample_CWE125_006_vuln",
+    "Sample_CWE125_007_vuln",
+    "Sample_CWE125_008_vuln",
+    "Sample_CWE125_009_vuln",
+    "Sample_CWE125_010_vuln",
+    "Sample_CWE125_011_vuln",
+    "Sample_CWE125_012_vuln",
+    "Sample_CWE125_013_vuln",
+    "Sample_CWE125_014_vuln",
+    "Sample_CWE125_015_vuln",
+    "Sample_CWE125_016_vuln",
+    "Sample_CWE125_017_vuln",
+    "Sample_CWE125_018_vuln",
+    "Sample_CWE125_019_vuln",
+    "Sample_CWE125_020_vuln",
+    "Sample_CWE129_001_vuln",
+    "Sample_CWE129_002_vuln",
+    "Sample_CWE129_003_vuln",
+    "Sample_CWE129_004_vuln",
+    "Sample_CWE129_005_vuln",
+    "Sample_CWE129_006_vuln",
+    "Sample_CWE134_001_vuln",
+    "Sample_CWE134_002_vuln",
+    "Sample_CWE134_003_vuln",
+    "Sample_CWE134_004_vuln",
+    "Sample_CWE134_005_vuln",
+    "Sample_CWE134_006_vuln",
+    "Sample_CWE134_007_vuln",
+    "Sample_CWE134_008_vuln",
+    "Sample_CWE134_009_vuln",
+    "Sample_CWE134_010_vuln",
+    "Sample_CWE134_011_vuln",
+    "Sample_CWE134_012_vuln",
+    "Sample_CWE134_013_vuln",
+    "Sample_CWE134_014_vuln",
+    "Sample_CWE134_015_vuln",
+    "Sample_CWE190_001_vuln",
+    "Sample_CWE190_002_vuln",
+    "Sample_CWE190_003_vuln",
+    "Sample_CWE190_004_vuln",
+    "Sample_CWE190_005_vuln",
+    "Sample_CWE190_006_vuln",
+    "Sample_CWE190_007_vuln",
+    "Sample_CWE22_001_vuln",
+    "Sample_CWE22_002_vuln",
+    "Sample_CWE22_003_vuln",
+    "Sample_CWE369_001_vuln",
+    "Sample_CWE369_002_vuln",
+    "Sample_CWE401_001_vuln",
+    "Sample_CWE401_002_vuln",
+    "Sample_CWE401_003_vuln",
+    "Sample_CWE415_001_vuln",
+    "Sample_CWE415_002_vuln",
+    "Sample_CWE415_003_vuln",
+    "Sample_CWE415_004_vuln",
+    "Sample_CWE415_005_vuln",
+    "Sample_CWE415_006_vuln",
+    "Sample_CWE415_007_vuln",
+    "Sample_CWE415_008_vuln",
+    "Sample_CWE415_009_vuln",
+    "Sample_CWE415_010_vuln",
+    "Sample_CWE416_001_vuln",
+    "Sample_CWE416_002_vuln",
+    "Sample_CWE416_003_vuln",
+    "Sample_CWE416_004_vuln",
+    "Sample_CWE416_005_vuln",
+    "Sample_CWE416_006_vuln",
+    "Sample_CWE416_007_vuln",
+    "Sample_CWE416_008_vuln",
+    "Sample_CWE416_009_vuln",
+    "Sample_CWE416_010_vuln",
+    "Sample_CWE416_011_vuln",
+    "Sample_CWE59_001_vuln",
+    "Sample_CWE787_001_vuln",
+    "Sample_CWE787_002_vuln",
+    "Sample_CWE787_003_vuln",
+    "Sample_CWE787_004_vuln",
+    "Sample_CWE787_005_vuln",
+    "Sample_CWE787_006_vuln",
+    "Sample_CWE787_007_vuln",
+    "Sample_CWE787_008_vuln",
+    "Sample_CWE787_009_vuln",
+    "Sample_CWE787_010_vuln",
+    "Sample_CWE787_011_vuln",
+    "Sample_CWE787_012_vuln",
+    "Sample_CWE787_013_vuln",
+    "Sample_CWE787_014_vuln",
+    "Sample_CWE787_015_vuln",
+    "Sample_CWE787_016_vuln",
+    "Sample_CWE787_017_vuln",
+    "Sample_CWE787_018_vuln",
+    "Sample_CWE787_019_vuln",
+    "Sample_CWE787_020_vuln",
+    "Sample_CWE787_021_vuln",
+    "Sample_CWE787_022_vuln",
+    "Sample_CWE125_001_safe",
+    "Sample_CWE125_002_safe",
+    "Sample_CWE125_003_safe",
+    "Sample_CWE125_004_safe",
+    "Sample_CWE125_005_safe",
+    "Sample_CWE125_006_safe",
+    "Sample_CWE125_007_safe",
+    "Sample_CWE125_008_safe",
+    "Sample_CWE125_009_safe",
+    "Sample_CWE125_010_safe",
+    "Sample_CWE125_011_safe",
+    "Sample_CWE125_012_safe",
+    "Sample_CWE125_013_safe",
+    "Sample_CWE125_014_safe",
+    "Sample_CWE125_015_safe",
+    "Sample_CWE125_016_safe",
+    "Sample_CWE125_017_safe",
+    "Sample_CWE125_018_safe",
+    "Sample_CWE125_019_safe",
+    "Sample_CWE125_020_safe",
+    "Sample_CWE129_001_safe",
+    "Sample_CWE129_002_safe",
+    "Sample_CWE129_003_safe",
+    "Sample_CWE129_004_safe",
+    "Sample_CWE129_005_safe",
+    "Sample_CWE129_006_safe",
+    "Sample_CWE134_001_safe",
+    "Sample_CWE134_002_safe",
+    "Sample_CWE134_003_safe",
+    "Sample_CWE134_004_safe",
+    "Sample_CWE134_005_safe",
+    "Sample_CWE134_006_safe",
+    "Sample_CWE134_007_safe",
+    "Sample_CWE134_008_safe",
+    "Sample_CWE134_009_safe",
+    "Sample_CWE134_010_safe",
+    "Sample_CWE134_011_safe",
+    "Sample_CWE134_012_safe",
+    "Sample_CWE134_013_safe",
+    "Sample_CWE134_014_safe",
+    "Sample_CWE134_015_safe",
+    "Sample_CWE190_001_safe",
+    "Sample_CWE190_002_safe",
+    "Sample_CWE190_003_safe",
+    "Sample_CWE190_004_safe",
+    "Sample_CWE190_005_safe",
+    "Sample_CWE190_006_safe",
+    "Sample_CWE190_007_safe",
+    "Sample_CWE22_001_safe",
+    "Sample_CWE22_002_safe",
+    "Sample_CWE22_003_safe",
+    "Sample_CWE369_001_safe",
+    "Sample_CWE369_002_safe",
+    "Sample_CWE401_001_safe",
+    "Sample_CWE401_002_safe",
+    "Sample_CWE401_003_safe",
+    "Sample_CWE415_001_safe",
+    "Sample_CWE415_002_safe",
+    "Sample_CWE415_003_safe",
+    "Sample_CWE415_004_safe",
+    "Sample_CWE415_005_safe",
+    "Sample_CWE415_006_safe",
+    "Sample_CWE415_007_safe",
+    "Sample_CWE415_008_safe",
+    "Sample_CWE415_009_safe",
+    "Sample_CWE415_010_safe",
+    "Sample_CWE416_001_safe",
+    "Sample_CWE416_002_safe",
+    "Sample_CWE416_003_safe",
+    "Sample_CWE416_004_safe",
+    "Sample_CWE416_005_safe",
+    "Sample_CWE416_006_safe",
+    "Sample_CWE416_007_safe",
+    "Sample_CWE416_008_safe",
+    "Sample_CWE416_009_safe",
+    "Sample_CWE416_010_safe",
+    "Sample_CWE416_011_safe",
+    "Sample_CWE59_001_safe",
+    "Sample_CWE787_001_safe",
+    "Sample_CWE787_002_safe",
+    "Sample_CWE787_003_safe",
+    "Sample_CWE787_004_safe",
+    "Sample_CWE787_005_safe",
+    "Sample_CWE787_006_safe",
+    "Sample_CWE787_007_safe",
+    "Sample_CWE787_008_safe",
+    "Sample_CWE787_009_safe",
+    "Sample_CWE787_010_safe",
+    "Sample_CWE787_011_safe",
+    "Sample_CWE787_012_safe",
+    "Sample_CWE787_013_safe",
+    "Sample_CWE787_014_safe",
+    "Sample_CWE787_015_safe",
+    "Sample_CWE787_016_safe",
+    "Sample_CWE787_017_safe",
+    "Sample_CWE787_018_safe",
+    "Sample_CWE787_019_safe",
+    "Sample_CWE787_020_safe",
+    "Sample_CWE787_021_safe",
+    "Sample_CWE787_022_safe"
+  ],
+  "loader_compatible": false,
+  "sample_count": 280,
+  "samples": {
+    "CVE-2018-20818": {
+      "code_sha256": "45feffa5468ff3fffe9b1368e87d84163051537cc77ca8cbf6995011e21408f9",
+      "cwe_id": "CWE-119",
+      "files": {
+        "CVE-2018-20818/vuln_code.md": "1645a305f0335608cfc832ade21296be37772585bcef34107883995c472ccbe8",
+        "CVE-2018-20818/vuln_info.json": "7efb2a00977d1f7e38cbd66affeb71336891ba291cb469df9e01cad11b3f2781"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2019-10242": {
+      "code_sha256": "8744486422cf24666e57d4074f38cc8e43c550a4b0fc099110c30466f066fee6",
+      "cwe_id": "CWE-22",
+      "files": {
+        "CVE-2019-10242/vuln_code.md": "5947232eb8fe4a3bcdb237c7d80cac1fd54a90e72895b29a52980f53d15bb11a",
+        "CVE-2019-10242/vuln_info.json": "d9462a16e58729d9a83c40c470a016dac8ddb693a4c5a6bca91d9ee25d0e8f13"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2019-10242-fixed": {
+      "code_sha256": "c01a3ac01e59fe3b7821a247d594289cf2d627413a94f9b295ed26c3f111d3b6",
+      "cwe_id": "CWE-22",
+      "files": {
+        "CVE-2019-10242-fixed/vuln_code.md": "7dce566f889125ff3eff367ee969619125a15663101b0e295803dea0683608da",
+        "CVE-2019-10242-fixed/vuln_info.json": "856186638a26c2a2dd575d95289eff7b2288dff21a6742a4cf04822331ec8f8a"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2019-10243": {
+      "code_sha256": "9b3520322b75551edb78bdfe2a9658978077521c1a0addbf80bd6d467f0d4aac",
+      "cwe_id": "CWE-497",
+      "files": {
+        "CVE-2019-10243/vuln_code.md": "539fb3566f4ced3609e9e3d94e4262f342543ac00b7f960cf596aecc41191a71",
+        "CVE-2019-10243/vuln_info.json": "80dc9912716890a9976215e1cabb7575d33c5f3e616e3773b9b4cbe82ffcd1fd"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2019-10243-fixed": {
+      "code_sha256": "0e8c38a4e2513e4d2bf47ea99eeb3c878964988ce46df39949cf5e43a9e7a181",
+      "cwe_id": "CWE-497",
+      "files": {
+        "CVE-2019-10243-fixed/vuln_code.md": "c5ff43204b8e3dceef4811655760e9d34cf534f41c61e29976fb0f12124333f6",
+        "CVE-2019-10243-fixed/vuln_info.json": "8f07f4318e4ad61fcb007a2004b98c989f883800ca5de9e06ab913849dd13e9c"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2019-10244": {
+      "code_sha256": "8744486422cf24666e57d4074f38cc8e43c550a4b0fc099110c30466f066fee6",
+      "cwe_id": "CWE-611",
+      "files": {
+        "CVE-2019-10244/vuln_code.md": "5947232eb8fe4a3bcdb237c7d80cac1fd54a90e72895b29a52980f53d15bb11a",
+        "CVE-2019-10244/vuln_info.json": "b4fd066949b0bcb65b1c72b4db73c05b609ddf4e385866b228dd1bfa3f0f4aa1"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2019-10244-fixed": {
+      "code_sha256": "c01a3ac01e59fe3b7821a247d594289cf2d627413a94f9b295ed26c3f111d3b6",
+      "cwe_id": "CWE-611",
+      "files": {
+        "CVE-2019-10244-fixed/vuln_code.md": "7dce566f889125ff3eff367ee969619125a15663101b0e295803dea0683608da",
+        "CVE-2019-10244-fixed/vuln_info.json": "44cc9bd9095af7a5ea538c54ca61d0e3f3ce5b529e3dd40dbb3e7df09e157457"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2019-14462": {
+      "code_sha256": "64f0b8c20e76fa878d69dd9095349af91a464c78b0ed2538940d263e607823d9",
+      "cwe_id": "CWE-125",
+      "files": {
+        "CVE-2019-14462/vuln_code.md": "a200278ac9467aabe6057aa6d87e540582666b9bb9c3dcc4637e4dd793153663",
+        "CVE-2019-14462/vuln_info.json": "9cd26389405df14f86167e155ebf6784ba9e372c3f574946fcd9919cfecef0d4"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2019-14462-fixed": {
+      "code_sha256": "8e7193bd979d2325aee2fcd3413df24db3313ad57b6676d7110a879d0035a930",
+      "cwe_id": "CWE-125",
+      "files": {
+        "CVE-2019-14462-fixed/vuln_code.md": "df22c8ed83ba044980100947c4a6e36adeed15ee4a5152251f0818ad824f7dee",
+        "CVE-2019-14462-fixed/vuln_info.json": "60ddf94067cf4c5cb2a7bc3bda65bf280a2f5ebd46de85e3ba205ea6fb9ed753"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2019-14463": {
+      "code_sha256": "64f0b8c20e76fa878d69dd9095349af91a464c78b0ed2538940d263e607823d9",
+      "cwe_id": "CWE-125",
+      "files": {
+        "CVE-2019-14463/vuln_code.md": "a200278ac9467aabe6057aa6d87e540582666b9bb9c3dcc4637e4dd793153663",
+        "CVE-2019-14463/vuln_info.json": "86d46f0e21ecee4fdcf29980844010aca7ff67ee56fa1ef1fa745bd89e56f4c7"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2019-14463-fixed": {
+      "code_sha256": "8e7193bd979d2325aee2fcd3413df24db3313ad57b6676d7110a879d0035a930",
+      "cwe_id": "CWE-125",
+      "files": {
+        "CVE-2019-14463-fixed/vuln_code.md": "df22c8ed83ba044980100947c4a6e36adeed15ee4a5152251f0818ad824f7dee",
+        "CVE-2019-14463-fixed/vuln_info.json": "86d46f0e21ecee4fdcf29980844010aca7ff67ee56fa1ef1fa745bd89e56f4c7"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2020-36429": {
+      "code_sha256": "a70c20ef5d5c6c37b2de1b023908246ce311e29b90dfe1e0d0e68caf834bcd10",
+      "cwe_id": "CWE-787",
+      "files": {
+        "CVE-2020-36429/vuln_code.md": "f09108db104cb7135015fb42fd9c4a03fc2925735090bad11804f969adfb11f7",
+        "CVE-2020-36429/vuln_info.json": "f31d8e5c0215cdd226be47eb88a9e88e9f1953c782a9dc5e06cb3b07653748b8"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2020-36429-fixed": {
+      "code_sha256": "2820077b5b62ab6aa521582a97048a30525e58d0468281093d754dfbb2df9fe1",
+      "cwe_id": "CWE-787",
+      "files": {
+        "CVE-2020-36429-fixed/vuln_code.md": "08793faebdc1b75a979547d2dfe1a7ea261f90cd978fdc3221cf34793aba0d3a",
+        "CVE-2020-36429-fixed/vuln_info.json": "22ba26bddc3ddf04b70a871321a5901a40a3218d3b848d40058be9baade4bd72"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2021-26828": {
+      "code_sha256": "3b9506b1094a6dd469f20e63d0c0c87fd4b857062160b3ecd726a5178329e4e8",
+      "cwe_id": "CWE-434",
+      "files": {
+        "CVE-2021-26828/vuln_code.md": "bbab74655195bfb93b78c8458651d8eb6502917af25f1f988354e74a06946170",
+        "CVE-2021-26828/vuln_info.json": "88bb49f715be427af826c9cb605e923214d206c7d9a3431766f370c4fbf4c497"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2021-26829": {
+      "code_sha256": "13ac774303ca699ecee2a21c634403388cf44b170e5e67ca3cf3b14bc115b61f",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2021-26829/vuln_code.md": "d09f4f5990e34af16d6de2cd2672c545e9f62b4edc2dc261e8615c5117049417",
+        "CVE-2021-26829/vuln_info.json": "75394b54284851193fddc184d8620072e6954a1c0e9a9d02383661a0a4fd4fea"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2021-31630": {
+      "code_sha256": "38b2372cee8034149abb709a8c4f5c9aeab952cbff9005d8946fff905bd50c3f",
+      "cwe_id": "CWE-94",
+      "files": {
+        "CVE-2021-31630/vuln_code.md": "1764480a2ab80ca4c7cf870169db6b5502db0a0d86a37f754cf44c701e790066",
+        "CVE-2021-31630/vuln_info.json": "7d81c14e91ec52885da4e862fb5710ba121f0576fbff9464587797dc69309044"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2021-45844": {
+      "code_sha256": "9d8fb817bc08bc087567b28921ae1aa637945af3a2fcb072623bc22490f1df60",
+      "cwe_id": "CWE-78",
+      "files": {
+        "CVE-2021-45844/vuln_code.md": "693922e7655aa730f36e2c78d8e19d45271a2250279295dab352905cca48f4f4",
+        "CVE-2021-45844/vuln_info.json": "650d1f65bdb6ef810a853bc8e786fc9a206201681b848f119b1e6a25df039280"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2021-45844-fixed": {
+      "code_sha256": "685b083e350c998ddee77d12ce68c21c04a9e8cb77f5e132af138cc2374ad3a8",
+      "cwe_id": "CWE-78",
+      "files": {
+        "CVE-2021-45844-fixed/vuln_code.md": "cb66672b4826cfe5eb824309e6287bcbbf2cb0b56a95b69685d7db33fc354c22",
+        "CVE-2021-45844-fixed/vuln_info.json": "81b0f3e2efcb3ba4fb836982f3e3e37419a140097b1e2b22c5388fa38a671971"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2021-45845": {
+      "code_sha256": "9781dd215359d6a677653a6b1410b36f26a6e38f8876ee138bd72df7e2bf2bf7",
+      "cwe_id": "CWE-78",
+      "files": {
+        "CVE-2021-45845/vuln_code.md": "092359be6543a68ccaf73f9c25062d1db228ef63c7c9f07591d24da06f220d8c",
+        "CVE-2021-45845/vuln_info.json": "e823ee9eaf6457ea98c7290a4392333ac0bfa7ddee44e0555b11337e83887e3f"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2021-45845-fixed": {
+      "code_sha256": "30614cb03eed998b20b30a2d78dcf48171c6d8f66d7d96589d2699e2dcc9e96f",
+      "cwe_id": "CWE-78",
+      "files": {
+        "CVE-2021-45845-fixed/vuln_code.md": "6550a53a0798f55d9b94199b07e1ac5d3c65999ed5f32763fd6db7aeb17670f1",
+        "CVE-2021-45845-fixed/vuln_info.json": "ff76e433502345c292e7c6da3bf415dd0200a12f22271d392a075ca0f2596b4a"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2022-0367": {
+      "code_sha256": "c19171969585c5e686e3f84e3e08d735d65ca8969a264590505c975d7e79e344",
+      "cwe_id": "CWE-119",
+      "files": {
+        "CVE-2022-0367/vuln_code.md": "c2e2051c5357c9bf1aa6743b20fd335eec69e849f9ccd59bc6b9c91536496922",
+        "CVE-2022-0367/vuln_info.json": "ad16ff325e8090f90af0e4ece79672d0cbac3b3aa7b4c9b35e7cb1f1b6fa1f86"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2022-0367-fixed": {
+      "code_sha256": "36bc7a14de1c2495cf5a1927855ca880a18173fccda6b44a04cf6026c8e54fb8",
+      "cwe_id": "CWE-119",
+      "files": {
+        "CVE-2022-0367-fixed/vuln_code.md": "ccdee5a24b95929b56e59aa464d8e692c26076778d3a68bbdaa8580b63a783ea",
+        "CVE-2022-0367-fixed/vuln_info.json": "90639835bd1576d451954999e1f081c3f7345327d777b254dcd6381e57575ad3"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2022-25761": {
+      "code_sha256": "acd3f80c8ed9d2c3ffea33eb0f0005f03a9abb9f4bffa9790e64ed2b2bdf656f",
+      "cwe_id": "CWE-770",
+      "files": {
+        "CVE-2022-25761/vuln_code.md": "542cfec9ab525d43af54cbc93b1799f73999a68b8942729fa8843207ad46952a",
+        "CVE-2022-25761/vuln_info.json": "1da32efdc464f059513331017dde57b27ba2bf779b4dbbc319862a4fd60ce09c"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2022-25761-fixed": {
+      "code_sha256": "07fcab3f77217bf52bf0ae1484a33fb4f15be0b30b8a4e45a2c3ac64063685f8",
+      "cwe_id": "CWE-770",
+      "files": {
+        "CVE-2022-25761-fixed/vuln_code.md": "4347ac46253aedf6b51a99a8efda158eb4271845ce1f8b859ccd4e3141bb8310",
+        "CVE-2022-25761-fixed/vuln_info.json": "e62b7409b12d331dc9f37bc16d1b005c1ac58bff0d738dbdd8f00abf3d370e1d"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2022-31860": {
+      "code_sha256": "694edb9e94f4ca8e67a1160423c3b87f938d58cb50b5000ffdb051237f8e54b1",
+      "cwe_id": "CWE-94",
+      "files": {
+        "CVE-2022-31860/vuln_code.md": "242b41d3c6b3e9fba2670249d701063ede1f59f412594ab6598f849f47510452",
+        "CVE-2022-31860/vuln_info.json": "4df0104aca21191ca72ff3e697ec18931fe547760fa002dfd4cf89cc9b60ed77"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2022-31860-fixed": {
+      "code_sha256": "274269eefb19e6a01b274c9850e070adfdc8887e9d766bedc9c649baa1e1b12a",
+      "cwe_id": "CWE-94",
+      "files": {
+        "CVE-2022-31860-fixed/vuln_code.md": "ea46b275084a1eca126c5f79e23bf9c920319df28adf74aebccb348cb47df42b",
+        "CVE-2022-31860-fixed/vuln_info.json": "bb920a364e6c211dfaecd0d8e2809bed722a5df1bcec6f7b62c149841106e455"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2022-44153": {
+      "code_sha256": "d4cbf0b7deff18ed1e4a7d6d6ba414cc95e7b1d82b250c0756f7d50b9dde1028",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2022-44153/vuln_code.md": "34c0d5485cd75ea12d8afe8a64072795a8affa8931d9b2b39c6a8371ce79d420",
+        "CVE-2022-44153/vuln_info.json": "4e7618e20b1e3be94bf26419a03a76293711e63571e00cebb824a2236d19cfc1"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2024-10918": {
+      "code_sha256": "9044818194587b527426ded83beccab62170c2eed5b484974b9548d4642ae8f2",
+      "cwe_id": "CWE-121",
+      "files": {
+        "CVE-2024-10918/vuln_code.md": "4eb133bbffc4b426485495dd862a81d75702788f7e70693e2db2c836486223d8",
+        "CVE-2024-10918/vuln_info.json": "3e90bfb374adba44868faa074be6535fc28d9192a9da9355c7678dc3a88f2582"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2024-10918-fixed": {
+      "code_sha256": "c79a3fb2ebb6360303468a72949526ae71d1411a04d74bd6a4c96dec8eb58e99",
+      "cwe_id": "CWE-121",
+      "files": {
+        "CVE-2024-10918-fixed/vuln_code.md": "474f0ba5aeaf4a86ddf136d81e59b8fc508ed01685d4ac370256abd58547d682",
+        "CVE-2024-10918-fixed/vuln_info.json": "350459c80edeaa59f364e3218de8843638b79cea0dc027c8093216e4696fb118"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2024-3046": {
+      "code_sha256": "81522bab92ba6255b30fe6c68d7cbbb134a02a9e71808af419480d123779a462",
+      "cwe_id": "CWE-303",
+      "files": {
+        "CVE-2024-3046/vuln_code.md": "f8078d7a33d11d4fa249425fd47e9c3cee2771b637eb882d817aca3caea03473",
+        "CVE-2024-3046/vuln_info.json": "d19dd0a07e43b885dd2ffb2363a26d654e4a244af2f157b5978890abd2337bf2"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2024-31504": {
+      "code_sha256": "2630908d1ff8b56071b2fc4c5ee9ed7386e01e87b77086556c8117c15d775054",
+      "cwe_id": [
+        "CWE-120",
+        "CWE-121"
+      ],
+      "files": {
+        "CVE-2024-31504/vuln_code.md": "b44b3a0417b01a6c9b355480b2925cbc76b44f677f39ccf3197fb8bf4682c080",
+        "CVE-2024-31504/vuln_info.json": "a6e35cbc4c4b34a213a8164074602a8881fd14f83dbe1888deea3582d50263bf"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2024-34026": {
+      "code_sha256": "65ca14ce62e79889c45779ce63cb296dddd557d37e7d97fb0142de6d706c1484",
+      "cwe_id": "CWE-121",
+      "files": {
+        "CVE-2024-34026/vuln_code.md": "beb6a7898ab125710a3384a85088e37b758d79af1e76822dfcfd10632e7ae779",
+        "CVE-2024-34026/vuln_info.json": "07bee4ec1025aaab1c120a12c1f032d043b9afd6bffae119d5538f13bdd34f3c"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2024-34026-fixed": {
+      "code_sha256": "61f8ce5885bdca197893d180bc9138cec3c7da4d458e1ebde3ba24188d6e0f22",
+      "cwe_id": "CWE-121",
+      "files": {
+        "CVE-2024-34026-fixed/vuln_code.md": "72f052224bf780c6718cc8111db4b5e1b6518dd61b3425064abcf958372a5076",
+        "CVE-2024-34026-fixed/vuln_info.json": "5f53c71f59a7726f59216c290c6171a71345b9a8764be299f0e4b7e7c119fd3f"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2024-36843": {
+      "code_sha256": "caa229f4c9c27d07a6dcf222b33376031fdf79f29bd2fdc2db2191515eb9a514",
+      "cwe_id": "CWE-122",
+      "files": {
+        "CVE-2024-36843/vuln_code.md": "d6735cbba7bc122274b95b1e621ed7190492ae987add2f02bcb02a8507d9ea74",
+        "CVE-2024-36843/vuln_info.json": "37c4c449d54611739af0911c155f613b903138c13b61c835bffd1dab9fdf2f21"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2024-36843-fixed": {
+      "code_sha256": "ab9c6c5e943ab0f9dc679adf6f7f85a272a215d409ac5ec3d89e46e4591d2437",
+      "cwe_id": "CWE-122",
+      "files": {
+        "CVE-2024-36843-fixed/vuln_code.md": "c86a44d218c9a31849a7fcbc162659ea951ba860946bf12da15957e01136059b",
+        "CVE-2024-36843-fixed/vuln_info.json": "ea350934a52acb2e972a4dddecb0bc123ce1724d1c9fea8be4b2880296905f50"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2024-36844": {
+      "code_sha256": "c537b84e003f072b7f43216de368998bbc6649512a5848ae3e0df10e03c414d7",
+      "cwe_id": "CWE-416",
+      "files": {
+        "CVE-2024-36844/vuln_code.md": "3d6a2f39b91d9b3944434d8aa7a7b724742bffb4e084142ab2bed5bc68da7f68",
+        "CVE-2024-36844/vuln_info.json": "5c3b2226588a820d580a4d72e839eb94a4a832796e0aa0b7d1e72ea78b577052"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2024-36844-fixed": {
+      "code_sha256": "d241083fdbc2c39568c111cba2f0fb45c608a481b83f95a14d58d10dcc879c9e",
+      "cwe_id": "CWE-416",
+      "files": {
+        "CVE-2024-36844-fixed/vuln_code.md": "cb469cdb476066cf099f7b6bb0c4fae7ee9d6d405a148ab0b4a80b339cf19be3",
+        "CVE-2024-36844-fixed/vuln_info.json": "db70890461fde2bcfcc4dc8ce1c666fd33ecef4b8d6418e254705348d4ea2b63"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2024-36845": {
+      "code_sha256": "c537b84e003f072b7f43216de368998bbc6649512a5848ae3e0df10e03c414d7",
+      "cwe_id": "CWE-400",
+      "files": {
+        "CVE-2024-36845/vuln_code.md": "3d6a2f39b91d9b3944434d8aa7a7b724742bffb4e084142ab2bed5bc68da7f68",
+        "CVE-2024-36845/vuln_info.json": "04e8aa32473601c1c691ec08f71ff4c437fbc72f0eab2ec3e7339f10f6dc5779"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2024-36845-fixed": {
+      "code_sha256": "d241083fdbc2c39568c111cba2f0fb45c608a481b83f95a14d58d10dcc879c9e",
+      "cwe_id": "CWE-400",
+      "files": {
+        "CVE-2024-36845-fixed/vuln_code.md": "cb469cdb476066cf099f7b6bb0c4fae7ee9d6d405a148ab0b4a80b339cf19be3",
+        "CVE-2024-36845-fixed/vuln_info.json": "be47a7e63e9ca896c3c826e4957890faad55153b14fe3b071b5e68085efea80e"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2024-36980": {
+      "code_sha256": "47b02419c644b2a2c306008c48f91cb6604f5799136f6d45ec74848ee2f7fce2",
+      "cwe_id": "CWE-125",
+      "files": {
+        "CVE-2024-36980/vuln_code.md": "b5b91658a99daa8b4cc2b5ebeb859863dbbf0d9da9cee2d12823e654d1d186d0",
+        "CVE-2024-36980/vuln_info.json": "d8339428c9eeb59fc2f5eb99ba13fc2b46d6daf40c5964494c904912776fb5f5"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2024-36981": {
+      "code_sha256": "aeb5ebb94e720c0e76a57e511115f28a141c11271c8bf49b8064917c5c3a2a8c",
+      "cwe_id": "CWE-125",
+      "files": {
+        "CVE-2024-36981/vuln_code.md": "5053cb1a6a57da6e593757a96aafbb801de4170bc9cb054b380e7826b03fa2c1",
+        "CVE-2024-36981/vuln_info.json": "f4ca51bb90361835d929f1fecf27253c0781057025fcb5814a4c1328eeba9988"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2024-36981-fixed": {
+      "code_sha256": "fba90da45528aeed7adb3b9f978214d5fe5e3c67d782d232879b148970b92f80",
+      "cwe_id": "CWE-125",
+      "files": {
+        "CVE-2024-36981-fixed/vuln_code.md": "bb4a4f8364d0b17d8b12befd4dc71783d7100fe53629b799590fd56e11d56640",
+        "CVE-2024-36981-fixed/vuln_info.json": "ea77f4e3a152c8e5245161b5ec7a177f190f4bc54b857c6d188fc097af9a6193"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2024-37741": {
+      "code_sha256": "ed03587f66b167e1f1ba351829a41e901664a8fe15a3991025ba844bd353e12e",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2024-37741/vuln_code.md": "a3827d4e379954b832d38b417c8946fdb78dccc16ac510abf2da81b9b3339887",
+        "CVE-2024-37741/vuln_info.json": "1707f5fa6c3941f9a4372783232c6748b49e2f40efc6bf3535ef9b936b6dc660"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2024-39589": {
+      "code_sha256": "041d48578cfb382009bbc989cc01df9f48097c078d95aa9dd3cc35aab1a2c9fb",
+      "cwe_id": "CWE-704",
+      "files": {
+        "CVE-2024-39589/vuln_code.md": "1cbd21e7ff84477ca318ca5dd8de59de718252455aa610a9a182e8378a7959c5",
+        "CVE-2024-39589/vuln_info.json": "79bf004072366a401b2e42a09f86d927303f14d211e66e8082d1bace9f1e2cc9"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2024-39589-fixed": {
+      "code_sha256": "1a5f1b0d9fa89d4c14a6c0ed016c64ad9b357c879d333edad32a3761eaee1b0c",
+      "cwe_id": "CWE-704",
+      "files": {
+        "CVE-2024-39589-fixed/vuln_code.md": "5b1289948ebada6b72eeaed811ebe4047f937f1883f959263552034e2595ac8c",
+        "CVE-2024-39589-fixed/vuln_info.json": "8f0fa85faf0eb705b6bbb75aa0af907508fc8fcbb8bec15449dfd879477a5217"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2024-39590": {
+      "code_sha256": "83cdc49b6486d66399d3ea4fa2bc48fb31c5799ee510cb1855462ed036402735",
+      "cwe_id": "CWE-704",
+      "files": {
+        "CVE-2024-39590/vuln_code.md": "0099065a5ba9368efebb62feb35e17d6a6d330181cfa65e9d5f604567e6613e3",
+        "CVE-2024-39590/vuln_info.json": "7fba482101e3d4fb7a57c7c4c7f1bdb54ff46a97c143fe6a3629f03c78e784c1"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2024-39590-fixed": {
+      "code_sha256": "3172400f1a2598e76d61942867fb07b1dab63a0859cbaaee1ab71e918cddc44c",
+      "cwe_id": "CWE-704",
+      "files": {
+        "CVE-2024-39590-fixed/vuln_code.md": "972176460b99652893b5575dc60d35a7404c6f0ff561a9927e38c9a706279fba",
+        "CVE-2024-39590-fixed/vuln_info.json": "c75d49d57298a32c09fede404838f914086f1977b92d097583f5621e76d25288"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2024-47221": {
+      "code_sha256": "605bbd2e47d92c75a062439c29fac6bce2a17126b560ea85b9ddeb157f7e95b6",
+      "cwe_id": "CWE-521",
+      "files": {
+        "CVE-2024-47221/vuln_code.md": "92515f86927c145c927d0e7892542de26f6b9d21976a3765c68e2283a2a20ccc",
+        "CVE-2024-47221/vuln_info.json": "f190ef0301eaf23d2c61eee325d2baa55f7abe37f8e336fc8ca4fd1cf1b11cf9"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2024-47221-fixed": {
+      "code_sha256": "ad096a81abe8099a2ad49afd696cc11672a21df2b6b4933ec7cacc020ae09686",
+      "cwe_id": "CWE-521",
+      "files": {
+        "CVE-2024-47221-fixed/vuln_code.md": "85b5e0f0e898f71daf84996ec69741c2e621c5a86384a16241610bc861a29bbd",
+        "CVE-2024-47221-fixed/vuln_info.json": "faad479b4c24d712bccf2fc6aa3504bb2aa2c4e2fedbfe53a6d83d532943d45c"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2025-10234": {
+      "code_sha256": "a14b3e3655c20e50da35bb245f543fcf871bc1a9e379e2c01f029a95688e5657",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2025-10234/vuln_code.md": "46bd7ee0d51f0136be64dfd5f7aa8b9b79bc80eba0d29d1a020f3e77acea4f3f",
+        "CVE-2025-10234/vuln_info.json": "d15f16c86dec9ebcacffd3829c5c43b790d8889b60c98fb268a2673965ef1416"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-10235": {
+      "code_sha256": "a612a17b0dd09b289584995544228de0ed6e12b9d1d62fcd4015d8838acd8b90",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2025-10235/vuln_code.md": "998816ed77d9d1577ec3d8c12c0a76aea1f95690f03b0482435188d99ad8ec92",
+        "CVE-2025-10235/vuln_info.json": "3c1e19ea773cfbd60b5740619bcf9fccb491e64e3df44445f6fd39b2a044eefd"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-1066": {
+      "code_sha256": "a35363da1c2e6b4a0187c96707ddb40390c28329b0c6d2492005e214de2e9b14",
+      "cwe_id": "CWE-434",
+      "files": {
+        "CVE-2025-1066/vuln_code.md": "32dfdcff7a924d393734261d3fa18ac8d6a17caf7f4237db32f48ac56c73534f",
+        "CVE-2025-1066/vuln_info.json": "5ac264dda956543b4b36b6046a4bbbf5b8bcd968b6529fcd08499682c96c68b6"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-1066-fixed": {
+      "code_sha256": "601526281a85b78ea69e89081aeab8a1ebc897e8c086b6a4420b6383503ae46c",
+      "cwe_id": "CWE-434",
+      "files": {
+        "CVE-2025-1066-fixed/vuln_code.md": "a263972ecf4a4f5efbd8178715f4021607155aa55341b7c73b196bdd54e059c6",
+        "CVE-2025-1066-fixed/vuln_info.json": "8cedb5fb1314a797b8119aed3bae9fe1cda7cd3d05505b7e721256ce12dd7938"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2025-13790": {
+      "code_sha256": "b86f5fa685f5d1b623253d2c59450c022d45e68e391bb38ced59bc7f6119c1c8",
+      "cwe_id": [
+        "CWE-352",
+        "CWE-862"
+      ],
+      "files": {
+        "CVE-2025-13790/vuln_code.md": "dc1f084f7e7e897316291baa1d2f2b6fc71899932bb5ba53f1fb4053af4e4a4d",
+        "CVE-2025-13790/vuln_info.json": "022b9fc8302be1f5ed31658ab380efa8e4d83d69d76c77a2e0f8a67c514ee405"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-13791": {
+      "code_sha256": "50008ae65b2853d91f3ad138f8bdc3f38dcf8967d649cb3bdbad30d52c5d4193",
+      "cwe_id": "CWE-22",
+      "files": {
+        "CVE-2025-13791/vuln_code.md": "9c0e6a4611df15b1eef3ef3a0595dcbd0d0f33add7384f9b542bc74c1a1204de",
+        "CVE-2025-13791/vuln_info.json": "0b36d8e2b62ea0ec4ae2e0793dd4d7bd0d47049622dd758d038bb43e9c2a9057"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-13970": {
+      "code_sha256": "f7772d8c693443bb141427843ae0dd6a316e552575ea74c251d130a77ddb4cf5",
+      "cwe_id": "CWE-352",
+      "files": {
+        "CVE-2025-13970/vuln_code.md": "a7eb5793e3deaef8047bb74d282e6ff9ba2953058e76a54116f879b3a4e0f2f0",
+        "CVE-2025-13970/vuln_info.json": "ecb1d4580cd702f630ba8f637e58fab9a017c4071f18c1388534edd0e8a90eb0"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-13970-fixed": {
+      "code_sha256": "3553fb9e9f780b1f38a5690099e8c71557800187ac7cbc9493c4b8b4f2ed2d04",
+      "cwe_id": "CWE-352",
+      "files": {
+        "CVE-2025-13970-fixed/vuln_code.md": "089ce23c7b210e8016833eaaf03e049f0c87c62bfe2e56ae703bbb0800c03215",
+        "CVE-2025-13970-fixed/vuln_info.json": "21258a057d18e7184fe4bf4b9c2083f6293868d4ccf9ac02681335e3085da7a7"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2025-34226": {
+      "code_sha256": "9957ecee5dd99ac2d05cb89c047d2a145cae33a1f7eb775664fb64c39be552ab",
+      "cwe_id": [
+        "CWE-664",
+        "CWE-20"
+      ],
+      "files": {
+        "CVE-2025-34226/vuln_code.md": "fdb34b3cff87264d761573f03f9c1a3fcc3ca6fad29f84dbf2ba29fc5c44f1d9",
+        "CVE-2025-34226/vuln_info.json": "c001952bb789145f6ebd3f6c317170da1f3adf5709368f7a806fa99dee0d52d0"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-34226-fixed": {
+      "code_sha256": "218ae06cd6a4d15dcf999350ed632cd87f01b80be4fb8a2aa2d04253ee03fe12",
+      "cwe_id": "CWE-664, CWE-20",
+      "files": {
+        "CVE-2025-34226-fixed/vuln_code.md": "b553df3174d754d271a629bf9d0fe82f9033152dce83e84fe966d6723f9cb303",
+        "CVE-2025-34226-fixed/vuln_info.json": "8cd084511e36b341d97d6a1f93fb4fc8f1afb7d59792d869fe5086265f2228e9"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2025-46613": {
+      "code_sha256": "687b343c7022b3870607e14fd1f821f5d48f0d09c40bea831788336ed94a34b6",
+      "cwe_id": "CWE-362",
+      "files": {
+        "CVE-2025-46613/vuln_code.md": "bdf041dced08db098b71e8c706a8438ce8b796584fecc4930e86a86e4aef7a84",
+        "CVE-2025-46613/vuln_info.json": "d100eed5592e8ec08b620b349d8cd94963d841b2fd7bf2f4f54cb614980532ad"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-46613-fixed": {
+      "code_sha256": "0b8eab5c93933926911b4b88a6a57942fcbf871c3eb0c19ead258a8af61d9b4c",
+      "cwe_id": "CWE-362",
+      "files": {
+        "CVE-2025-46613-fixed/vuln_code.md": "8f5dda379132cceb25a42a3d77195ecfa0983f7d428e01b3567b823db8157071",
+        "CVE-2025-46613-fixed/vuln_info.json": "7c703ffbd9699f2bc6534f593191d2902a5dcc597b4315dc392cbd63b480b9ec"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2025-51986": {
+      "code_sha256": "cd28d6d367da5a10c9bc8ebcc64bfe33f64cc073df95a96466d3b9339ffa4ff0",
+      "cwe_id": "CWE-835",
+      "files": {
+        "CVE-2025-51986/vuln_code.md": "a72279f9699b90ff9f0f0bb052704ee7d74930f08f2f27cef7617e051f8c6180",
+        "CVE-2025-51986/vuln_info.json": "b5448fb8579e759b46d8c4143e97045c5e69d6f1d2156a90763ab00f92a5b1c8"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-53476": {
+      "code_sha256": "31da0e5838b257ad024840cf7fa8432ad1f581396a0f0619c9cabd5df195f31f",
+      "cwe_id": "CWE-775",
+      "files": {
+        "CVE-2025-53476/vuln_code.md": "493b92f55abb8b7ebc7f62ce5d1c6a75d819c5c4279bfa0ca948361325ccfb28",
+        "CVE-2025-53476/vuln_info.json": "eb6ddb84353dab4248f883da8132ffe91be26c45e2311de45b88b9c28e121ca0"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-54811": {
+      "code_sha256": "df663e158828c0d95bda7496918bb0b94a16e8911eb3508c087cde55a4d531ed",
+      "cwe_id": "CWE-758",
+      "files": {
+        "CVE-2025-54811/vuln_code.md": "08d54f0412cf572b60c337dfbd6896d57f571759e3a19d787805b9d202874011",
+        "CVE-2025-54811/vuln_info.json": "e581ce676630ef243510de37b9aaf3d53bd34362dde337b4b65943153532c291"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-54811-fixed": {
+      "code_sha256": "3329fcdfd6d548c00852320c33113b84d5cdf6c0c05117b77b076c8e0ac0e597",
+      "cwe_id": "CWE-758",
+      "files": {
+        "CVE-2025-54811-fixed/vuln_code.md": "2eef178adca6b897704c05e7f00c5f287ab8e9566010a52ca0ff4361179b1e23",
+        "CVE-2025-54811-fixed/vuln_info.json": "e0d3d3162f2396f00641f4c4aed1cf2c43a3dcb33eccaba1b235750c18ddc5f8"
+      },
+      "label": "safe",
+      "source_type": "cve_fixed"
+    },
+    "CVE-2025-54962": {
+      "code_sha256": "ed03587f66b167e1f1ba351829a41e901664a8fe15a3991025ba844bd353e12e",
+      "cwe_id": "CWE-434",
+      "files": {
+        "CVE-2025-54962/vuln_code.md": "a3827d4e379954b832d38b417c8946fdb78dccc16ac510abf2da81b9b3339887",
+        "CVE-2025-54962/vuln_info.json": "d39840c6ba605b2298d437d1662a4d0e6045681d5cf683943ecbb63e2c9bdd61"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-61982": {
+      "code_sha256": "414f7756cc9c37e9f2c8ee3f6c304bf11839627a485965d495f560d965485b68",
+      "cwe_id": "CWE-94",
+      "files": {
+        "CVE-2025-61982/vuln_code.md": "f25478e1c6bd32c934f10e77f64007263cc9f7374d994a75ef67a16146a878b3",
+        "CVE-2025-61982/vuln_info.json": "04ebc1862ee45cee2466f810b4945d2235c51dd613bd911a470731a6e4b8ed36"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-7728": {
+      "code_sha256": "4b6ed128ce180333d82b88fb44e0c68804416a2a225eeb346ffc339887e3a2a1",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2025-7728/vuln_code.md": "25be958c56c2a59617610ef39b822339b64db8bcf977f1ce1858943abbccf7d9",
+        "CVE-2025-7728/vuln_info.json": "6c6a84db25b80e16b972db9f300a9ff69bef58e0fb4cbfb4801de88dabeec618"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-7729": {
+      "code_sha256": "3fbf8109cf29bb0ef5a449b32d74d100e72b2ac34e63c8f67af93137c9bbda3d",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2025-7729/vuln_code.md": "44f60aa413a4f5f827a6c833a4d880fcf9287f0e82d9b458c0fc1fc6378d9fdf",
+        "CVE-2025-7729/vuln_info.json": "8d3cdefe4d2e5ee6675c22584e34d4936d5e717c0acabb610055181d480138b7"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-8743": {
+      "code_sha256": "d37caa8ddf7ae5c9a04220d4f0152e5508052192a0697e62042f3fc0000d491f",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2025-8743/vuln_code.md": "dbff741dab36aa271db089f547bfbad8f2c888058761dfade520f120c4330f14",
+        "CVE-2025-8743/vuln_info.json": "d385a20fe3ac34653e55a3ab1b5589a49b4edf6478fba374ec24484a89f05a04"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-9137": {
+      "code_sha256": "f176fb9062ba2ee2122ec85cf931afcd25b1135c3b50f9687c40b71dc245303d",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2025-9137/vuln_code.md": "f58c64209170278ad94ce231995d3e91f7b920ef479fd6788ec5611abb938177",
+        "CVE-2025-9137/vuln_info.json": "00a40cc080804340ab7b84a46e572a5028a21fe3aa5ec8c053761b0c6dddfa41"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-9139": {
+      "code_sha256": "3ee272bbfeda1751c06df850d88f55590841cc885aca05ea7b7942cb719ddf24",
+      "cwe_id": [
+        "CWE-200",
+        "CWE-284"
+      ],
+      "files": {
+        "CVE-2025-9139/vuln_code.md": "018a0f4c9f1a2d137adc17405e71f1efd8b46a0162fefdc834d5bf78cbd51c7d",
+        "CVE-2025-9139/vuln_info.json": "9e1bf1156c1f106d50520da3657d1341aa69102a351d80bd8423e4c295e967cd"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-9143": {
+      "code_sha256": "ede36f1a6400b2313ff91f12114fd4b6b7598099f27994e5766f0ec673e7a6aa",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2025-9143/vuln_code.md": "8a4320d8d803164dfcbeacbae93138495475b8f2ce0278f808e1a32fa2e0fd8b",
+        "CVE-2025-9143/vuln_info.json": "b22ecbab47ce9e85694e34c7aa7702b2ec19ebe5a7e13d2308e570e936853836"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-9144": {
+      "code_sha256": "1e17194eb0ad7c3dd963ad6c0a524f495b5b60e79b04b67a567a732c2ed86a61",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2025-9144/vuln_code.md": "eddb7587682cc061cf50026d915acfa4c26e7b382665d043a6b311f3da2eeee3",
+        "CVE-2025-9144/vuln_info.json": "357be7e6906943f013e69ce74ad910e0bd3b794690e2c2c12fc009128d760b12"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-9145": {
+      "code_sha256": "42d4db41883bc3a8d2af22ce1ae79619985bcde5aead8c7e9da95e2f71601c33",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2025-9145/vuln_code.md": "9e30daf4b0876398c1858de9b0a163c0806d1a7932904940889d5cd4919192c6",
+        "CVE-2025-9145/vuln_info.json": "63dd37082e43a9cd5ca2d8f1a49e2e152834aee7a06a327e51e6f31d028b6c71"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-9233": {
+      "code_sha256": "2e5de525907e12bfb9b27c0482f5057901142965fc12c226ae7e18c750ce5828",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2025-9233/vuln_code.md": "d1272230b7428fd940a4260e185d5975198753f381a8af4bba0c88b14f8917be",
+        "CVE-2025-9233/vuln_info.json": "dc5a80b26ce145a811fabcbd7b59ae10f68c1a6f5cec9ccd6c88bd08b397ca14"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-9234": {
+      "code_sha256": "fdd1cd1aa32bc5a0f7dfccefa9295c5b4da5f571f0d0771ec7671a554975654d",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2025-9234/vuln_code.md": "180608407e52e0729f34a5f2b2aa827f05521a2c7472a69a103b60a96b943b5c",
+        "CVE-2025-9234/vuln_info.json": "da509ce9e122d5c4b4330c88dce92c3985ebc25e89e8c8d480f6043d4c51609b"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-9235": {
+      "code_sha256": "e824a794b8a02744c9aaaf2b489baabc1c2200b06dbf1187d5c2c5aa9120686a",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2025-9235/vuln_code.md": "478f7991096dae05b6162bc183b7b32106fd8202cdacf0e01f15594e83b2aec6",
+        "CVE-2025-9235/vuln_info.json": "b2b0b3a7f4d2aeefad9fe62df6ecb14e0b34bce17d034e605e5cadfa06762a4a"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-9388": {
+      "code_sha256": "cea0a783d8bfa31c58f556a25a57db2311081e9272d5e3ea7ad28e2dfc074ed1",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2025-9388/vuln_code.md": "d5be7e73acdfb7027ab3a9e075aca36461b8839bd3549748a80f660a66642428",
+        "CVE-2025-9388/vuln_info.json": "2c9fb49f051ba3704577613e439f91dbcd2fe5ae541ef2ee3f5e5c1c917ffecf"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "CVE-2025-9404": {
+      "code_sha256": "f19f8e0f5548cf978b5605bde2333618761baa128ebf4dfd520f810f8677afea",
+      "cwe_id": "CWE-79",
+      "files": {
+        "CVE-2025-9404/vuln_code.md": "31b3a815b958f52126d630122baf7148a84416fbf0fd2e53dfc59f2327f40e12",
+        "CVE-2025-9404/vuln_info.json": "84112db31ebbad02d0c684e3996d1465799776055b5252e70b0decb76ec4f667"
+      },
+      "label": "vulnerable",
+      "source_type": "cve_vuln"
+    },
+    "Sample_CWE125_001_safe": {
+      "code_sha256": "b146c2ee4a8e2437eb6994fdc568903c3a06a202720f0ddf3a24d64f4be19ba1",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_001/safe_code.cpp": "5f733af5b21995824d5897c8085247b9768eecd8fc7b5907560a06d1ef360b8f",
+        "Sample_CWE125_001/vuln_info.json": "b706698bb27fbdd9ff148ef85e71425bf9ded5d114db365fa7a9888e7f9ed7ae"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_001_vuln": {
+      "code_sha256": "672ac8bd4a1e8cc6f28a9e2690fad609f6761440dbd29d3bba979baf5f94e743",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_001/mutated_code.cpp": "4046415e6b3acb69d078b8c45beedc438868a9e77fc8a8b16fa88c9c2a70cb8c",
+        "Sample_CWE125_001/vuln_info.json": "b706698bb27fbdd9ff148ef85e71425bf9ded5d114db365fa7a9888e7f9ed7ae"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_002_safe": {
+      "code_sha256": "19bd58cc444c3887f7820ef80ec0e482d3a661985c4d75ba7ce1312f6b7ee6b6",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_002/safe_code.cpp": "465f5a7cc906501ad2755cd041f8729a4f53b4e1efeb5be214157faebb33eca3",
+        "Sample_CWE125_002/vuln_info.json": "1c91f87c09d36e19937272d6cadd9aa57092e90b684ddc75a4fbba8a74fcd631"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_002_vuln": {
+      "code_sha256": "c49142f6fb4522192cc443cbdb584fca02a9ceb1b48e9319446596f3a8449bae",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_002/mutated_code.cpp": "827110560ee49d2c96d049a35285aaa10b2f6af4f9d5ecd1463e7e40bc8b5fc6",
+        "Sample_CWE125_002/vuln_info.json": "1c91f87c09d36e19937272d6cadd9aa57092e90b684ddc75a4fbba8a74fcd631"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_003_safe": {
+      "code_sha256": "00817c3a23ff9eec999bb26a3909c898363e9f90207aa660c126048059902232",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_003/safe_code.cpp": "de7a78bf1f85b82f69261d442be57c05dd2b0b7974c3507156e30b1337827714",
+        "Sample_CWE125_003/vuln_info.json": "c603954ca2d73b7797d4c24b853e5bf5c8b1e91bea37032f537a5e5d76d173a8"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_003_vuln": {
+      "code_sha256": "91ed8cf50c65821c6ac9206915d5403c7ccc5dca004d031774de2fc3616db917",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_003/mutated_code.cpp": "3fb5a2c70d7104157f775f4b1d6479c34b4471632d9a670860f11732cbd96499",
+        "Sample_CWE125_003/vuln_info.json": "c603954ca2d73b7797d4c24b853e5bf5c8b1e91bea37032f537a5e5d76d173a8"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_004_safe": {
+      "code_sha256": "d9e4539eeae511a841bde558e68796910419644adbf058d947247c6c86588e29",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_004/safe_code.cpp": "bea72a84bccfaba2d6db9079b8a5961b0a19d145e31df56f7542a5da35241b64",
+        "Sample_CWE125_004/vuln_info.json": "1aa1ea5105303ba9577f75765a4ac355a2dee4249c1ee505b1a3d7341aa21187"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_004_vuln": {
+      "code_sha256": "908a2a4967de161a05c965bc4c467963b6836ef2cb5930c7efd939be9cf4d697",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_004/mutated_code.cpp": "f9871cc87cefdcd14e1eea1e68eed7b71d664bfa1cd981b2787c728fde4a9f80",
+        "Sample_CWE125_004/vuln_info.json": "1aa1ea5105303ba9577f75765a4ac355a2dee4249c1ee505b1a3d7341aa21187"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_005_safe": {
+      "code_sha256": "394dd041c5f332ba9104da466ea42c4358db60c644f5ae3f69b462d630243257",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_005/safe_code.cpp": "c56469a7d46570a4fb97dfdab3254551ef98061d2b8caac265403177d55bac8c",
+        "Sample_CWE125_005/vuln_info.json": "76cf31054076fa5f502643472fcec0c1c3b93fce334eb53cb17d6f19e7750947"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_005_vuln": {
+      "code_sha256": "47a6152600fecaa1048743bbeb6ac54cbebbcdac8da65500df8e3cd3338580f8",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_005/mutated_code.cpp": "ac24e384551b4feb9c0920de1708a7c53f45b23ba435cf46225f2c876d8df52f",
+        "Sample_CWE125_005/vuln_info.json": "76cf31054076fa5f502643472fcec0c1c3b93fce334eb53cb17d6f19e7750947"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_006_safe": {
+      "code_sha256": "718e36fecf6593cd2ff846ad1913a69568a8ae89235759ab2a6f6b6565fae2d6",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_006/safe_code.cpp": "b2b92b6b61c6adb7f0e7716f17f04ee6e754bac00c0cc5c1baac452114a51f5b",
+        "Sample_CWE125_006/vuln_info.json": "0cf8170c6a75bbcf099376ac10cf7534518495b4326ee7b624adf2db27bd3788"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_006_vuln": {
+      "code_sha256": "d9c329ff68a9ab2dead22e8ba1ee4b5a132b005d69636d1294506558ffe33977",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_006/mutated_code.cpp": "4eabeb3c1a7df640103981db37b5d4eb99aa2350c6c3bf49efba6d00f60104e3",
+        "Sample_CWE125_006/vuln_info.json": "0cf8170c6a75bbcf099376ac10cf7534518495b4326ee7b624adf2db27bd3788"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_007_safe": {
+      "code_sha256": "2bb8e022ebb648b36fff1a3f924e5f6a0ac1fd7d811c5de74b6d646c17250172",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_007/safe_code.cpp": "a322ac398de133249226ad82fb1933cbdf1543d86a0dac507fa3feb8a348334c",
+        "Sample_CWE125_007/vuln_info.json": "f05794f3995d3d8d51365d9b24441ce551631916204696583b86636d7e8118d3"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_007_vuln": {
+      "code_sha256": "8cc463c1394d46311fb72412530e6f966b53d3029ed50104b867fa8becc2d13c",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_007/mutated_code.cpp": "10daee752ab8f4b6d7d52159ff10f1fb2db2e9a218649a6e6aeb2716efdfe869",
+        "Sample_CWE125_007/vuln_info.json": "f05794f3995d3d8d51365d9b24441ce551631916204696583b86636d7e8118d3"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_008_safe": {
+      "code_sha256": "b1112080d43d95dd13264daff71130fb05be239e4eb2b7c5c13584eaa3ca1273",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_008/safe_code.cpp": "9ece7c40a19e576ad744480e794daefa68a1af8a35d4dff1f797b4b4bc342843",
+        "Sample_CWE125_008/vuln_info.json": "06e3c68f0ef6d6f23ce05922700504a284f13cbc3910acc7535a31feea1b256c"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_008_vuln": {
+      "code_sha256": "015816b949616cd978ab6321e7a8d2cbafc3c2c3e212af701431071437a8d434",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_008/mutated_code.cpp": "2c4b236dc487a321501ab2e5d97f2455c52564fc0ec0cbaccfc963b8e57c834e",
+        "Sample_CWE125_008/vuln_info.json": "06e3c68f0ef6d6f23ce05922700504a284f13cbc3910acc7535a31feea1b256c"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_009_safe": {
+      "code_sha256": "9fe1ee291caa1a27cee525f39188f55b5ceb892de1827debac26ea03ea4140e5",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_009/safe_code.cpp": "dfb7dc7e78f97acf777b2662959470b9270b52e9557abb558b5487e42c9a1889",
+        "Sample_CWE125_009/vuln_info.json": "9dabebc6706094d91d326c78c48069e04cddddafaa5001770650d1da0d94f8d9"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_009_vuln": {
+      "code_sha256": "2b985eb231a7b3ee4216e8bb19b435d23b755a803c1e330326f497dc30cc9dda",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_009/mutated_code.cpp": "af79d4dbd473999d81fc7f94c27949d92119e41f868a50f5a0a787f09b4d2e3b",
+        "Sample_CWE125_009/vuln_info.json": "9dabebc6706094d91d326c78c48069e04cddddafaa5001770650d1da0d94f8d9"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_010_safe": {
+      "code_sha256": "7206adbd794c61795923b23e70c861dfed5bdbdc658fe2cfc6103f94779e03e8",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_010/safe_code.cpp": "53bc83c71829c95d460c7a18a2f0dd85dfb9543b1a6f27d5561e146d32f91e8f",
+        "Sample_CWE125_010/vuln_info.json": "edb59f9ff1159f29e5b5a2994795712fbdf167db11c3119b0890482e490ffc03"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_010_vuln": {
+      "code_sha256": "228e97f0497bd535dacf0aee57e4f7be4ca840edcd1cd70298f429627e22e57c",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_010/mutated_code.cpp": "684d2934657702dba211dea17a74ada7dcfae836cc7adc2e04cb0faaa5678399",
+        "Sample_CWE125_010/vuln_info.json": "edb59f9ff1159f29e5b5a2994795712fbdf167db11c3119b0890482e490ffc03"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_011_safe": {
+      "code_sha256": "f35b230f4bb27f3d3d1369ca49aa7d3426a054ee71404171acd2f1d0d5515534",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_011/safe_code.cpp": "df8b1258871669f2245d3e26da14bd50c666d72924a85b7802107f0956dc6159",
+        "Sample_CWE125_011/vuln_info.json": "598164de05ea2ff5c21767e1c163d3953e3d3fdda4ce2751266a4b9c4b91b39c"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_011_vuln": {
+      "code_sha256": "94bb88064488136eceadd52d64d9f036dc7903c5dd297e36e9e78897c573280b",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_011/mutated_code.cpp": "44b2260ad43ea750389f20aae65be04bba8e1ebdd8040a6220d6e4a9c78416b5",
+        "Sample_CWE125_011/vuln_info.json": "598164de05ea2ff5c21767e1c163d3953e3d3fdda4ce2751266a4b9c4b91b39c"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_012_safe": {
+      "code_sha256": "7109309d9f1ad34653dd70a123c9f4d368ac4777e2806953ba3f994fddcd5bc2",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_012/safe_code.cpp": "35b1bfdc0fa16e09d7420ec52de6584704d63d6d5fd1c5df54131a77d330289f",
+        "Sample_CWE125_012/vuln_info.json": "b92868cb3d323b0374c898399f263aa45d51332d557248a04cfde4c63e288b25"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_012_vuln": {
+      "code_sha256": "da8b9192931ad4a962be6d0726e10ae2cc900c1bd78c13a80ecc751612c0d7eb",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_012/mutated_code.cpp": "92720ea41e4ccd0c600af3ece8b347a9baa86a44a29b02522f3a5eccb7a7f205",
+        "Sample_CWE125_012/vuln_info.json": "b92868cb3d323b0374c898399f263aa45d51332d557248a04cfde4c63e288b25"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_013_safe": {
+      "code_sha256": "8fc6bcf43e18bf13b458aad6550957b6608261df7a5d7cc21b600b77dcd25d4a",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_013/safe_code.cpp": "e90348738afb36a5dd2b0ca3646eb559b5b3f39a6ff3e5751271e361d17d3430",
+        "Sample_CWE125_013/vuln_info.json": "1e4fe020e6a086b89cedf02bab162edd6d770ed046efcdbce85554cd4a145aee"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_013_vuln": {
+      "code_sha256": "8e265a7b71e221905c554f8271b87f5db1043d8da1dc6dca1c0b0f852ce4243a",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_013/mutated_code.cpp": "ac6b79ea50a5ce9c29cfe4860252d296e95dc9b5da10d1136e2d1460a093b09d",
+        "Sample_CWE125_013/vuln_info.json": "1e4fe020e6a086b89cedf02bab162edd6d770ed046efcdbce85554cd4a145aee"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_014_safe": {
+      "code_sha256": "3b4f5921519f7d26a69947726d6ce07d06dd55da78632f63e2e4526a436a1f08",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_014/safe_code.cpp": "2e37a463c6de8951d2b882dbcd7566eea65c8e85c6ad4a3ce1cc0f6a5ef59999",
+        "Sample_CWE125_014/vuln_info.json": "2e73ec14ee72786db9d53171a50e6c7f4c2efeaeebb7ea4b3aae7802165b5f4b"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_014_vuln": {
+      "code_sha256": "4d176c0b6ce9f2550d1e499b05dfeab7acc1f815e5fbf8d63994a94a70833726",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_014/mutated_code.cpp": "b30275c06e2dd0c2eeb4372b4bf63b4c70a75eb5bd5aa266483d11f038ad77bb",
+        "Sample_CWE125_014/vuln_info.json": "2e73ec14ee72786db9d53171a50e6c7f4c2efeaeebb7ea4b3aae7802165b5f4b"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_015_safe": {
+      "code_sha256": "915a32ee094fc498675494011e8c682178a57f39eb45c27f8a14ead562b9a345",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_015/safe_code.cpp": "43c7c618c395c2e44a930239c2e96ad4cd19418d0ccb144f8549d18570458a18",
+        "Sample_CWE125_015/vuln_info.json": "42c6e57ab24100b2e2af340c51d6c7a4c9a02b46661b6bc5101dca4301d0ffa3"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_015_vuln": {
+      "code_sha256": "34d8cbc4cdc320afbfbfe354549f222d9d7adb69efc4e23c38feabba63436c62",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_015/mutated_code.cpp": "68d2395c7201f1bd7710b309444e1c589d355bf1f6b4e62db60b625687fc1d50",
+        "Sample_CWE125_015/vuln_info.json": "42c6e57ab24100b2e2af340c51d6c7a4c9a02b46661b6bc5101dca4301d0ffa3"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_016_safe": {
+      "code_sha256": "ffa1284279e15f25b469c2c385ff957a299af63881ac70c0e2919d1e2fe877ef",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_016/safe_code.cpp": "9ddaf846990ab7db88eaa46aeead68ece69c66d84b4a5528b2389ca3e432718b",
+        "Sample_CWE125_016/vuln_info.json": "421eb98330c0fa12c8419728b66c99183f75bd59733e3e21e2b6c3e91a0a9566"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_016_vuln": {
+      "code_sha256": "790e036e0a0ffca0221b23ac84317a5ad31db32d3fc9cc10326ec7c0b5c273c5",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_016/mutated_code.cpp": "20ba42d21d7e01a1f5dcbf1d3e820c935b1000de6b66fb00466fa0f36ab6ee74",
+        "Sample_CWE125_016/vuln_info.json": "421eb98330c0fa12c8419728b66c99183f75bd59733e3e21e2b6c3e91a0a9566"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_017_safe": {
+      "code_sha256": "a532aef9af33b1f9f58c23519024e9efac74687bb59700fa06165a29f054659c",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_017/safe_code.cpp": "3b488ceeb67f26b0237c59261a8ebb88dc7cc838ccf5e0e9c5de278f762205b0",
+        "Sample_CWE125_017/vuln_info.json": "510f89c264b726fafd78806821ba17bdfbb646a1c773c802a99ce26843713cae"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_017_vuln": {
+      "code_sha256": "0966189ec2ecb6b3aceddd556347788e89f17f59f9b350f9313a27863a4c17ad",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_017/mutated_code.cpp": "f6e988d1fb649526bc03980d920faa27e633fa8f03c54209025e59dbaa569d9e",
+        "Sample_CWE125_017/vuln_info.json": "510f89c264b726fafd78806821ba17bdfbb646a1c773c802a99ce26843713cae"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_018_safe": {
+      "code_sha256": "565bd8682b844394e548c5295757905529743a2da5234f5f558ebf425f5795de",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_018/safe_code.cpp": "600998e8dcff52677304602e885003879e61d70ccfe6797452be471b3c7cad53",
+        "Sample_CWE125_018/vuln_info.json": "869185d255890fa56e6d08731d7ca7ce2d4c4a911f3c24fabd1718124d73290c"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_018_vuln": {
+      "code_sha256": "4405d5ec110e53fb38903a55ac9ea94c1e139fbd17de013b2c39f7db082565aa",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_018/mutated_code.cpp": "1acc1f90bc9217294a468ffe77c2f88baaf57514d1d007ab21bf7ea0677cf877",
+        "Sample_CWE125_018/vuln_info.json": "869185d255890fa56e6d08731d7ca7ce2d4c4a911f3c24fabd1718124d73290c"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_019_safe": {
+      "code_sha256": "8852fe52aae0dd1d6381a455644f51a7a01952f2e58b20fc8357f00f501aa684",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_019/safe_code.cpp": "f8c5aa2f5a4e102df818263351ca05078609aafa5140c9cf9d5c5252366e5070",
+        "Sample_CWE125_019/vuln_info.json": "cd3b1c6112b6efaf161ac50888e9c4cae87236a6e9302fac70fdf3bf8ef58820"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_019_vuln": {
+      "code_sha256": "d09b143c9fa287d2f8c71e8e648ffe1b584002d519892b02364fdb70d3226b28",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_019/mutated_code.cpp": "4fdeedf381943e24424b5044f419cfa096df9200602ed34a384f9d9e3e7e5d91",
+        "Sample_CWE125_019/vuln_info.json": "cd3b1c6112b6efaf161ac50888e9c4cae87236a6e9302fac70fdf3bf8ef58820"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE125_020_safe": {
+      "code_sha256": "faae2c91a37e69c3c218dbf0afcc05b869f9ceafed9994c39846eeb9b28dda0c",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_020/safe_code.cpp": "a1529507b5fc69023448e24220aa18fa6e8f4420be5422e545da36e768f1609e",
+        "Sample_CWE125_020/vuln_info.json": "c7793f49057a5852124d2d0a014ba033681f72ee5225a33f6383ff28b640ab36"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE125_020_vuln": {
+      "code_sha256": "a4acb4977f2620d78e14528d71776ff8fff7495cc880aad66918b471a7ecce47",
+      "cwe_id": "CWE-125",
+      "files": {
+        "Sample_CWE125_020/mutated_code.cpp": "74fa158b8836838c718d11e07ef86530d09463a5eef6adcf0d1446e12a86cad7",
+        "Sample_CWE125_020/vuln_info.json": "c7793f49057a5852124d2d0a014ba033681f72ee5225a33f6383ff28b640ab36"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE129_001_safe": {
+      "code_sha256": "0b6ee77604656de989be0299afd66dbb012408da71d35eb508195ce36de87ce7",
+      "cwe_id": "CWE-129",
+      "files": {
+        "Sample_CWE129_001/safe_code.cpp": "7487b1d753bf19404b8e30e033e4f918f2192ecdab65410e802ac170f3d2de10",
+        "Sample_CWE129_001/vuln_info.json": "1ee282b3b373e4d9d7899ff126b75d203c2e90088b4d23b63efb1f5d5308c20a"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE129_001_vuln": {
+      "code_sha256": "0408bd3958ec58d14804e3624f15cbf98a5777a9429805f8e5d28542b1e3244f",
+      "cwe_id": "CWE-129",
+      "files": {
+        "Sample_CWE129_001/mutated_code.cpp": "021d3a805019a8558ebac37940e5454e1848138216ba319479441cff624e0489",
+        "Sample_CWE129_001/vuln_info.json": "1ee282b3b373e4d9d7899ff126b75d203c2e90088b4d23b63efb1f5d5308c20a"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE129_002_safe": {
+      "code_sha256": "dbc2965454644aa9b9ccb12ceceaa3e8e5887974fe40a0023321b36561719135",
+      "cwe_id": "CWE-129",
+      "files": {
+        "Sample_CWE129_002/safe_code.cpp": "e415ceaca79c3c37f23b57478c37de671986a0421fba16cd494ff636b11daa6d",
+        "Sample_CWE129_002/vuln_info.json": "8ec09336525abadfb6f331b777f02f8255c43bf4f03881d1cbba574a1c0a82e4"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE129_002_vuln": {
+      "code_sha256": "b15f01b3c30436cc902c8e011a9fa1462b272b33a0f7ad9d00de0866d541d429",
+      "cwe_id": "CWE-129",
+      "files": {
+        "Sample_CWE129_002/mutated_code.cpp": "2f662c50184b1d13f3265b66451757dde6d910ed349eb5162f0c38fa1792897c",
+        "Sample_CWE129_002/vuln_info.json": "8ec09336525abadfb6f331b777f02f8255c43bf4f03881d1cbba574a1c0a82e4"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE129_003_safe": {
+      "code_sha256": "712e5d49553431e78d000eef834fc31391482da1d506bb29576a525e31e36bba",
+      "cwe_id": "CWE-129",
+      "files": {
+        "Sample_CWE129_003/safe_code.cpp": "9266ea56884cdedfc6db1f7b99c894d89f4510463635243467b77e5516d62037",
+        "Sample_CWE129_003/vuln_info.json": "d6e109c00293f9c664728545f3bdd4759dfee08e06f68a7ead3c7eb272436c86"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE129_003_vuln": {
+      "code_sha256": "a7d94b2f893e3f77c7ecfeee0b6dc161bf568daf34ed3a525018d66976dd3a8a",
+      "cwe_id": "CWE-129",
+      "files": {
+        "Sample_CWE129_003/mutated_code.cpp": "39badced65ad75327d6d23b2cda4b6680fa0c35f06abd394d7c852376a372cf4",
+        "Sample_CWE129_003/vuln_info.json": "d6e109c00293f9c664728545f3bdd4759dfee08e06f68a7ead3c7eb272436c86"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE129_004_safe": {
+      "code_sha256": "363529c36a0ddb7d865c5eed4a523722fb5e64c65684d1ac897e9e91dc6bc57c",
+      "cwe_id": "CWE-129",
+      "files": {
+        "Sample_CWE129_004/safe_code.cpp": "e0763e5382f1b37b32f3afc7bcdffff6642aa3c0b6b14b845f0fbc6c88b8229b",
+        "Sample_CWE129_004/vuln_info.json": "2751145d7506185ba3eaa7cffb102b39856976b7487f48042024328d325e2f6d"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE129_004_vuln": {
+      "code_sha256": "078e886d3cecdda0be170cd044d9acbc9c50dfb89d53056f43c8f26c0a9d9974",
+      "cwe_id": "CWE-129",
+      "files": {
+        "Sample_CWE129_004/mutated_code.cpp": "c299291510804570acdb2a57659cf74a108ba87f0392a8c07f56b3d9c5b23fdb",
+        "Sample_CWE129_004/vuln_info.json": "2751145d7506185ba3eaa7cffb102b39856976b7487f48042024328d325e2f6d"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE129_005_safe": {
+      "code_sha256": "42eea755528fd648047442a40fd1581f565d0bb1975159743ed6ef05da000a74",
+      "cwe_id": "CWE-129",
+      "files": {
+        "Sample_CWE129_005/safe_code.cpp": "9f03ea3ba106ae6f2ea3550dec1ffa6438f743b8a589326be708f3f678434d93",
+        "Sample_CWE129_005/vuln_info.json": "df6fbf2c9a81ec9a49919966fe20bee9433c2731e543ee53493f144a5fc11b0b"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE129_005_vuln": {
+      "code_sha256": "b2497079d2ce7f6c70fc018a9d9957d057568b182711eaefca5ea0c00e5eb394",
+      "cwe_id": "CWE-129",
+      "files": {
+        "Sample_CWE129_005/mutated_code.cpp": "8e75588fe4bdeab083ab782e3e800de73225003eaba53ac261cac46441841373",
+        "Sample_CWE129_005/vuln_info.json": "df6fbf2c9a81ec9a49919966fe20bee9433c2731e543ee53493f144a5fc11b0b"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE129_006_safe": {
+      "code_sha256": "b26a2f923fa252e960f65b4c70d9a6e8aa122fb925b0618845c0b74cedb01886",
+      "cwe_id": "CWE-129",
+      "files": {
+        "Sample_CWE129_006/safe_code.cpp": "38c9d0924012ecd963ac1ce52c6f7f594531155883fbb0617f7ab402582ae742",
+        "Sample_CWE129_006/vuln_info.json": "59bb1c9d73ee177a2538d2f6fe371065fcc04e1a2b132057338c116830a715ed"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE129_006_vuln": {
+      "code_sha256": "7b05615863219bc89eaa618891e5de9bbc33d32c040203b48dc7bbc241ba203f",
+      "cwe_id": "CWE-129",
+      "files": {
+        "Sample_CWE129_006/mutated_code.cpp": "47472558a214b1c9d1ae10fa57f3d4c926aa1e8815120c96dcbb5113ea0ab9cb",
+        "Sample_CWE129_006/vuln_info.json": "59bb1c9d73ee177a2538d2f6fe371065fcc04e1a2b132057338c116830a715ed"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE134_001_safe": {
+      "code_sha256": "70d3f258a29171d5c522b7769c82737b4733f1c8eb3da55cefd39942dacb1655",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_001/safe_code.cpp": "731a9b37f03ca074199cf9376863c14384c7de49070b38af4c6a71d7d501c037",
+        "Sample_CWE134_001/vuln_info.json": "4a183266f91d7bcfc5f1be86bdb02032f8b8ce98924c3f481049a84c16b6bb3e"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE134_001_vuln": {
+      "code_sha256": "f8dac2474b554aec404fc9d3ac931481abfb85f4dba286ed97c3b958748c5ce6",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_001/mutated_code.cpp": "56650051fe2193fe3cf9290b1e808b7a42c5651b0f8785a62135693da2862ad4",
+        "Sample_CWE134_001/vuln_info.json": "4a183266f91d7bcfc5f1be86bdb02032f8b8ce98924c3f481049a84c16b6bb3e"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE134_002_safe": {
+      "code_sha256": "d894b198044d8476b4ddbaf67d894af67ced757c03c928829852c8ac922de13f",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_002/safe_code.cpp": "8cc9af325ecf8503178465727ac5f1c5e34b4c46d07cab6efe726712dbb4d72c",
+        "Sample_CWE134_002/vuln_info.json": "1b96ba15ccb2f6cab3e005312a9754bdf9dcd10a5bc6fe781da46d6af99fe185"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE134_002_vuln": {
+      "code_sha256": "5c1217ca130fe50807b0209c6d2e5f0558e5881f04e93aab499c9a91308d4b1a",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_002/mutated_code.cpp": "ee39ed3c27bea3cd4a2122ad7921ee96847d237b8151be46a9a539bb2a5ea47c",
+        "Sample_CWE134_002/vuln_info.json": "1b96ba15ccb2f6cab3e005312a9754bdf9dcd10a5bc6fe781da46d6af99fe185"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE134_003_safe": {
+      "code_sha256": "f29e6016eeef82d1d8aa75b0486f5a51fb28d12d1a1f3ad92c3fabd2496fbe57",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_003/safe_code.cpp": "32ec3d4502658e5db00f72d891c0e9f2117690855bd139fe79f9f2ac27c5fa3e",
+        "Sample_CWE134_003/vuln_info.json": "e7f94ef6b42b010f37d3a56d1095d73fafb2dc4cfe5902e90d3494a070c2159d"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE134_003_vuln": {
+      "code_sha256": "a71a1fb9e51ea6fd9e18e9d0171524fc49131d93a502ff5dcfec21c17d78c927",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_003/mutated_code.cpp": "016ae778e898ddba8b2faef75ab46aea8bc1fdb28316c7f547afe7c9f41a2a7b",
+        "Sample_CWE134_003/vuln_info.json": "e7f94ef6b42b010f37d3a56d1095d73fafb2dc4cfe5902e90d3494a070c2159d"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE134_004_safe": {
+      "code_sha256": "ecc52c63b96fddc72d053be7711859382b5727ffbcb710e044166c50311f3cdc",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_004/safe_code.cpp": "cfc019f04ba3c3c1359bfb8f12a8d1f1334f838c2592aebaf68e4e78789a32cd",
+        "Sample_CWE134_004/vuln_info.json": "58734b5791361af1d1d69015fb5223fa63a639cf7b7bfde3aeada97ec295a7d1"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE134_004_vuln": {
+      "code_sha256": "515b9b147e25fdb23641a02307ba42061d4d106aba3ff4b1d3eb2c350f83c12b",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_004/mutated_code.cpp": "3ef4636784baad54b16be15df1d0c37a0fb70791203508ae640de37b6008c092",
+        "Sample_CWE134_004/vuln_info.json": "58734b5791361af1d1d69015fb5223fa63a639cf7b7bfde3aeada97ec295a7d1"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE134_005_safe": {
+      "code_sha256": "816981639a084d0df40d04742cfe90ae156f78ab37f9edc932e27caeed3adcc0",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_005/safe_code.cpp": "fa82830f14efb97c7a165b9960b049c520861fe0ddeb2401acf22b998cb7a6b9",
+        "Sample_CWE134_005/vuln_info.json": "01ff718088e4cd0fd02431a92aa85f829d26d4a69a7bbef4c24dc6738ffdbc7b"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE134_005_vuln": {
+      "code_sha256": "75a310e4771ca350d82b4a6195c1bc0343150b4e2e32a290f5adf244d5a344a2",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_005/mutated_code.cpp": "16662484600930cfeb5d8e589a73adc73d1e2e5b4e2fd419f3138e8c42b34faf",
+        "Sample_CWE134_005/vuln_info.json": "01ff718088e4cd0fd02431a92aa85f829d26d4a69a7bbef4c24dc6738ffdbc7b"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE134_006_safe": {
+      "code_sha256": "5faffc23408b7a86a93d1e9ea4d7954786a08cb11f87e381b195e4aa6ac821ae",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_006/safe_code.cpp": "8cbc048a234658110a0fa6294df19b9b05a37cad1eaaf9e7313c42ae0c82df93",
+        "Sample_CWE134_006/vuln_info.json": "b7cdf5846d8485290a8a9eae028eb11a405678e9bd581668e5ef25af48304515"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE134_006_vuln": {
+      "code_sha256": "27e2095cd2da15b80171561c7551e9c573fc4194595a190903934c7d24400a6f",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_006/mutated_code.cpp": "f8f2fdfb495cceb66affd8570b61fa2c07b9047c82938baadfbf9a24c76b04d2",
+        "Sample_CWE134_006/vuln_info.json": "b7cdf5846d8485290a8a9eae028eb11a405678e9bd581668e5ef25af48304515"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE134_007_safe": {
+      "code_sha256": "5abd6e9b5ee6c6da9408dbb949be2f9facbb528e8f00210572fd6843471d0d81",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_007/safe_code.cpp": "968a138946d2e61f465ff57f135afa22e917d128135880833bae04bfbee236ca",
+        "Sample_CWE134_007/vuln_info.json": "ee2b1fe17cae2118ef7debe1a5fe97cbb60c3cc572902ad225fad972dcb621ca"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE134_007_vuln": {
+      "code_sha256": "f8185f6fa0f535a253ff1145a81f3ed3c5b472378dac92c3c921adb5589ea5c0",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_007/mutated_code.cpp": "f712520c4857e0400dc5c6aa8bc3c667550931aa88a32d6a18a75c9eec04fa40",
+        "Sample_CWE134_007/vuln_info.json": "ee2b1fe17cae2118ef7debe1a5fe97cbb60c3cc572902ad225fad972dcb621ca"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE134_008_safe": {
+      "code_sha256": "43f621cf2843f8348e6582d2f5f11ad47db2dea3021175555cd4f9fa9d852add",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_008/safe_code.cpp": "f19972c9ab7031c10d24cbd17329f64137feafaed650ac7ee9f706c1016d2303",
+        "Sample_CWE134_008/vuln_info.json": "b58c6886c821db01d5a144f180825c563e325ef711aaa37a6d6b1ec018fdd810"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE134_008_vuln": {
+      "code_sha256": "41077b6572e3c661ec966e1c7351ec47e858ed2f9fe9787c539c1f626b1a96aa",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_008/mutated_code.cpp": "8eb83fa8723e582df5de3dbca204aeba607fffdc88cda8936fa805f5a2e278ac",
+        "Sample_CWE134_008/vuln_info.json": "b58c6886c821db01d5a144f180825c563e325ef711aaa37a6d6b1ec018fdd810"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE134_009_safe": {
+      "code_sha256": "fa9ccc56b9f4cb221c702958675b3091eee957379b9b5ba6230721483aec42df",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_009/safe_code.cpp": "e43a4dfa30ff90fa434b54ea42be65932800bfae092342b5f21ab531a960a3e3",
+        "Sample_CWE134_009/vuln_info.json": "2b20736254a77b32b5e5655f41e4c2341073fa29546279f2756b94b50c4ab72b"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE134_009_vuln": {
+      "code_sha256": "4cc1adcea530c6ca969e11994e6fcd8b80fb1c82000b324bbfa0afb4577fd548",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_009/mutated_code.cpp": "179df54629943010c4418a492c88ac2a16c55b0cf2062258461eb0a4cc2fa8b3",
+        "Sample_CWE134_009/vuln_info.json": "2b20736254a77b32b5e5655f41e4c2341073fa29546279f2756b94b50c4ab72b"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE134_010_safe": {
+      "code_sha256": "75fd68ce12352f9ebdc8cd65eb00453212c9638902cecfa92861ab11c8a49caf",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_010/safe_code.cpp": "0dd600f1a84076cc3d00ba163fb57d7a209c18ab9d3e812e9a82e26a34a7b08b",
+        "Sample_CWE134_010/vuln_info.json": "7f4aaa1ac59848faf6d823e14176d8aa873d5f8f7cb9880fbdad3c84b2989e57"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE134_010_vuln": {
+      "code_sha256": "f5ef5363db8244c521c36d478cb87c426341516c61682eedfbccce247d8989d3",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_010/mutated_code.cpp": "b06deef0b396af9e6a306ee95a30fd5e1f792e30fd0025e9a37b1b78e2538ea5",
+        "Sample_CWE134_010/vuln_info.json": "7f4aaa1ac59848faf6d823e14176d8aa873d5f8f7cb9880fbdad3c84b2989e57"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE134_011_safe": {
+      "code_sha256": "3fe0c425ccb77bb6d15169b87b9243e32b00278592e130ba7d02e9db43d69a53",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_011/safe_code.cpp": "e5a591055cbef12f4685727d549d6cc7d4b6027195cc6e5ee3b8ecf7ad06742a",
+        "Sample_CWE134_011/vuln_info.json": "c98ea4a82eb907b183b9792cffecd40898d78338270817ac251d020fc2a656f2"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE134_011_vuln": {
+      "code_sha256": "8b7f5eba7b590fa7ba6cdecdf01a3af94336779a613ff4e35fd13bb8a8b04ea3",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_011/mutated_code.cpp": "c4b25ad885723edcb5c9d32d51478e42f3d774c43cb66ca4c7fadcbdbf806f8e",
+        "Sample_CWE134_011/vuln_info.json": "c98ea4a82eb907b183b9792cffecd40898d78338270817ac251d020fc2a656f2"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE134_012_safe": {
+      "code_sha256": "b3ad4d17fd267630a955bc387cdbfc9d1539d8fd9320af45c379c0e23a05d95d",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_012/safe_code.cpp": "0bb1c51a86cdb756d83426ad411609dba2536bcecb3cc0c8267dea782398ee7a",
+        "Sample_CWE134_012/vuln_info.json": "fb63026436765643678fd541ca6ce4d94ad9d20f2bce34aa64e1d95a360e1f0f"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE134_012_vuln": {
+      "code_sha256": "180c00c6c4f59d09e4b7e49ba357cce0cec5d3717326ae746616550b76e846f3",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_012/mutated_code.cpp": "82ef05bbe1a8a2ba6f454ce2b6586e31941bc37d61a367bcbc10062587254d76",
+        "Sample_CWE134_012/vuln_info.json": "fb63026436765643678fd541ca6ce4d94ad9d20f2bce34aa64e1d95a360e1f0f"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE134_013_safe": {
+      "code_sha256": "dacbd44c8f70e5a5eb2e5624445c33dce47409472f67aa8bf372fcca896463df",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_013/safe_code.cpp": "9e1eb52fd4ccacf880859e4cc400bfce34c7f056f7ba8f387266bebccba77e54",
+        "Sample_CWE134_013/vuln_info.json": "f9158ed622a981a79c44560c038ed36fd87ec1be56d1069930af2c6078b0704c"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE134_013_vuln": {
+      "code_sha256": "6444671fea1e6d9615b5ee88c2fdd468fa0a1d67f9948e732601fa068f667479",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_013/mutated_code.cpp": "b730320eb9de04af8fa76333309613754e91e1ac2b58153b3c1819dc03f01f53",
+        "Sample_CWE134_013/vuln_info.json": "f9158ed622a981a79c44560c038ed36fd87ec1be56d1069930af2c6078b0704c"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE134_014_safe": {
+      "code_sha256": "dce5470cc7c08c6fcdf960eb7099dfcd60e47d8298ef880d2258e31d52d64a9b",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_014/safe_code.cpp": "72c1ce7d28caf064073be6b62d68e1513d14aacf6b091eeb021aa519c12ddb0d",
+        "Sample_CWE134_014/vuln_info.json": "2859e9fd2ae160768d0326d0d2ccecde6ab432ae88bc82f0183835b570cbb351"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE134_014_vuln": {
+      "code_sha256": "a1a540908605631cb3ecfb11e7929a2bde4dbc9aab86ae2d7fec2605cd36e9b4",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_014/mutated_code.cpp": "8591eff8bb4653316133a1f80efb8021ad57e1f8ce6706ccfdf8a34762cf0621",
+        "Sample_CWE134_014/vuln_info.json": "2859e9fd2ae160768d0326d0d2ccecde6ab432ae88bc82f0183835b570cbb351"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE134_015_safe": {
+      "code_sha256": "71a4b0459646e8c473848c2027f53d66077ac622176626b5e8d2d0ca46c4402f",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_015/safe_code.cpp": "aafeadbf8f01dd7fe0fcaf7dab86bb14717d1678eced44bc5e801ee5ca56a5cd",
+        "Sample_CWE134_015/vuln_info.json": "fcae14cc7e377059f78a4bdf37550c379f8f65a22c12b7b8ba22582151f3179a"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE134_015_vuln": {
+      "code_sha256": "726df3e6e730880e5cf4c58b01a5527c1eba0cc49bd686314bae76b8f4d33c6d",
+      "cwe_id": "CWE-134",
+      "files": {
+        "Sample_CWE134_015/mutated_code.cpp": "7fdc5a51e27e5728d852e50f9d28c3d12ee814a7898d3dbf645c4e7e69d4c896",
+        "Sample_CWE134_015/vuln_info.json": "fcae14cc7e377059f78a4bdf37550c379f8f65a22c12b7b8ba22582151f3179a"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE190_001_safe": {
+      "code_sha256": "374af6e03b53d0acc3822e3077d1975e033cee075311b50b4e7abcaf3f5bcc06",
+      "cwe_id": "CWE-190",
+      "files": {
+        "Sample_CWE190_001/safe_code.cpp": "56786b531e28e4305794e0c3584368b8ebebbf453e11e7fecdf0e3532a3d0b10",
+        "Sample_CWE190_001/vuln_info.json": "dbca9ee0751d66a99d3130a2b6a9d4c5136fd42e53d97526d3cb8dd704c790b0"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE190_001_vuln": {
+      "code_sha256": "ffc907093e890effa7cd5fa53084a3dff4052aab15a52cf11b87b5d2f8987065",
+      "cwe_id": "CWE-190",
+      "files": {
+        "Sample_CWE190_001/mutated_code.cpp": "13988c9e0493aa58f61a027c4a3b3bc61eb5f27969082b6bef8699e0b45fdd02",
+        "Sample_CWE190_001/vuln_info.json": "dbca9ee0751d66a99d3130a2b6a9d4c5136fd42e53d97526d3cb8dd704c790b0"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE190_002_safe": {
+      "code_sha256": "8f599941e491e5a96385763031d4ebf5b06f4a7f63ed5c4bc73d88df57809d74",
+      "cwe_id": "CWE-190",
+      "files": {
+        "Sample_CWE190_002/safe_code.cpp": "3ac59a72d1977c878f87741fd16653326606dc45b4329fe268905b26290213ca",
+        "Sample_CWE190_002/vuln_info.json": "2e34319172aef90f73e8c6c0a87d8279dfa5b4bd2b8e66918f85e649c1810919"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE190_002_vuln": {
+      "code_sha256": "d4837ce4ee56db48b1158a085b81fd2e220b2070b138107395d9671df7988eff",
+      "cwe_id": "CWE-190",
+      "files": {
+        "Sample_CWE190_002/mutated_code.cpp": "9d2148de11d0fb42abe997bfddff937fb7b805b2a879dcbce40dcd8717e19780",
+        "Sample_CWE190_002/vuln_info.json": "2e34319172aef90f73e8c6c0a87d8279dfa5b4bd2b8e66918f85e649c1810919"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE190_003_safe": {
+      "code_sha256": "56eea8e4e33977b4e43d2bc868dd6ed14f1b74d22d9b3b2b59c5143a205eabde",
+      "cwe_id": "CWE-190",
+      "files": {
+        "Sample_CWE190_003/safe_code.cpp": "46bb46e6565a60a5e838cd2b522a155f5ebc35c59bac7e9508d257082ffe22dc",
+        "Sample_CWE190_003/vuln_info.json": "f4dc4fe21f9449764c2daf93e1fb417ec11afb92816caac4d7fb7df62ca4ec8d"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE190_003_vuln": {
+      "code_sha256": "b9f0ecfb0c79f14b4d10282f98472678ca0a000214cbce7566424087d65160b6",
+      "cwe_id": "CWE-190",
+      "files": {
+        "Sample_CWE190_003/mutated_code.cpp": "d383fe0172111fbe02ba7af4096e0de9e524d0cd5542e65d3e44f4209cad6737",
+        "Sample_CWE190_003/vuln_info.json": "f4dc4fe21f9449764c2daf93e1fb417ec11afb92816caac4d7fb7df62ca4ec8d"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE190_004_safe": {
+      "code_sha256": "a59b868ed72d6013f99151fdbac63d7d90e4b7f0ee302cb6a2dd745eef7eec89",
+      "cwe_id": "CWE-190",
+      "files": {
+        "Sample_CWE190_004/safe_code.cpp": "bc23336ae94a036c50b8b8aa0ee74186cc6a751abd2d82881028e883f84fd653",
+        "Sample_CWE190_004/vuln_info.json": "9bfb0f5f818555f004d0cc042095a86fcba00613d4d9128e51c64760d3a7c2e7"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE190_004_vuln": {
+      "code_sha256": "ade8110a9969ab139fb9656687fe388288cb94bf2dd67203058c51653f274ef0",
+      "cwe_id": "CWE-190",
+      "files": {
+        "Sample_CWE190_004/mutated_code.cpp": "b09b2b7709b5e30cb3c5d97d25d84c8ce8550558efb629b1652487b6d1db3f77",
+        "Sample_CWE190_004/vuln_info.json": "9bfb0f5f818555f004d0cc042095a86fcba00613d4d9128e51c64760d3a7c2e7"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE190_005_safe": {
+      "code_sha256": "bc92017f2dda2f2ced889b3cb698625957dd9cb5b9bbdca552b99d241565a89d",
+      "cwe_id": "CWE-190",
+      "files": {
+        "Sample_CWE190_005/safe_code.cpp": "8db6f93a3c6e52a7a3ba6b479517f378dd37dd098ff967a8596175ab24b67490",
+        "Sample_CWE190_005/vuln_info.json": "293709c9b5db6de3d3df29e7323c9b40559873abaa729ca4fbac406e9ccfbb35"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE190_005_vuln": {
+      "code_sha256": "cd3a1c80efbf4b0105998d4e726aa5a6f28b7572d7f2023577510ca67c26cf44",
+      "cwe_id": "CWE-190",
+      "files": {
+        "Sample_CWE190_005/mutated_code.cpp": "ee052f146a3fe38facc2e750f969912ec1883f2f6732c85fa7c33f6bdfc2ffc2",
+        "Sample_CWE190_005/vuln_info.json": "293709c9b5db6de3d3df29e7323c9b40559873abaa729ca4fbac406e9ccfbb35"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE190_006_safe": {
+      "code_sha256": "5424b6eff46c9e500b25e54da0f4f273665e807dd5cf5e55cec7e81b4fcf65f3",
+      "cwe_id": "CWE-190",
+      "files": {
+        "Sample_CWE190_006/safe_code.cpp": "9e1afc51067f4e251725876f055d5c556a34c53979e8e6464b343968ebb0caf9",
+        "Sample_CWE190_006/vuln_info.json": "bc45c36c3fe0a1f44e51294aad3e5f747072b86623519f6cc1cd5a1a688d9bb3"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE190_006_vuln": {
+      "code_sha256": "73b0aab8bc2f5945a0908ad7c3c6f60c5d7feb42f7eeb920f880201d59eaca2c",
+      "cwe_id": "CWE-190",
+      "files": {
+        "Sample_CWE190_006/mutated_code.cpp": "b061045fa8324d4a0a6dd6c108f641255818120f79d7d1d88a56a4e9ebee7b10",
+        "Sample_CWE190_006/vuln_info.json": "bc45c36c3fe0a1f44e51294aad3e5f747072b86623519f6cc1cd5a1a688d9bb3"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE190_007_safe": {
+      "code_sha256": "e85eb87fce2ddc4c9ed03d5dbd8fc2b690c1caa3672c991b28beb2ce35603987",
+      "cwe_id": "CWE-190",
+      "files": {
+        "Sample_CWE190_007/safe_code.cpp": "1190551475dd4515c1ebd5b1a404a6449647d08dd98ceeae87d78fc9a51702c2",
+        "Sample_CWE190_007/vuln_info.json": "735f6e12f65d8172f90cee6a71770172b1d6268fbb9b32b81e07a185bbca50f7"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE190_007_vuln": {
+      "code_sha256": "f9ef8967a2cffc2c7a8da8118d39b3c34b6da2a5d0d6aeec3d0186fa4c68477d",
+      "cwe_id": "CWE-190",
+      "files": {
+        "Sample_CWE190_007/mutated_code.cpp": "f59414f5800e0dc754efa4670b51922ed72f416b172c74c4acc3f1cb863fc21b",
+        "Sample_CWE190_007/vuln_info.json": "735f6e12f65d8172f90cee6a71770172b1d6268fbb9b32b81e07a185bbca50f7"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE22_001_safe": {
+      "code_sha256": "c276a58f8e9e5ce05913123a066fc6adf7a9e33e730d1dc54ac1af7fc9dffbc0",
+      "cwe_id": "CWE-22",
+      "files": {
+        "Sample_CWE22_001/safe_code.cpp": "10eb6ba463f7d7df658082d93f27d6a0cf58df649d42d6a03e6f69187a3b043b",
+        "Sample_CWE22_001/vuln_info.json": "c2ac834381ea5596e52ec4f94829f13f78cbe0f97de62a38a5b491b5f9dc9c9e"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE22_001_vuln": {
+      "code_sha256": "02860a383ffe218a6282961e40a756a37458c39f35cb433fd796cad01e276b55",
+      "cwe_id": "CWE-22",
+      "files": {
+        "Sample_CWE22_001/mutated_code.cpp": "af2c5330a7764e71a0116749307492f85ba3d620f3205a8e03bb8a66a47d1ea5",
+        "Sample_CWE22_001/vuln_info.json": "c2ac834381ea5596e52ec4f94829f13f78cbe0f97de62a38a5b491b5f9dc9c9e"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE22_002_safe": {
+      "code_sha256": "0e160b7754266fdc383f9b5ade9d9f17d8d1fb5d3639f1399d0e11fdc47b37ca",
+      "cwe_id": "CWE-22",
+      "files": {
+        "Sample_CWE22_002/safe_code.cpp": "bb0442ffcf0ae8b33bebb48939228eca9bebb554ccb1ef3f574a4ae551ec9eb7",
+        "Sample_CWE22_002/vuln_info.json": "ef5d99e2107fe8a5906d209a3239cd8dd65c16bbc7e85d0a10c8e4d86467965d"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE22_002_vuln": {
+      "code_sha256": "11a2af1dbbdc22bcb1ac9bb7c53a38b96afbd084a4f1f58c0a39edb7fd7ea4a6",
+      "cwe_id": "CWE-22",
+      "files": {
+        "Sample_CWE22_002/mutated_code.cpp": "a7d6af2225320a2ff41930beda81a476fb0d46fd1d1819157ab2ef5cab0c2571",
+        "Sample_CWE22_002/vuln_info.json": "ef5d99e2107fe8a5906d209a3239cd8dd65c16bbc7e85d0a10c8e4d86467965d"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE22_003_safe": {
+      "code_sha256": "1ca07b445b6d8ca06e0be8f037cb870b973cd4c78e8fc3555e02c365ed67066f",
+      "cwe_id": "CWE-22",
+      "files": {
+        "Sample_CWE22_003/safe_code.cpp": "3af5981c08590e51b8d7baabdb829f826925bddcfaf3b0d6df39bc6ec1b90c86",
+        "Sample_CWE22_003/vuln_info.json": "e44a3f653903d610abfc5e8ae6f32c47bd323121817e53d691ce8dd498e4d42b"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE22_003_vuln": {
+      "code_sha256": "a747be24cc26592b8462286d08884cdac9fd2f29b57938a51b626916683e68bb",
+      "cwe_id": "CWE-22",
+      "files": {
+        "Sample_CWE22_003/mutated_code.cpp": "52b9e6a49092794a22b4e00d82d7d7d1781c63cdfd0906a77d332c04ecb90e1b",
+        "Sample_CWE22_003/vuln_info.json": "e44a3f653903d610abfc5e8ae6f32c47bd323121817e53d691ce8dd498e4d42b"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE369_001_safe": {
+      "code_sha256": "fcf9f5f937baf8e38bf2fed25b8269211405d89e9df257c6287d7beaccd7308a",
+      "cwe_id": "CWE-369",
+      "files": {
+        "Sample_CWE369_001/safe_code.cpp": "4450c4af0a3df7593d3414cc89adfb391472aa891be98ae69ccb0e794057a962",
+        "Sample_CWE369_001/vuln_info.json": "7efdcbdad92b25c18909c0ee8b4cff4cfef3044b5744515a59c9066c9553cc7b"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE369_001_vuln": {
+      "code_sha256": "bad914b97e52708ecb996eef1def48bb6b56beaeb2fc40fadf5c3b7768a8b319",
+      "cwe_id": "CWE-369",
+      "files": {
+        "Sample_CWE369_001/mutated_code.cpp": "edbe685808a895d70407cb34150ed2a67ad3a742a13bb1911622fb5d13185ca8",
+        "Sample_CWE369_001/vuln_info.json": "7efdcbdad92b25c18909c0ee8b4cff4cfef3044b5744515a59c9066c9553cc7b"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE369_002_safe": {
+      "code_sha256": "8ae807758863dc331a963942b5991d07e4ae1dc21cd7dbdc92fdd8960cabd911",
+      "cwe_id": "CWE-369",
+      "files": {
+        "Sample_CWE369_002/safe_code.cpp": "51c998b145db3bb6d1c0aecc3b108d92c9125429eff854d5bfdffd15d3a8d318",
+        "Sample_CWE369_002/vuln_info.json": "f02fe65d2f8d05e99b33dd33088f1dc6f125ba684196201c758912e64f1a7d5a"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE369_002_vuln": {
+      "code_sha256": "dd02657388b58b2d118a0c2404c86d98b6d3a8cf9d5610d360d0d8100abe2b89",
+      "cwe_id": "CWE-369",
+      "files": {
+        "Sample_CWE369_002/mutated_code.cpp": "dcacb1af198e49045081ff28967b7ea3e97e19606097092dc6f2609003d63fb1",
+        "Sample_CWE369_002/vuln_info.json": "f02fe65d2f8d05e99b33dd33088f1dc6f125ba684196201c758912e64f1a7d5a"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE401_001_safe": {
+      "code_sha256": "4915a7914cef3285c55ac835bf932477a7736da7d6e25d1d80471152c7aa75e5",
+      "cwe_id": "CWE-401",
+      "files": {
+        "Sample_CWE401_001/safe_code.cpp": "534eec9e222c21db35b1fe8aed4da76fb27f965a48ab68538c4431df078fa60a",
+        "Sample_CWE401_001/vuln_info.json": "78a692495ecb3302445523325676e4ee009e35303875697f4e9a47d536a50df3"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE401_001_vuln": {
+      "code_sha256": "e5fd1d3a1eaf56863409f47f8c9dae0756668c328652ed4f92d461f32a197f88",
+      "cwe_id": "CWE-401",
+      "files": {
+        "Sample_CWE401_001/mutated_code.cpp": "79a25b4c075d16bb4e84982ea79db25684438cb5a4e29052d817b151d2d07ab8",
+        "Sample_CWE401_001/vuln_info.json": "78a692495ecb3302445523325676e4ee009e35303875697f4e9a47d536a50df3"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE401_002_safe": {
+      "code_sha256": "72b2b15013374e72c638974ffefcff515ded3357e81b67bb2ce74bafaf5ca372",
+      "cwe_id": "CWE-401",
+      "files": {
+        "Sample_CWE401_002/safe_code.cpp": "87e52c4da427b3b87e737f13fa9b3061c582ee57f853893bf28e6a3c967968b7",
+        "Sample_CWE401_002/vuln_info.json": "90b290bae06d85cd796651e86f85054c90747cf12070be081f7386d590d73df7"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE401_002_vuln": {
+      "code_sha256": "16b864ba8e3d0ac72a3d11477adf3a5b9b76ddfe1bdd5c698aa9b2babe6b4a98",
+      "cwe_id": "CWE-401",
+      "files": {
+        "Sample_CWE401_002/mutated_code.cpp": "df6660c17c9777d79073ddede00a41c3fe5bf8d0c132487144b68367ab30660b",
+        "Sample_CWE401_002/vuln_info.json": "90b290bae06d85cd796651e86f85054c90747cf12070be081f7386d590d73df7"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE401_003_safe": {
+      "code_sha256": "c8eb75536439fc66a2b1e3780c3cc49d69b99878b65a3c3307ae25225e1795bf",
+      "cwe_id": "CWE-401",
+      "files": {
+        "Sample_CWE401_003/safe_code.cpp": "84b1e78a80bbecf0d23df258a8d28e87b7319b21f726fcf0c864a9874bc3da8d",
+        "Sample_CWE401_003/vuln_info.json": "63a040939230cce937710763760d60f3f2202c73c6d933415e4f76aee30a372f"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE401_003_vuln": {
+      "code_sha256": "aec2e688ac345923fb5c096b86c23057b4ae660fb829ca5a63f1d172ba5b206e",
+      "cwe_id": "CWE-401",
+      "files": {
+        "Sample_CWE401_003/mutated_code.cpp": "b8364ec95785205ccae1c1d06e48ac099ede35c21de2852d639c78cb77d17d59",
+        "Sample_CWE401_003/vuln_info.json": "63a040939230cce937710763760d60f3f2202c73c6d933415e4f76aee30a372f"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE415_001_safe": {
+      "code_sha256": "4d7d2c1f3a217649be74eeddc6a9e58f986e18d74821dc5ab0c376b7371e2ef9",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_001/safe_code.cpp": "48892414e6b5989c82dac540ace5b2ae0b8daeb480f00e80c2d0170f5cbb8a27",
+        "Sample_CWE415_001/vuln_info.json": "f30a6b4cd9f2662201f32821a5bb5ba03488156028828e7819fc65d2899383bb"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE415_001_vuln": {
+      "code_sha256": "c34da2b31f1d85a1c8826cb6b066097d48fe19e9cd105e15eae42476304c3d6d",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_001/mutated_code.cpp": "e0335e126810f3b49c5de82fe549af9d46676a483f89092f794d7aea3e79387b",
+        "Sample_CWE415_001/vuln_info.json": "f30a6b4cd9f2662201f32821a5bb5ba03488156028828e7819fc65d2899383bb"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE415_002_safe": {
+      "code_sha256": "8d0fb8ab29eabf59b2e6309b7a782e09f01e31fc4cef98d575e4ad0aa833ab58",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_002/safe_code.cpp": "e88d5fecafa31a795a9d79dd624c3ca27521bd406e7089179ce663c0630e5bea",
+        "Sample_CWE415_002/vuln_info.json": "d410bb1778ca850bca85ae15e024b599ccea64b63be26d346f9f6fbc20d113bf"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE415_002_vuln": {
+      "code_sha256": "edd2af2885320baa546ca7fad23725aa0c39ec1a7a09de8fabb144a2d2abea3e",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_002/mutated_code.cpp": "30d2dff939ff9378237809a7a0d940f91fce2719c8dc6778d523473fbef6d837",
+        "Sample_CWE415_002/vuln_info.json": "d410bb1778ca850bca85ae15e024b599ccea64b63be26d346f9f6fbc20d113bf"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE415_003_safe": {
+      "code_sha256": "84ed9be470867353e481ef69761f2a2a7d7e08465465d13abc7c5e9d0d337657",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_003/safe_code.cpp": "4cf2581cfd62e414dfd323e5f905a05942bdd589fc132f8492c50a805aded984",
+        "Sample_CWE415_003/vuln_info.json": "9358bf027854f252c79d8d871791c107547f3402db5ff0c8b75736e26d6f5830"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE415_003_vuln": {
+      "code_sha256": "6cf6ba95cbb3354109e9b733da28b8837a38681c956fa2cf69fecde9bbe860be",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_003/mutated_code.cpp": "d9a0206b9a7ba3f35aaa36ed60bf6387f2fe7072eadd4d6183ae9a89823b723c",
+        "Sample_CWE415_003/vuln_info.json": "9358bf027854f252c79d8d871791c107547f3402db5ff0c8b75736e26d6f5830"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE415_004_safe": {
+      "code_sha256": "12755f45baf533ea5cb1e55e82479bfa9166d68eee7b8c96d844bee2586a40fa",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_004/safe_code.cpp": "1c3129cfcb46d53325cdf4c2830526ac7a8429a73e77c09955cd9ef03cadcc58",
+        "Sample_CWE415_004/vuln_info.json": "0ea18ae38fab292178fb1d359c6e0c44d901d6fc78fe699e268cba7ad365e51d"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE415_004_vuln": {
+      "code_sha256": "dc9dad7bf665c0945e68ffb2bd7fb5ca2d4928dbb437297c8924ccb8e70428a8",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_004/mutated_code.cpp": "09c9fe7d20a8d366774b57ca597e76042704e815c08a59779bc46e5256698548",
+        "Sample_CWE415_004/vuln_info.json": "0ea18ae38fab292178fb1d359c6e0c44d901d6fc78fe699e268cba7ad365e51d"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE415_005_safe": {
+      "code_sha256": "9884f5702a15dbfd3652d2b189a0d04d28fb06883600a57bfb87ba71a134a61a",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_005/safe_code.cpp": "07acd99edb70bb13da3efb465ee75e8458b733c08c3b0ce2ab8d3602d52ea977",
+        "Sample_CWE415_005/vuln_info.json": "2fca05c740140bb8db8d33145d8ae765e0ba8188cfc87331b5dd69ebaaa05934"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE415_005_vuln": {
+      "code_sha256": "01e3d7006c892ec4d3655ece1a34b01452ae9fecd47eba3ecb3ffd42ef09caa8",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_005/mutated_code.cpp": "ed7469d9cba8ce45dde6efb9eff831b6d9c4dcad8f25ee8dd8bdcc022991c2ee",
+        "Sample_CWE415_005/vuln_info.json": "2fca05c740140bb8db8d33145d8ae765e0ba8188cfc87331b5dd69ebaaa05934"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE415_006_safe": {
+      "code_sha256": "4d6cda11375400661e9eadac4625ed0b7a9bdc2d74f8ce11ac3ca40136f686da",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_006/safe_code.cpp": "a5fd03694b5c5fd1a53d84673608acc0e43ab0f08837fe8ac05d235acfd04723",
+        "Sample_CWE415_006/vuln_info.json": "9a36804dfe4d3ec9588fe67336c3fba7ad4dd53f8cdaed0cf3170aaec401c647"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE415_006_vuln": {
+      "code_sha256": "958f17b3812f4d558b60fb00214c11e52ecc8ba4803fedc057d2509bbe1584dd",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_006/mutated_code.cpp": "b1a79d2bcd702c64201fbfbb326531b0b622d35d83952621dfd634008aaf9e63",
+        "Sample_CWE415_006/vuln_info.json": "9a36804dfe4d3ec9588fe67336c3fba7ad4dd53f8cdaed0cf3170aaec401c647"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE415_007_safe": {
+      "code_sha256": "ca11f67f305377ebf11a4c8d9be6e5049abe45795a77d5db5ff15623558ac97a",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_007/safe_code.cpp": "1f6d469cd64ea070f8209f57a765db9c920ef951a02cd06d15199613278ee8bb",
+        "Sample_CWE415_007/vuln_info.json": "1db0208c9ab32cd560cd00cfe49e3d0602892950f2e6762af30d86a7b59fc123"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE415_007_vuln": {
+      "code_sha256": "9a279f20b684a692ae124aa3984cde997ec65acea67d5fcff99ba5055568d569",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_007/mutated_code.cpp": "04662635634efce4c9398fb00a5090b73ba118a37a1dfa56498072a51dfdc251",
+        "Sample_CWE415_007/vuln_info.json": "1db0208c9ab32cd560cd00cfe49e3d0602892950f2e6762af30d86a7b59fc123"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE415_008_safe": {
+      "code_sha256": "f5d723d11c1a57e45cc66d21c52f22e381102a3a9d5e6ba3526bf1c76ce5dbc2",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_008/safe_code.cpp": "b905ed66b75f1f365b35521bd16f7daa1adc6808268461074694c290d216ff9b",
+        "Sample_CWE415_008/vuln_info.json": "028fcd3f602601ae5d7c1704e7f22e60aa233f33f5e000f678db4c721ff5df3b"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE415_008_vuln": {
+      "code_sha256": "99e210f234f1a5dd9dc84a32c2e2e4683c60a206796ea65c5fc6a78e8695856f",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_008/mutated_code.cpp": "acade13e618cf2c556fc7128730643f498455e5a59fcdbb22b1652da5819a1bd",
+        "Sample_CWE415_008/vuln_info.json": "028fcd3f602601ae5d7c1704e7f22e60aa233f33f5e000f678db4c721ff5df3b"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE415_009_safe": {
+      "code_sha256": "e7f3d0b3ffaeda07c8b1b113de651ad955f2d9c664cdb31ae06cbcc008a342ff",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_009/safe_code.cpp": "cb3b75f1625047562ef9373691711c195d5b6542b9ab2002a58b684b8a2733d3",
+        "Sample_CWE415_009/vuln_info.json": "65c8c58ee82cb148299727b1cd57ad5bef3ddff03f8959fe2b0a645c87cb8099"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE415_009_vuln": {
+      "code_sha256": "5cfb7dc9120509bfb82e5a60fd4ca36f8a2a58ac9f3ffd87083ed3bb12e59c1b",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_009/mutated_code.cpp": "fdeb8fedef4d0b576b7aade3e7e3cd633025c27ff60a001c4af2afb7090d95b5",
+        "Sample_CWE415_009/vuln_info.json": "65c8c58ee82cb148299727b1cd57ad5bef3ddff03f8959fe2b0a645c87cb8099"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE415_010_safe": {
+      "code_sha256": "bd337e061e1969cbbe25da2e231ac901c4eb4ec3cb8898eef91a6948c85731cc",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_010/safe_code.cpp": "1a5cfdda644511cdd2c173b29742584add9f9a70abc59d565abfd83cd5d2927d",
+        "Sample_CWE415_010/vuln_info.json": "90006479a243ab4095eed9695c04a17f79a8b635195e14ca81c5b2c517a01280"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE415_010_vuln": {
+      "code_sha256": "4406e85ecfc09dbc4ace2b9fc6b388b118d63b8a1be63003b5032d199e24a654",
+      "cwe_id": "CWE-415",
+      "files": {
+        "Sample_CWE415_010/mutated_code.cpp": "ad9d4a8853428c84b1e750ea580fd2d6046c05985e96ab40d80b6726ab0ccdce",
+        "Sample_CWE415_010/vuln_info.json": "90006479a243ab4095eed9695c04a17f79a8b635195e14ca81c5b2c517a01280"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE416_001_safe": {
+      "code_sha256": "926ba91713f3bdce7bb69e48568275dd9430a9842a008f02ca9e6eb83ef97cc8",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_001/safe_code.cpp": "56c42a0735afc80788caa887ed37f17f623c61c2e91982f5b65a6a0ae5d73c15",
+        "Sample_CWE416_001/vuln_info.json": "fb9ba8a27721502874211222d4ed6873eeceab006d8679099f266ddb006d39d7"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE416_001_vuln": {
+      "code_sha256": "3a59cb7e4c90dca5981cbe4f56761b67bbf6343c5e1c62b234533235bffe555f",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_001/mutated_code.cpp": "03e666674a799f781b0a98e1c540ae25550d92d2ba45e8f7a6eae8281b66fb46",
+        "Sample_CWE416_001/vuln_info.json": "fb9ba8a27721502874211222d4ed6873eeceab006d8679099f266ddb006d39d7"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE416_002_safe": {
+      "code_sha256": "d5ee49814923fe46e405c5409d6cfc45af055424bb2bcc46cec6bbcc228e90f3",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_002/safe_code.cpp": "dfdcc9fb77cccb594f17ac2f52ea5d4b20392a735e1974ac52fb123cd3c1e1e5",
+        "Sample_CWE416_002/vuln_info.json": "556f8df5f3e23ec03e8fbb28e4cf1f6888a85751f4b1fee67ed4b6e4ec7b2d45"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE416_002_vuln": {
+      "code_sha256": "80d9728b4cc682df49b4f0d86c0567748834d8c6c0c87646d889aa6552949012",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_002/mutated_code.cpp": "eeb7e9aca495d7ba17677ce5bc394adb320d82e2f76308fb87a67bb935268507",
+        "Sample_CWE416_002/vuln_info.json": "556f8df5f3e23ec03e8fbb28e4cf1f6888a85751f4b1fee67ed4b6e4ec7b2d45"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE416_003_safe": {
+      "code_sha256": "780bfbae5544a48352247bec86de445f23497bf04511bb7b2be19f6965edfe61",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_003/safe_code.cpp": "c7bd29526a111cbd1a68421f178b0dd20a4fcc3ff2855e465688585e55a860d2",
+        "Sample_CWE416_003/vuln_info.json": "9520c5a14b4a5a3692a0bb59e11533ba1b11b231b5b06f9b373cf3b6e2f8bb37"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE416_003_vuln": {
+      "code_sha256": "ece428754fb38c4ce57c59b2bb4abc0974e087a527b2efd60656de82df1dcf8e",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_003/mutated_code.cpp": "50ca6043175ec46ee786ad52b46d81509280e0d4d073f810a0770949446fbe85",
+        "Sample_CWE416_003/vuln_info.json": "9520c5a14b4a5a3692a0bb59e11533ba1b11b231b5b06f9b373cf3b6e2f8bb37"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE416_004_safe": {
+      "code_sha256": "265b47457b1471bcd7d994cca86d6752fff794bf650f460636eb66f15cfe3ab0",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_004/safe_code.cpp": "4f0c36387d6ff014bbb1de2f91476b942dd2774225ea57ff5b060937619f3b89",
+        "Sample_CWE416_004/vuln_info.json": "019f1b4b968694a206307cc8fa0bb3abc021dede0f7718a46965a9516c3e71f4"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE416_004_vuln": {
+      "code_sha256": "75789f0e85a717ffe5fcf3b267bf40445d6d60d5f958b2339fcf4184f3ac8c31",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_004/mutated_code.cpp": "6d5362ed6fd7305416ccd25e7c0e8c65dc677dc9de06bb263e89fa96c3a0bf7c",
+        "Sample_CWE416_004/vuln_info.json": "019f1b4b968694a206307cc8fa0bb3abc021dede0f7718a46965a9516c3e71f4"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE416_005_safe": {
+      "code_sha256": "340c4afbea039b8ab3c64224a6feb5a08c2547fb300d3068b65cf0134211479d",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_005/safe_code.cpp": "8a0ed05ee196c32a3e1b73d12157deae3a1745199e0dc56c5a103d4e04f7656e",
+        "Sample_CWE416_005/vuln_info.json": "34f65dc99af8ff792714bfdd2317cea779938fc3584a1165384a0934030f8a98"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE416_005_vuln": {
+      "code_sha256": "40e52177ab7463daa1a73fdfd98a9fe9ef6b2993f8460ec69a56edb4642b1c62",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_005/mutated_code.cpp": "1af42b639a7122739f976dea47da5feb89c52775c02205bc37f54124d29773b3",
+        "Sample_CWE416_005/vuln_info.json": "34f65dc99af8ff792714bfdd2317cea779938fc3584a1165384a0934030f8a98"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE416_006_safe": {
+      "code_sha256": "ea633c0cbae906397db27978fe443053190c7486da2ac442f5804cb9d9c9fdf8",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_006/safe_code.cpp": "19cbc2403d5b3f40876f8befa86b9e7325fc8e1a0c28779d32ad8c25af8a64df",
+        "Sample_CWE416_006/vuln_info.json": "93a63e044c58d496a2fb7833004edc2045615e82af01514522a666581d82cf71"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE416_006_vuln": {
+      "code_sha256": "0b51f3fbff8663a2fe74198c8174cc40d1c0712565a735dcf2b42c55b9439ad7",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_006/mutated_code.cpp": "118d54facd4af475b1892110d45ddf85f682a75fc8eac50b229dde15e655a621",
+        "Sample_CWE416_006/vuln_info.json": "93a63e044c58d496a2fb7833004edc2045615e82af01514522a666581d82cf71"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE416_007_safe": {
+      "code_sha256": "bc08fa57b570768f113298e136b59157bffba059a751fd74d9ebe43e3335fc5c",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_007/safe_code.cpp": "2bc27154a46e6a977a802b82c38873d1d006dc6b0e7534c2f59d20320f1aa4c5",
+        "Sample_CWE416_007/vuln_info.json": "637b04e31e35d96eac808bb9d1b2376b4f10d6082fbfd95c1b0fe147d2862603"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE416_007_vuln": {
+      "code_sha256": "7342025aebbec4752fe1c030f13efc5f72a9b4fc09327b370c0e8811ce6d46d4",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_007/mutated_code.cpp": "cdb8bce1be327bb993564b15ba4866ff53a1660538c0bc69f17edce7d50529f6",
+        "Sample_CWE416_007/vuln_info.json": "637b04e31e35d96eac808bb9d1b2376b4f10d6082fbfd95c1b0fe147d2862603"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE416_008_safe": {
+      "code_sha256": "ebee66d2d6fecf1758c49f13308262f86a7c0f8925cd5b19db81a09cd55b90e9",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_008/safe_code.cpp": "763deca9f50a6fd7922dd023e309fc236cc45d22c217b56c88e4f84f8e2e5aa9",
+        "Sample_CWE416_008/vuln_info.json": "1fbe7c44bddc4da70c244b37f309d1a35d3fdee43549b1fb3fbd59d620be1d23"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE416_008_vuln": {
+      "code_sha256": "fa3b888ca3e8e732808cd50df123fe7c8870a78f49b1ca76491ac2f56550453d",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_008/mutated_code.cpp": "99b7988810fdaa0681c5eb7e8498af1a9de9302831880b7e9709d457f53e458f",
+        "Sample_CWE416_008/vuln_info.json": "1fbe7c44bddc4da70c244b37f309d1a35d3fdee43549b1fb3fbd59d620be1d23"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE416_009_safe": {
+      "code_sha256": "c773548a9b21b01da543db02ea266ffdbdc16b8ff8e7fa347d538010505cd106",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_009/safe_code.cpp": "15fe402cadd4f4f956cf7abd55058c918c37f5332f00d804928d9b9c39501c67",
+        "Sample_CWE416_009/vuln_info.json": "cfd52cdad5f52eb1dc4f3ad52c651ec46e2db427bf3903070610271b7fb96434"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE416_009_vuln": {
+      "code_sha256": "0f6df251ea0413ed97a78dd078f20a115bae66c3eef71d9a5f78d2bbadd08163",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_009/mutated_code.cpp": "4cfd5d6a0b131e9408767b080b02cd445fe4d0d3d58009ab8204414848b397d9",
+        "Sample_CWE416_009/vuln_info.json": "cfd52cdad5f52eb1dc4f3ad52c651ec46e2db427bf3903070610271b7fb96434"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE416_010_safe": {
+      "code_sha256": "5aa832d90763d82a06adb2c31c715d870c7d81e015a4f858a2221d80619d949c",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_010/safe_code.cpp": "d81a3fe510df8005ae02806d3b5c8509b9a051f112b4000028c3a49640bf4527",
+        "Sample_CWE416_010/vuln_info.json": "a16f5bcd8835071f1afc92fb0d58d71f29c00c9799ffc997e8e24737dfd4c28c"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE416_010_vuln": {
+      "code_sha256": "8c5a37c98a0157403f3314db7297d2c19b8c90586b964f88f003802b8cfbaa60",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_010/mutated_code.cpp": "c1aca66c4ca306a3e4f53890244504b0f770e52b7b6c37a99ad2efd7b22384dd",
+        "Sample_CWE416_010/vuln_info.json": "a16f5bcd8835071f1afc92fb0d58d71f29c00c9799ffc997e8e24737dfd4c28c"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE416_011_safe": {
+      "code_sha256": "a40c7be7bf885f4fa5ed99e6fb8994b21d004c357312319b7ab7c2887998ac2f",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_011/safe_code.cpp": "b910198fa52e052a9017c08fedc5b23506ba25e1150eafa31246b584aa027e97",
+        "Sample_CWE416_011/vuln_info.json": "3a5d87c6fd89428a15a0978c311606fe83bc191e80fea5871e7a44cbca588f32"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE416_011_vuln": {
+      "code_sha256": "8888e05234dab95236318b1f9a9bc4930a9dc1d47c97803442dcc9f4d143d3df",
+      "cwe_id": "CWE-416",
+      "files": {
+        "Sample_CWE416_011/mutated_code.cpp": "067576a5eea8461764aa3afa34026fa5ac144bd5b3daa1c952f6d1655c5de3e6",
+        "Sample_CWE416_011/vuln_info.json": "3a5d87c6fd89428a15a0978c311606fe83bc191e80fea5871e7a44cbca588f32"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE59_001_safe": {
+      "code_sha256": "914df9682c5ad446501d0be06808f216d9cf733eb5532efe9978b69358200897",
+      "cwe_id": "CWE-59",
+      "files": {
+        "Sample_CWE59_001/safe_code.cpp": "02321906cb21e37db25b6e031823656b9cb333151efc0ca5d701fb60b9574e91",
+        "Sample_CWE59_001/vuln_info.json": "0c7fceb9c09e8a50c48449e58a139806ce05077f911fffb6216b22fb0dcb7bfd"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE59_001_vuln": {
+      "code_sha256": "87a0692c5adfaad53b630b131ee35c9444b6ed44374d3575675823a4a6b0a902",
+      "cwe_id": "CWE-59",
+      "files": {
+        "Sample_CWE59_001/mutated_code.cpp": "ac1408234c9da5e6bf9c955dcb3c33653839b8cb32363a89d46bf6e489b82f36",
+        "Sample_CWE59_001/vuln_info.json": "0c7fceb9c09e8a50c48449e58a139806ce05077f911fffb6216b22fb0dcb7bfd"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_001_safe": {
+      "code_sha256": "8ecdb83455dbf7fafc927e4acbff5d278b4da978d9735c6a5a6fc96a5311b995",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_001/safe_code.cpp": "bcea92dd35634dab4777263e5b96dfca809dcc6933a1f31538fa633b6f2ff075",
+        "Sample_CWE787_001/vuln_info.json": "c676886d1437c8de176080c4d47b1c9aa9049eaad4de9deb322fd690610e6ad2"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_001_vuln": {
+      "code_sha256": "e4eb33db47ddb13905c2aaf56ec1ee97de0bf42bf22fccd8351f156570fc23d4",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_001/mutated_code.cpp": "619f9e0edf9bfcb2b664daf1772cea3fac15eb6e6b818b21154024eef7f2be7c",
+        "Sample_CWE787_001/vuln_info.json": "c676886d1437c8de176080c4d47b1c9aa9049eaad4de9deb322fd690610e6ad2"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_002_safe": {
+      "code_sha256": "4f15cbaf5bb00f3f1107149efcf06bd2cbbbe2c6025bca0ec5fede50db01b2d8",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_002/safe_code.cpp": "16abdd0aebfbed504354bc94e5ffafbfd6ecd7411684857c0573c0d508b95c43",
+        "Sample_CWE787_002/vuln_info.json": "17188228e43541aed4c993da6423bf92181b196c3d3dcfc8774e74b7ac880c4f"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_002_vuln": {
+      "code_sha256": "c59baadbacba81c2febe437f9ad3c55b6d6424772a910b5715be09bbcac2c6c4",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_002/mutated_code.cpp": "e887f1fb1fdd3c236a54237b44eb8047d7f65593589edb5c13464ddde2530512",
+        "Sample_CWE787_002/vuln_info.json": "17188228e43541aed4c993da6423bf92181b196c3d3dcfc8774e74b7ac880c4f"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_003_safe": {
+      "code_sha256": "1e0205db006cc505b3cd535e3deeacd3178e6d618bc409a5da53b58b7789edb2",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_003/safe_code.cpp": "8c7189284952707988fbc6e7c04a6faf983b9b9bd7a65cb389c3e3a4d0866631",
+        "Sample_CWE787_003/vuln_info.json": "8b082ac5a10fdfe3242816651e9f4cd6304598e392318d6e29ca7d637ad5dfeb"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_003_vuln": {
+      "code_sha256": "6dfe3cebb9a0d7bef9f89db800bbc71e44750ede1c9ff95d9a4f52b5007fef90",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_003/mutated_code.cpp": "ea9dec7f47f344d1cf0f30bcca8bbcbe25321f89bdcc20fd6a7fa00b33d62985",
+        "Sample_CWE787_003/vuln_info.json": "8b082ac5a10fdfe3242816651e9f4cd6304598e392318d6e29ca7d637ad5dfeb"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_004_safe": {
+      "code_sha256": "783fc21b0bab0de5fd08042bd76a11d60fb7b0d299e1849987db1c581279347e",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_004/safe_code.cpp": "207b7abf9223a7a76f0d349086ee23b0a77b1bfcd70fac981ca03c36d8fbb68d",
+        "Sample_CWE787_004/vuln_info.json": "e0dee4c4b8a8070975c408429ec3779ae15ace4fba3b7b8756a9fb6eee831e19"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_004_vuln": {
+      "code_sha256": "9702e9325d7834df19c236fde9320bde6845e5792c231e7e39cfa92a17325caa",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_004/mutated_code.cpp": "d5c37e7eb4f00c1ef873885e498e433acfbb924d00e0eeaf813344d6f3a0cf34",
+        "Sample_CWE787_004/vuln_info.json": "e0dee4c4b8a8070975c408429ec3779ae15ace4fba3b7b8756a9fb6eee831e19"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_005_safe": {
+      "code_sha256": "dacbd44c8f70e5a5eb2e5624445c33dce47409472f67aa8bf372fcca896463df",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_005/safe_code.cpp": "9e1eb52fd4ccacf880859e4cc400bfce34c7f056f7ba8f387266bebccba77e54",
+        "Sample_CWE787_005/vuln_info.json": "34d53076db202ddd000a50cf2d03c0f7bd190bdbcb5047be9a25a2a13edc4f90"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_005_vuln": {
+      "code_sha256": "28ed052d9d7385d0fce5013193601efb6cfe31373fe40d48d57aae04e5c1a348",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_005/mutated_code.cpp": "f3b3c6de065d218c097d90aecf0fd129d3304a2fdeb8735e19c7b61f123eba53",
+        "Sample_CWE787_005/vuln_info.json": "34d53076db202ddd000a50cf2d03c0f7bd190bdbcb5047be9a25a2a13edc4f90"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_006_safe": {
+      "code_sha256": "786de4af68fb76563b9f5efb99b325fec6a1e3f0a2c27accd260073d0330d75f",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_006/safe_code.cpp": "2fc6c2cce348bacbb7a1f73eff21901c320cbcfd69fb1e9959e84aff00f1b322",
+        "Sample_CWE787_006/vuln_info.json": "a620b54f074209804c4034c9fb36694a4e06caf6abee1ed7e3ca90fc184a9e39"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_006_vuln": {
+      "code_sha256": "6464ef5c81ab77db73155647f9ed20c61d25901216385e27c9b8a35d2eca8fb2",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_006/mutated_code.cpp": "956e6a18c4783a4bb8a25eea18cf19163cdd49395f52bbc921e2a28ccc176eeb",
+        "Sample_CWE787_006/vuln_info.json": "a620b54f074209804c4034c9fb36694a4e06caf6abee1ed7e3ca90fc184a9e39"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_007_safe": {
+      "code_sha256": "19ad77ebc5e07cd5e50fec5a0273ef6796455fc3fa35822deb1776c9e3a59bf3",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_007/safe_code.cpp": "b35cadc15ee1cd534ce68c071127fda50c1e1547463c154d5042ac3fcb730282",
+        "Sample_CWE787_007/vuln_info.json": "e58836fe77c43e5b2d2da2a44b6fc4fd70793d038fb134efb9be0fa2ca345e97"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_007_vuln": {
+      "code_sha256": "28b89a63e4e6ed59b4cfac3009635ec25bf45a32d0d3332d5aa7f77cecbd5a2d",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_007/mutated_code.cpp": "e9d84880bf9ae6a32eabc4eff1d8523b22001edc12c4aecf3bb296c4cb8faefc",
+        "Sample_CWE787_007/vuln_info.json": "e58836fe77c43e5b2d2da2a44b6fc4fd70793d038fb134efb9be0fa2ca345e97"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_008_safe": {
+      "code_sha256": "bd15c260e24c441ff3446a6c66a5b9ffb38e2669ffa04872a644664ff2bdece1",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_008/safe_code.cpp": "765777486b9ce3ff94f94d67ebee464419576bc5e7197514236a9d51c815a7e2",
+        "Sample_CWE787_008/vuln_info.json": "fd509afd38d7dc7bdf60e384e742c06e05ff5b51694d9718eca3c9a269ffd53c"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_008_vuln": {
+      "code_sha256": "14efc73a1a077602c70db63c8cef58c10ef58e614abf8edb9317285dc7749256",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_008/mutated_code.cpp": "33aaca7cfcc51673c34a010f4675149a179ea534aa8bf0ac9043d07971f8d1ae",
+        "Sample_CWE787_008/vuln_info.json": "fd509afd38d7dc7bdf60e384e742c06e05ff5b51694d9718eca3c9a269ffd53c"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_009_safe": {
+      "code_sha256": "da6a933c817b2dbcd9428c22cdf04101784d7eaa58296be4663a18f0270781ac",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_009/safe_code.cpp": "b2b9277eaa28a8eb9012c963bb7b5404c507c15fdd17d788e999949bc66ea8dd",
+        "Sample_CWE787_009/vuln_info.json": "380d798504c0280b0b59bab905efc9738c2cc7a710e57574254d889e2e2cee9c"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_009_vuln": {
+      "code_sha256": "5b712f0f1d47618a9eee0ea7519054dfe6ce0ea4a0eb7750c48b9e0102b7ca39",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_009/mutated_code.cpp": "c4553ac811e732cfd8183762cd32c59d3aa88e413863781a418f2ce9743fa3b0",
+        "Sample_CWE787_009/vuln_info.json": "380d798504c0280b0b59bab905efc9738c2cc7a710e57574254d889e2e2cee9c"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_010_safe": {
+      "code_sha256": "bc7829da2e489cc9e6b55219b3c9bf75450aa86114e00bbda62970b413a7044a",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_010/safe_code.cpp": "7cfce1ba617bd4c0263426f37dd853768b7bb7dcbe9c2695c43a71c085852d69",
+        "Sample_CWE787_010/vuln_info.json": "7a5dba3c3c01dc149346ad9026c26dc353fbde9bacb4e4d9295a1cb08d514a46"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_010_vuln": {
+      "code_sha256": "c4cf8716c4c11b6516cdd3da93efa8c83c25bad73e9f859c720c028901f20c09",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_010/mutated_code.cpp": "2aeb84be3e361e10cfac480239be708a6d8d4ee31195fee51a11e6bd4f556839",
+        "Sample_CWE787_010/vuln_info.json": "7a5dba3c3c01dc149346ad9026c26dc353fbde9bacb4e4d9295a1cb08d514a46"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_011_safe": {
+      "code_sha256": "8f605c17adbe62a48009610f55933cfeda083d66d58c474e4361ed5a5090419f",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_011/safe_code.cpp": "64cbc8e0b18273e999c053f005f5397beb1d92a6e7e41b96155f734b3fd2cda6",
+        "Sample_CWE787_011/vuln_info.json": "c8def03fa2f4624ff27e469158f53249320f7da7f8254fac0a686e60939ce461"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_011_vuln": {
+      "code_sha256": "8009a64b556be5d3bcdb7cfc9333def95f0faedf1d9c80424b226b99d9efe389",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_011/mutated_code.cpp": "898a71322bf2718205d52b07df1772c31ebf000b1d6efdb9ed881cf11f451e47",
+        "Sample_CWE787_011/vuln_info.json": "c8def03fa2f4624ff27e469158f53249320f7da7f8254fac0a686e60939ce461"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_012_safe": {
+      "code_sha256": "1dc83a07a4588abde6c31698f62733b438a4be12c8c7575371c7c4007869fcfc",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_012/safe_code.cpp": "9e1d48789a7a2573c36683f04ee7808d044eea1c5f3456b9590ee084a9486eae",
+        "Sample_CWE787_012/vuln_info.json": "34ff119811694ac6cff578d442499f77e6ed89c68ef7f68e8ef59ab5ccb1073c"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_012_vuln": {
+      "code_sha256": "07194eb5b3897fcb663cf8f0872c434fc1e9159015f8f9fb746b818f9e7389cd",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_012/mutated_code.cpp": "7118e8fdfb80f1c7531a7e727f6f358851c195119456b352e7a90ab900ddb961",
+        "Sample_CWE787_012/vuln_info.json": "34ff119811694ac6cff578d442499f77e6ed89c68ef7f68e8ef59ab5ccb1073c"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_013_safe": {
+      "code_sha256": "fcf40e0288d4a820f03b4710feeae084b4bd162529a5f68eb428f4e51a4b7c57",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_013/safe_code.cpp": "b5b0bdcb67ac3d5a0d4a09123161d54ecf64cb5153198beef1adb0f5760b9b0f",
+        "Sample_CWE787_013/vuln_info.json": "1f7f394e39c61aab2669aa85f8e21a5d9e84409162ecc53091c8ec125aafe7d9"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_013_vuln": {
+      "code_sha256": "e589d2e8e6c89ec3c3e8ff1dc28e819f86f059f8019f45b0fd6390025ef5103c",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_013/mutated_code.cpp": "46b47e4b6ada1d15ca6c3d26bbde4c4d95306bc76d24bd4ee32e7f84bf1ec483",
+        "Sample_CWE787_013/vuln_info.json": "1f7f394e39c61aab2669aa85f8e21a5d9e84409162ecc53091c8ec125aafe7d9"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_014_safe": {
+      "code_sha256": "b3670c569ba99520a0269ff44e60c115f91dec438095c59406b53b644fc1c0cb",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_014/safe_code.cpp": "ca02bc00b829813044d55fbbe074cc6c25b45e04f0ab03ce6006e662e16ce550",
+        "Sample_CWE787_014/vuln_info.json": "b66cee5c9bdbf6ec4943bba3c3395e77ebd77b22c78c64e53edb4fc48df7033b"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_014_vuln": {
+      "code_sha256": "cdef252e0d449ef1009d4816a655d324e8c4a58225e2c90311d266ddec595121",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_014/mutated_code.cpp": "9dfe5163338ae0448a66e23fd91b86f7ed66444d30b47bd790c4570f1eb111bd",
+        "Sample_CWE787_014/vuln_info.json": "b66cee5c9bdbf6ec4943bba3c3395e77ebd77b22c78c64e53edb4fc48df7033b"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_015_safe": {
+      "code_sha256": "457670ded2a5248ec60bbe16c7c0cc8eea62f34d619d93b60c7aeddd4408ec17",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_015/safe_code.cpp": "ca28438a7fe7eee633e61d5ba235d3d120458319cdd72921d946da8acc398f9c",
+        "Sample_CWE787_015/vuln_info.json": "c386abcd5867bf4a1237821899466f238873a76cc92505b1df376ec73a93e2f6"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_015_vuln": {
+      "code_sha256": "c146493f4a78eb656a815919537cef91dc0fafa58b7eafca9f38716344e6d0de",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_015/mutated_code.cpp": "cb0e071cda5692da6d846f94be4d071cb514d2c86efd5c26fe372fc412abb420",
+        "Sample_CWE787_015/vuln_info.json": "c386abcd5867bf4a1237821899466f238873a76cc92505b1df376ec73a93e2f6"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_016_safe": {
+      "code_sha256": "68eef63e65701d3de2bed642036fb8e3b25a2776c991892f4f306d082673e558",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_016/safe_code.cpp": "0c2ff21bb9fad9cc5abb13ba288844a6b6e7927679bdfd01e3a6ae66fa6667c0",
+        "Sample_CWE787_016/vuln_info.json": "4335a1d9b206a94799840cdad9f70acce5b6b29f00682fdd399a551e62b283a0"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_016_vuln": {
+      "code_sha256": "173291ffae1c8671ba5f70860cfc9562e851067675384f2d62f5635a434d82f4",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_016/mutated_code.cpp": "ed7b6811c9b8a69d5f82e4b361489f8503a441cb12bec69e27beb199e117fc53",
+        "Sample_CWE787_016/vuln_info.json": "4335a1d9b206a94799840cdad9f70acce5b6b29f00682fdd399a551e62b283a0"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_017_safe": {
+      "code_sha256": "60494ce92c00efb71dad7df366594b18a3e16b20c38974e2292287a9f5dbcbbd",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_017/safe_code.cpp": "29709c5d9da25f851693d064f943e805438b598af14cd2554bfeb6e3ae25835c",
+        "Sample_CWE787_017/vuln_info.json": "ab824e369d0f1b6a07803dc2d6e75cc1361be591a81844608b2a84bdf9b0d867"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_017_vuln": {
+      "code_sha256": "e0cf031001766c81cc4d778723db7e476e2a0fbb47a961fa2df49f6ce37206cc",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_017/mutated_code.cpp": "3e916c5e06e4b9b64585f8e874b8c81b61c9ff7910122f8600046fbfa3722d4f",
+        "Sample_CWE787_017/vuln_info.json": "ab824e369d0f1b6a07803dc2d6e75cc1361be591a81844608b2a84bdf9b0d867"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_018_safe": {
+      "code_sha256": "6a27b707949a5eae4e93323eedaf3be9af07c4237e54911746dfa9bf6f17e3c6",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_018/safe_code.cpp": "c8fa48ef0fef32af82b416d6de620694cf6fc96cf2c90bb03910f9e43d9f5588",
+        "Sample_CWE787_018/vuln_info.json": "792ef9e4ef142721452c91a7a14d4da5bbaa6dfafa98a8be25f324b9845a21f7"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_018_vuln": {
+      "code_sha256": "9e47b6397ac6e11c576e6804c2d567121754528475b1c90ac13e4b3feb75fa34",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_018/mutated_code.cpp": "dc9c9559f8991fc59a1f8d44c57277367d85723a16aaaf48a23cbf57cd27ccfd",
+        "Sample_CWE787_018/vuln_info.json": "792ef9e4ef142721452c91a7a14d4da5bbaa6dfafa98a8be25f324b9845a21f7"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_019_safe": {
+      "code_sha256": "74fb874a5d0ed57751b9674089972cdcfa2c34a7fbdc76401eefc2eda4d9b132",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_019/safe_code.cpp": "330f38a5bf5e1b682305163b7e0bfb702728f87116060bea409f1b5e01beafd1",
+        "Sample_CWE787_019/vuln_info.json": "c1a8da6f35c7fd3ef865c0cac0b0d802235c46dd38c281be09c60daa6d17ad3d"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_019_vuln": {
+      "code_sha256": "150bbb47aa63fcd5d72d3b9fa42e182de1bf89f39f17837f511844cee250a255",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_019/mutated_code.cpp": "c2ba1ca20dfb6811dc55d5403c98ddaf067fb99256e3abd66d3b957e079c4f83",
+        "Sample_CWE787_019/vuln_info.json": "c1a8da6f35c7fd3ef865c0cac0b0d802235c46dd38c281be09c60daa6d17ad3d"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_020_safe": {
+      "code_sha256": "2bc8f0ea0b95f7dad0681e0e69b1437f889a9d4cbaf73d228c4bd5e7aeb523a6",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_020/safe_code.cpp": "d451a3b7811d3cb311c15938465392f448d03fa41aadd053de377e92bed72af8",
+        "Sample_CWE787_020/vuln_info.json": "cfecd22f67b4fc01d4120ec6e32605e3163da60a020c2ec73f11c78c9370acc2"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_020_vuln": {
+      "code_sha256": "51fdcccda2ca3b345455aa8016ae46af4a6ec52d203d51d6214deb7d6b155424",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_020/mutated_code.cpp": "501e64a2903c7e6969c3522a1df3bce1d510286d5d1881e86a05c236450e12e3",
+        "Sample_CWE787_020/vuln_info.json": "cfecd22f67b4fc01d4120ec6e32605e3163da60a020c2ec73f11c78c9370acc2"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_021_safe": {
+      "code_sha256": "4b4ca0087f22df47e27402b13cab8f7d6892cf3af09942404006017c5880ab44",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_021/safe_code.cpp": "79d993533866990cd2c6cd9d81542f86edcbe6650e38a839afd34db96ff2ce87",
+        "Sample_CWE787_021/vuln_info.json": "628762e1a87c65c921ccaa598687d69bce8002d78d4003b58075b52dfaf915e9"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_021_vuln": {
+      "code_sha256": "a36d2d28024cf25fe2d7ed5335e83131d8896f492430de2803dd52da6d7647c8",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_021/mutated_code.cpp": "eaf21c51d7b202a104f3c3f2d918527e9460c02f5266c7ec161470c86e79114c",
+        "Sample_CWE787_021/vuln_info.json": "628762e1a87c65c921ccaa598687d69bce8002d78d4003b58075b52dfaf915e9"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    },
+    "Sample_CWE787_022_safe": {
+      "code_sha256": "1f2d61f5688ac670ec728e12271771291444ccbd3c9d03c643206745cfbc7680",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_022/safe_code.cpp": "c69ec94ecdbe3fc9bac5ca0c1b4aef4c3de8758a455fa0513dfe3303500fbba4",
+        "Sample_CWE787_022/vuln_info.json": "c142a5d45295340418debf54fce94175f4a56c9b3fc22617016fdcc1bfe8260d"
+      },
+      "label": "safe",
+      "source_type": "synthetic_safe"
+    },
+    "Sample_CWE787_022_vuln": {
+      "code_sha256": "a2ecd15b57d90571e6b0b30f0707c7af28f99aa0d6a181c15ee6ff11797ce811",
+      "cwe_id": "CWE-787",
+      "files": {
+        "Sample_CWE787_022/mutated_code.cpp": "489409ff619617feb97bb262aec3eed9969f23c18ae974b864c15554480791f7",
+        "Sample_CWE787_022/vuln_info.json": "c142a5d45295340418debf54fce94175f4a56c9b3fc22617016fdcc1bfe8260d"
+      },
+      "label": "vulnerable",
+      "source_type": "synthetic_vuln"
+    }
+  }
+}

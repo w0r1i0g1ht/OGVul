@@ -1,0 +1,7 @@
+{
+  "cwe_id": "CWE-787",
+  "purpose": "Original teaching fixture, not a paper benchmark sample",
+  "origin": "Authored for OGVul examples; no upstream project code copied",
+  "license": "MIT",
+  "annotation": "The caller supplies an input buffer of at least length bytes. The mutated variant omits the destination-capacity check; the safe variant rejects writes larger than the 32-byte payload."
+}

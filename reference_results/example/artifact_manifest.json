@@ -1,0 +1,18 @@
+{
+  "purpose": "Real teaching example outputs, not paper results",
+  "graph_observation": "Recorded after the completed run from the dedicated example database",
+  "files": {
+    "kg.json": "3adf45e927355cdef26adbedec2fd06a52b2599be71c66fe0d5f643343b0c61e",
+    "agent.json": "6e373cd36b0afda39b5b430732e59439c96da8e77e70fc95727f9f3184408b47",
+    "fused.json": "6c1586a97b589e68556c41e2a117ed3bed7e5c923778a9fa4aadbc04acb3a5cf",
+    "refined.json": "4dd1b7c5a370724e2dd0ce150e97763042b35c4ed57cedd00aacdb4f0a7920a3",
+    "evaluation.json": "0e85e097532e472785f6073a33aea26b0ee2174ef91a4230011793c3b4e3d512",
+    "evaluation.md": "28a607095ce959a154e8eb240742710c6d152f74586453a3b029b8947105f1b7",
+    "kg.redacted.yaml": "57ee2bcadef60996b4978773f56dddd4cbedd8ec268c21736c0672de56c08333",
+    "agent.redacted.yaml": "4399e3e782768499d410e36e10ef4b859eec59213c5623dc62dfde9691f196c4",
+    "dataset_manifest.json": "cbea94bd3f36494ccd941d4d9adeaad00bf55be4f675c3fee0e0dccffa3a8d6c",
+    "run_identity.json": "34e871d5f748306fed86a7b34d20dfd7b315c96579fbadf10678b3beee88dd80",
+    "graph_snapshot.json": "546bcbae1b091d54195bfe1e98dba7c440343cb2640284b5ffc28c7e9cc280c9"
+  },
+  "graph_binding": "Fixture file identity recorded at startup; actual graph checked against expected fixture at export. No pre-run live content snapshot was recorded by this older launcher."
+}

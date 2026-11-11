@@ -1,0 +1,7 @@
+{
+  "cwe_id": "CWE-415",
+  "purpose": "Original teaching fixture, not a paper benchmark sample",
+  "origin": "Authored for OGVul examples; no upstream project code copied",
+  "license": "MIT",
+  "annotation": "When drop_cache is true the mutated variant frees the same allocation twice. The safe variant returns after the first release, so each path releases the allocation once."
+}

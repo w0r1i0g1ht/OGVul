@@ -1,0 +1,13 @@
+# Copy to config.yaml here. This local file is ignored by Git.
+model_path: /path/to/Qwen3-8B
+embedding_path: /path/to/bge-m3
+graph:
+  uri: bolt://127.0.0.1:7689
+  database: neo4j
+  username: neo4j
+  # The loopback-only demo instance uses NEO4J_AUTH=none.
+  # For an authenticated dedicated instance, set password_env to an env var name.
+  password_env: null
+engine:
+  gpu_memory_utilization: 0.8
+  tensor_parallel_size: 1

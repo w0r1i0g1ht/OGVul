@@ -1,0 +1,19 @@
+# Fill this per actual sample before adding any third-party source.
+sample_id: null
+upstream:
+  project: null
+  repository_url: null
+  revision: null
+  source_file: null
+  function: null
+  copyright_notices: []
+license:
+  spdx_identifier: null
+  full_text_file: null
+  additional_notices: []
+modifications:
+  description: null
+  modified_files: []
+distribution_review:
+  status: not-reviewed
+  root_mit_applies_to_third_party_portion: false

@@ -1,0 +1,42 @@
+# Edit deployment paths and Neo4j credentials before running.
+llm:
+  extraction:
+    backend: offline_vllm
+    model_path: /path/to/Qwen3-8B
+    gpu_memory_utilization: 0.9
+    tensor_parallel_size: 1
+    max_model_len: 16384
+    temperature: 0.0
+    max_tokens: 1024
+  diagnosis:
+    backend: offline_vllm
+    model_path: /path/to/Qwen3-8B
+    gpu_memory_utilization: 0.9
+    tensor_parallel_size: 1
+    max_model_len: 16384
+    temperature: 0.2
+    max_tokens: 4096
+  embedding:
+    model_path: /path/to/bge-m3
+neo4j:
+  uri: bolt://127.0.0.1:7687
+  username: neo4j
+  password: CHANGE_ME
+  database: neo4j
+paths:
+  cve_dir: /path/to/vuln_samples
+  synthetic_dir: /path/to/vuln_samples
+  output_dir: outputs/agent
+experiment:
+  pipeline_mode: kg_rag
+runtime:
+  max_workers: 3
+  retry_max_attempts: 3
+  retry_wait_seconds: 5
+  result_file: detection_results.json
+  test_sample_count: 100
+  agent_code_char_limit: 12000
+  agent_fusion_code_char_limit: 8000
+  agent_second_pass_enabled: true
+  agent_second_pass_max_tasks: 0
+  agent_second_pass_max_per_sample: 2

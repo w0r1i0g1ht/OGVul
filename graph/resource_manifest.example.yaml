@@ -1,0 +1,30 @@
+resource: OGVKG
+status: full-research-graph-not-distributed
+paper_snapshot_binding: unverified
+snapshot:
+  download_url: null
+  sha256: null
+  neo4j_version: null
+  node_count: null
+  relationship_count: null
+  license: null
+inputs:
+  - kind: domain-documents-and-extracted-triples
+    version: null
+    sha256: null
+    permission_status: per-document-review-required
+  - kind: CWE
+    upstream: https://cwe.mitre.org/
+    version: null
+    sha256: null
+    terms: https://cwe.mitre.org/about/termsofuse.html
+  - kind: CVE-CSAF-CPE-CAPEC
+    version: null
+    sha256: null
+    permission_status: per-source-review-required
+teaching_fixture:
+  file: example.cypher
+  expected_contents: example.json
+  content_sha256: a4923e141f1e2d99e5ddd20804eeac0fdcf0504b8f7b836ce3f458140f1f7fa7
+  license: MIT
+  is_paper_graph: false

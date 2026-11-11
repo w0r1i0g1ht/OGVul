@@ -1,0 +1,308 @@
+{
+  "description": "Selected original local research implementation; exact paper-generation version is not established.",
+  "files": [
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/kg_6_17/main_offline.py",
+      "target": "kg/main_offline.py",
+      "source_sha256": "eb04a84df8141dfa113d99a4efc43fa970d99e4a4837bb18637a42b7b2a9a7fc",
+      "target_sha256": "24fe1ff59c8b42336deb4dfee5963065921caea6fcb8d2e7457b4034626bfbe8",
+      "transformed": true,
+      "changed_fields": [
+        "preserve_native_tokenizer_property_if_present"
+      ]
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/kg_6_17/schemas.py",
+      "target": "kg/schemas.py",
+      "source_sha256": "af0467733866ed59ee9cc52d633b745eae5edae8ec7fb4163de81ca336332b1a",
+      "target_sha256": "af0467733866ed59ee9cc52d633b745eae5edae8ec7fb4163de81ca336332b1a",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/kg_6_17/data_loader.py",
+      "target": "kg/data_loader.py",
+      "source_sha256": "54dcb352890e41e6a797eb3244002441a1ee85fdf41d4d05021641b297465870",
+      "target_sha256": "54dcb352890e41e6a797eb3244002441a1ee85fdf41d4d05021641b297465870",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/agent_6_23/main_agent_offline.py",
+      "target": "agent/main_agent_offline.py",
+      "source_sha256": "97de057d0967a0052410e9715a981c0af32181ab6c639bb142c0ee33368f85fe",
+      "target_sha256": "97de057d0967a0052410e9715a981c0af32181ab6c639bb142c0ee33368f85fe",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/agent_6_23/main_offline.py",
+      "target": "agent/main_offline.py",
+      "source_sha256": "df864f89c9f7fac91b3d34887025a95d02ae238676e7ccebf3fd3ae092d90ab4",
+      "target_sha256": "caaf35c6f711af68202bfc3f0bd5a4773b74a9cd8a9fcd45aee452f434fe763b",
+      "transformed": true,
+      "changed_fields": [
+        "preserve_native_tokenizer_property_if_present"
+      ]
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/agent_6_23/schemas.py",
+      "target": "agent/schemas.py",
+      "source_sha256": "af0467733866ed59ee9cc52d633b745eae5edae8ec7fb4163de81ca336332b1a",
+      "target_sha256": "af0467733866ed59ee9cc52d633b745eae5edae8ec7fb4163de81ca336332b1a",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/agent_6_23/agent_schemas.py",
+      "target": "agent/agent_schemas.py",
+      "source_sha256": "aece889eb7b9583a56eb1571878d11548147a439f3f18703d11b743f76b0492c",
+      "target_sha256": "aece889eb7b9583a56eb1571878d11548147a439f3f18703d11b743f76b0492c",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/agent_6_23/data_loader.py",
+      "target": "agent/data_loader.py",
+      "source_sha256": "54dcb352890e41e6a797eb3244002441a1ee85fdf41d4d05021641b297465870",
+      "target_sha256": "54dcb352890e41e6a797eb3244002441a1ee85fdf41d4d05021641b297465870",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/run_historical_hybrid.py",
+      "target": "run_historical_hybrid.py",
+      "source_sha256": "b2ab1ee4c9773e71f18d32916d74bd8486b3a4ad5f82c8cb30e200725b738424",
+      "target_sha256": "ab4154ccc35c389d8ad964c2c0fda9a377e5b6266d417fa176fdabd7c42e2064",
+      "transformed": true,
+      "changed_fields": [
+        "functional_names_paths_or_documentation"
+      ]
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/verify_sources.py",
+      "target": "verify_sources.py",
+      "source_sha256": "129af05a3529e911f332fc106f62c467cf6e496f5a9a97f0a6116f0581f85aea",
+      "target_sha256": "129af05a3529e911f332fc106f62c467cf6e496f5a9a97f0a6116f0581f85aea",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/hybrid_fuse_results.py",
+      "target": "hybrid_fuse_results.py",
+      "source_sha256": "2f41b030d875f32a661b8b7d3edec5de5fd74f624b868392ea6656c5738b699d",
+      "target_sha256": "b34fa7939cb5aa258ba30b44898912f5555e031b7ce4e680a8d02d6a1ce1769b",
+      "transformed": true,
+      "changed_fields": [
+        "functional_names_paths_or_documentation"
+      ]
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/hybrid_cwe_refine_offline.py",
+      "target": "hybrid_cwe_refine_offline.py",
+      "source_sha256": "99f47b1e6b4d7f7cfb73907c8b0316407087c2f93954dc235e33c8c252ac35cb",
+      "target_sha256": "c89fce828d54c90174f889a77ff238adbc7bf2ec5331fe3ca9ff57bad7198083",
+      "transformed": true,
+      "changed_fields": [
+        "functional_names_paths_or_documentation",
+        "preserve_native_tokenizer_property_if_present"
+      ]
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/evaluate.py",
+      "target": "evaluate.py",
+      "source_sha256": "b0520bfcea9b702a3021d2381b5207cf384255dbd66ed1afbecc45cdc999befc",
+      "target_sha256": "b0520bfcea9b702a3021d2381b5207cf384255dbd66ed1afbecc45cdc999befc",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/1000.csv",
+      "target": "1000.csv",
+      "source_sha256": "2f8f0b969938be8af81bb7cf9a5d8e056bb80f0730226531efb85ea313bbaf22",
+      "target_sha256": "2f8f0b969938be8af81bb7cf9a5d8e056bb80f0730226531efb85ea313bbaf22",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/tests/test_run_historical_hybrid.py",
+      "target": "tests/test_run_historical_hybrid.py",
+      "source_sha256": "896ff6cdf70dc19641dce45fb9942cc3725c7115eb899d10b2cfcd887bbc8f2b",
+      "target_sha256": "4160d57360a8dca0a3b184e7f3540d9f9be3371f87a69e1cc6d91692faed2a26",
+      "transformed": true,
+      "changed_fields": [
+        "synthetic_test_paths_only",
+        "functional_names_paths_or_documentation"
+      ]
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/kg_6_17/config.yaml",
+      "target": "kg/config.example.yaml",
+      "source_sha256": "340bcb108ab02e818b0d4141525f2dd29debc44dbe7d80c49f448094a52081e3",
+      "target_sha256": "2a5037978fd4ee74d76caa5c52bd45970a9beb8175c371b35c92dc14e710fcc1",
+      "transformed": true,
+      "changed_fields": [
+        "llm.extraction.model_path",
+        "llm.diagnosis.model_path",
+        "llm.embedding.model_path",
+        "neo4j.uri",
+        "neo4j.username",
+        "neo4j.password",
+        "neo4j.database",
+        "paths.cve_dir",
+        "paths.synthetic_dir",
+        "paths.output_dir",
+        "functional_names_paths_or_documentation"
+      ]
+    },
+    {
+      "source": "scripts/agent_kg_vuln_detect/historical_hybrid/agent_6_23/config.yaml",
+      "target": "agent/config.example.yaml",
+      "source_sha256": "187e282b9fbeba0e94e74ac9421e49a315a9eaa934ab24a69b14a5efb8727992",
+      "target_sha256": "ee0d49f0b394175a674642370a7b708c494c865901246b3233101930e29957d5",
+      "transformed": true,
+      "changed_fields": [
+        "llm.extraction.model_path",
+        "llm.diagnosis.model_path",
+        "llm.embedding.model_path",
+        "neo4j.uri",
+        "neo4j.username",
+        "neo4j.password",
+        "neo4j.database",
+        "paths.cve_dir",
+        "paths.synthetic_dir",
+        "paths.output_dir",
+        "functional_names_paths_or_documentation"
+      ]
+    },
+    {
+      "source": "scripts/agent_vuln_detect_without_kg/main_agent_offline.py",
+      "target": "ablations/without_kg/main_agent_offline.py",
+      "source_sha256": "c3b229162f55b33a4627b8f20bca91ab419e38f4a61890ad0bfb65d04e8b68c8",
+      "target_sha256": "c3b229162f55b33a4627b8f20bca91ab419e38f4a61890ad0bfb65d04e8b68c8",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_vuln_detect_without_kg/offline_runtime.py",
+      "target": "ablations/without_kg/offline_runtime.py",
+      "source_sha256": "8ed613cc6d2c38f1792db5a935dac5426792c7842f23e66d2a46cca52ad57434",
+      "target_sha256": "1ed4e2f08315d0b0dbbf35c35e39c4f9271dd560913aaa786ee657ff58bb7d26",
+      "transformed": true,
+      "changed_fields": [
+        "preserve_native_tokenizer_property_if_present"
+      ]
+    },
+    {
+      "source": "scripts/agent_vuln_detect_without_kg/decision_policy.py",
+      "target": "ablations/without_kg/decision_policy.py",
+      "source_sha256": "637565d44122e3c3dfc3401b3d270f4ef3ca37252aa5798fbe872142aa1f1720",
+      "target_sha256": "637565d44122e3c3dfc3401b3d270f4ef3ca37252aa5798fbe872142aa1f1720",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_vuln_detect_without_kg/global_checkpoint.py",
+      "target": "ablations/without_kg/global_checkpoint.py",
+      "source_sha256": "4ff63e0ab8e66934b45229ffc2d14bd15f5a13045b7dac414a49cb165b40852f",
+      "target_sha256": "4ff63e0ab8e66934b45229ffc2d14bd15f5a13045b7dac414a49cb165b40852f",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_vuln_detect_without_kg/historical_binary_recovery.py",
+      "target": "ablations/without_kg/historical_binary_recovery.py",
+      "source_sha256": "2195e0df75f3a988e86ca97e629047d5b1249574191a577106f893aa737d7d77",
+      "target_sha256": "3121a6a795f565d40d5aae73dae4060ec3e09929ddde5ffe4529c97983fc2862",
+      "transformed": true,
+      "changed_fields": [
+        "functional_names_paths_or_documentation"
+      ]
+    },
+    {
+      "source": "scripts/agent_vuln_detect_without_kg/schemas.py",
+      "target": "ablations/without_kg/schemas.py",
+      "source_sha256": "af0467733866ed59ee9cc52d633b745eae5edae8ec7fb4163de81ca336332b1a",
+      "target_sha256": "af0467733866ed59ee9cc52d633b745eae5edae8ec7fb4163de81ca336332b1a",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_vuln_detect_without_kg/agent_schemas.py",
+      "target": "ablations/without_kg/agent_schemas.py",
+      "source_sha256": "127a879f498a6cb26303fa4fdfc9067af11d8ef99ab1b7d6fb3eb90872fae0e3",
+      "target_sha256": "127a879f498a6cb26303fa4fdfc9067af11d8ef99ab1b7d6fb3eb90872fae0e3",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_vuln_detect_without_kg/data_loader.py",
+      "target": "ablations/without_kg/data_loader.py",
+      "source_sha256": "54dcb352890e41e6a797eb3244002441a1ee85fdf41d4d05021641b297465870",
+      "target_sha256": "54dcb352890e41e6a797eb3244002441a1ee85fdf41d4d05021641b297465870",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_vuln_detect_without_kg/llm_compat.py",
+      "target": "ablations/without_kg/llm_compat.py",
+      "source_sha256": "e485c1d65f69d7d08edc8d56ab3a28d9c4876256bcbf8f99ce676f33df71c7dc",
+      "target_sha256": "665054b3c572b2e6fab74a1142d0b3cfffe749e95ad641d03806869a4994e1f5",
+      "transformed": true,
+      "changed_fields": [
+        "functional_names_paths_or_documentation"
+      ]
+    },
+    {
+      "source": "scripts/agent_vuln_detect_without_kg/run_pipeline.py",
+      "target": "ablations/without_kg/run_pipeline.py",
+      "source_sha256": "9376e0f54cdf211166f23d7e0c241c363a6c98915a926d9d599054f69837e35a",
+      "target_sha256": "9376e0f54cdf211166f23d7e0c241c363a6c98915a926d9d599054f69837e35a",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_vuln_detect_without_kg/evaluate.py",
+      "target": "ablations/without_kg/evaluate.py",
+      "source_sha256": "79741517c23a595d76dd83dc7cbcb60781901df27504dfe08f227def7acfa489",
+      "target_sha256": "79741517c23a595d76dd83dc7cbcb60781901df27504dfe08f227def7acfa489",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_vuln_detect_without_kg/cwe_refine_offline.py",
+      "target": "ablations/without_kg/cwe_refine_offline.py",
+      "source_sha256": "68b4e5fc5fe1dfea085c08f7ca91f8453c51f4b20f3db2e0139677c5e703d58a",
+      "target_sha256": "03969036bfc7f7410ff5846da12a0a539e9022497e5b486c7cda27875d2b2255",
+      "transformed": true,
+      "changed_fields": [
+        "preserve_native_tokenizer_property_if_present"
+      ]
+    },
+    {
+      "source": "scripts/agent_vuln_detect_without_kg/1000.csv",
+      "target": "ablations/without_kg/1000.csv",
+      "source_sha256": "2f8f0b969938be8af81bb7cf9a5d8e056bb80f0730226531efb85ea313bbaf22",
+      "target_sha256": "2f8f0b969938be8af81bb7cf9a5d8e056bb80f0730226531efb85ea313bbaf22",
+      "transformed": false
+    },
+    {
+      "source": "scripts/agent_vuln_detect_without_kg/config.yaml",
+      "target": "ablations/without_kg/config.example.yaml",
+      "source_sha256": "a342010f3ecc99bf0633514627dad81bda3a58a4b63436b1a9a7a5e9eeb6dd5e",
+      "target_sha256": "01ce46d3f8a229c86cc6efe77b8c152a7c81ff0f230c4fffe9f969bf8640745b",
+      "transformed": true,
+      "changed_fields": [
+        "llm.extraction.model_path",
+        "llm.diagnosis.model_path",
+        "paths.cve_dir",
+        "paths.synthetic_dir",
+        "paths.output_dir"
+      ]
+    }
+  ],
+  "ablations": {
+    "base_llm": {
+      "entrypoint": "kg/main_offline.py",
+      "mode": "base_llm",
+      "config": "ablations/base_llm.example.yaml",
+      "paper_result_version_bound": false
+    },
+    "without_agent": {
+      "entrypoint": "kg/main_offline.py",
+      "mode": "kg_rag",
+      "config": "ablations/without_agent.example.yaml",
+      "paper_result_version_bound": false
+    },
+    "without_kg": {
+      "entrypoint": "ablations/without_kg/run_pipeline.py",
+      "config": "ablations/without_kg/config.example.yaml",
+      "paper_result_version_bound": false,
+      "source_family": "agent_vuln_detect_without_kg; based on the unified/final Agent workflow, not proven identical to Hybrid minus KG"
+    }
+  },
+  "layout_note": "Functional directory and output names; original dated paths retained only as provenance."
+}

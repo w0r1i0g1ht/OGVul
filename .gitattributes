@@ -1,0 +1,10 @@
+*.py -text
+*.csv -text
+*.md text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.cpp text eol=lf
+*.cypher text eol=lf
+*.cff text eol=lf
+LICENSE text eol=lf

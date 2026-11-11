@@ -1,0 +1,108 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-09T02:48:34.954461+00:00",
+  "purpose": "Original teaching example; not the paper benchmark",
+  "samples": 4,
+  "source_files": {
+    "kg/main_offline.py": "24fe1ff59c8b42336deb4dfee5963065921caea6fcb8d2e7457b4034626bfbe8",
+    "kg/schemas.py": "af0467733866ed59ee9cc52d633b745eae5edae8ec7fb4163de81ca336332b1a",
+    "kg/data_loader.py": "54dcb352890e41e6a797eb3244002441a1ee85fdf41d4d05021641b297465870",
+    "agent/main_agent_offline.py": "97de057d0967a0052410e9715a981c0af32181ab6c639bb142c0ee33368f85fe",
+    "agent/main_offline.py": "caaf35c6f711af68202bfc3f0bd5a4773b74a9cd8a9fcd45aee452f434fe763b",
+    "agent/schemas.py": "af0467733866ed59ee9cc52d633b745eae5edae8ec7fb4163de81ca336332b1a",
+    "agent/agent_schemas.py": "aece889eb7b9583a56eb1571878d11548147a439f3f18703d11b743f76b0492c",
+    "agent/data_loader.py": "54dcb352890e41e6a797eb3244002441a1ee85fdf41d4d05021641b297465870",
+    "run_historical_hybrid.py": "ab4154ccc35c389d8ad964c2c0fda9a377e5b6266d417fa176fdabd7c42e2064",
+    "verify_sources.py": "129af05a3529e911f332fc106f62c467cf6e496f5a9a97f0a6116f0581f85aea",
+    "hybrid_fuse_results.py": "b34fa7939cb5aa258ba30b44898912f5555e031b7ce4e680a8d02d6a1ce1769b",
+    "hybrid_cwe_refine_offline.py": "c89fce828d54c90174f889a77ff238adbc7bf2ec5331fe3ca9ff57bad7198083",
+    "evaluate.py": "b0520bfcea9b702a3021d2381b5207cf384255dbd66ed1afbecc45cdc999befc",
+    "1000.csv": "2f8f0b969938be8af81bb7cf9a5d8e056bb80f0730226531efb85ea313bbaf22",
+    "tests/test_run_historical_hybrid.py": "4160d57360a8dca0a3b184e7f3540d9f9be3371f87a69e1cc6d91692faed2a26",
+    "ablations/without_kg/main_agent_offline.py": "c3b229162f55b33a4627b8f20bca91ab419e38f4a61890ad0bfb65d04e8b68c8",
+    "ablations/without_kg/offline_runtime.py": "1ed4e2f08315d0b0dbbf35c35e39c4f9271dd560913aaa786ee657ff58bb7d26",
+    "ablations/without_kg/decision_policy.py": "637565d44122e3c3dfc3401b3d270f4ef3ca37252aa5798fbe872142aa1f1720",
+    "ablations/without_kg/global_checkpoint.py": "4ff63e0ab8e66934b45229ffc2d14bd15f5a13045b7dac414a49cb165b40852f",
+    "ablations/without_kg/historical_binary_recovery.py": "3121a6a795f565d40d5aae73dae4060ec3e09929ddde5ffe4529c97983fc2862",
+    "ablations/without_kg/schemas.py": "af0467733866ed59ee9cc52d633b745eae5edae8ec7fb4163de81ca336332b1a",
+    "ablations/without_kg/agent_schemas.py": "127a879f498a6cb26303fa4fdfc9067af11d8ef99ab1b7d6fb3eb90872fae0e3",
+    "ablations/without_kg/data_loader.py": "54dcb352890e41e6a797eb3244002441a1ee85fdf41d4d05021641b297465870",
+    "ablations/without_kg/llm_compat.py": "665054b3c572b2e6fab74a1142d0b3cfffe749e95ad641d03806869a4994e1f5",
+    "ablations/without_kg/run_pipeline.py": "9376e0f54cdf211166f23d7e0c241c363a6c98915a926d9d599054f69837e35a",
+    "ablations/without_kg/evaluate.py": "79741517c23a595d76dd83dc7cbcb60781901df27504dfe08f227def7acfa489",
+    "ablations/without_kg/cwe_refine_offline.py": "03969036bfc7f7410ff5846da12a0a539e9022497e5b486c7cda27875d2b2255",
+    "ablations/without_kg/1000.csv": "2f8f0b969938be8af81bb7cf9a5d8e056bb80f0730226531efb85ea313bbaf22"
+  },
+  "graph_fixture_sha256": "395bd615d3604760abf762888c1af1253ae6862f68a960ea9c33ae7a2d064cb3",
+  "configuration": {
+    "model_path": "${MODEL_DIR}",
+    "embedding_path": "${EMBEDDING_DIR}",
+    "graph": {
+      "uri": "${DEDICATED_EXAMPLE_GRAPH_URI}",
+      "database": "neo4j",
+      "authentication": "disabled-local-demo"
+    },
+    "engine": {
+      "gpu_memory_utilization": 0.7,
+      "tensor_parallel_size": 1
+    }
+  },
+  "runtime": {
+    "python": "3.10.18",
+    "packages": {
+      "vllm": "0.8.5.post1",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.52.4",
+      "neo4j": "5.28.7",
+      "pydantic": "2.11.4",
+      "PyYAML": "6.0.3"
+    }
+  },
+  "resources": {
+    "model_path": {
+      "algorithm": "sha256-of-sorted-file-sha256-map",
+      "content_sha256": "97a9b214cb84712b7d647deb066900f52b8ed5414a97d516054562b7917d46ef",
+      "files": {
+        "README.md": "0f36caaff9c2516411a7738db384606263ba653c1e63e61d72f511606164d5a6",
+        "config.json": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+        "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+        "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "model-00001-of-00005.safetensors": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f",
+        "model-00002-of-00005.safetensors": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282",
+        "model-00003-of-00005.safetensors": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836",
+        "model-00004-of-00005.safetensors": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a",
+        "model-00005-of-00005.safetensors": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff",
+        "model.safetensors.index.json": "f9fdbcb91c23971c13ec5d5f2573d2349e8f61f2f049371ec699281748fdb1bc",
+        "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    },
+    "embedding_path": {
+      "algorithm": "sha256-of-sorted-file-sha256-map",
+      "content_sha256": "661ea60ad0020b27b61407a9c189a871eac09c2ac11ce2396d8a7c18b7e199cd",
+      "files": {
+        "1_Pooling/config.json": "e54c164a07274f2eb45bb724f54a79d1efcc90c41573887cd9a29aeee0597352",
+        "colbert_linear.pt": "19bfbae397c2b7524158c919d0e9b19393c5639d098f0a66932c91ed8f5f9abb",
+        "config.json": "26159e7ad065073448460117eb24b7a4572f6f4e78eadff65dc0a11c052449fa",
+        "config_sentence_transformers.json": "1eef72430e7194a1e59680e635aed81ffa083f05668dbc5bb1c56c04c0999c38",
+        "imgs/bm25.jpg": "4d88d1c224dc6dae62b76547e1e79ed12e1085b94dc1fe0c50440a948277d89a",
+        "imgs/long.jpg": "d2a44539154d2cee75abd032fe773d5514f1129b741c4641cde12554762709a6",
+        "imgs/miracl.jpg": "a48c10a1be83aa7a92a25d85dbc6d2c0194b59503a2599a9e89bd7e063c32a66",
+        "imgs/mkqa.jpg": "ae331fb64bdceeaafecc2f8cd89a2d55a3e41c429dcc5ba906cb9a7bdb73cf2b",
+        "imgs/nqa.jpg": "5385ca9d6af4124932281039e1366d704d10ed81e905526f795f5732352394bb",
+        "imgs/others.webp": "9222ef69ba79cbd3aa8c659bd3cbbf9d90b3dbb040526f56298ed9ceb05ec9df",
+        "long.jpg": "4ba03433ef54575eeef5a291abd81661eb53c432677934dc4050565893e7a8a9",
+        "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+        "pytorch_model.bin": "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38",
+        "sentence_bert_config.json": "eb9b44b13c0f52a3b3685c3b1cbdea1ba8b04bea123b98f61610048940776eb1",
+        "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+        "sparse_linear.pt": "45c93804d2142b8f6d7ec6914ae23a1eee9c6a1d27d83d908a20d2afb3595ad9",
+        "special_tokens_map.json": "8c785abebea9ae3257b61681b4e6fd8365ceafde980c21970d001e834cf10835",
+        "tokenizer.json": "21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08",
+        "tokenizer_config.json": "a62b2b6784f990259fddef5f16388693a8043be4f69179e6a5257eeb3f9abac4"
+      }
+    }
+  },
+  "ended_at": "2026-11-09T03:02:08.215358+00:00"
+}

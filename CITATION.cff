@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Please cite the OGVul paper when using this research implementation."
+title: OGVul research implementation
+type: software
+authors:
+  - name: OGVul contributors
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "OGVul: Domain-Knowledge-Guided Multi-Agent Reasoning for Vulnerability Detection in Oil-and-Gas Industrial Software"
+  authors:
+    - family-names: Wang
+      given-names: Laite
+    - family-names: Huang
+      given-names: Weidong
+    - family-names: Zhang
+      given-names: Peng
+    - family-names: Zhang
+      given-names: Runqing
+    - family-names: Yuan
+      given-names: Shiyi
+    - family-names: Wang
+      given-names: Liyuan
+    - family-names: Zeng
+      given-names: Gangyan
+    - family-names: Sun
+      given-names: Bo
+  collection-title: "2026 IEEE International Conference on High Performance Computing and Communications (HPCC)"
+  year: 2026
+  notes: "Accepted full paper. Metadata follows the manuscript and acceptance notice; DOI and proceedings pagination have not been verified."

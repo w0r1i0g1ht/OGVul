@@ -1,0 +1,995 @@
+{
+  "description": "Original MIT teaching graph expected contents; not OGVKG",
+  "nodes": [
+    {
+      "labels": [
+        "Domain",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "System"
+      }
+    },
+    {
+      "labels": [
+        "Domain",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "Protocol"
+      }
+    },
+    {
+      "labels": [
+        "CWE",
+        "OGVulExample"
+      ],
+      "properties": {
+        "id": "CWE-119",
+        "name": "Memory boundary control"
+      }
+    },
+    {
+      "labels": [
+        "CWE",
+        "OGVulExample"
+      ],
+      "properties": {
+        "id": "CWE-787",
+        "name": "Write outside destination capacity",
+        "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length."
+      }
+    },
+    {
+      "labels": [
+        "CWE",
+        "OGVulExample"
+      ],
+      "properties": {
+        "id": "CWE-415",
+        "name": "Repeated release of one heap allocation",
+        "verification_contract": "Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path."
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "TelemetryFrame"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "receive_telemetry"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "payload"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "telemetry"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "buffer"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "memcpy"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "ValveState"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "reset_valve_cache"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "heap allocation"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "memory management"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "free"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "id": "CWE-787",
+          "name": "Write outside destination capacity",
+          "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length."
+        }
+      },
+      "type": "CHILD_OF",
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "id": "CWE-119",
+          "name": "Memory boundary control"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "TelemetryFrame"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "TelemetryFrame"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "TelemetryFrame"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "id": "CWE-787",
+          "name": "Write outside destination capacity",
+          "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length."
+        }
+      },
+      "properties": {
+        "reason": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks."
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "receive_telemetry"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "receive_telemetry"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "receive_telemetry"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "id": "CWE-787",
+          "name": "Write outside destination capacity",
+          "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length."
+        }
+      },
+      "properties": {
+        "reason": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks."
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "payload"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "payload"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "payload"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "id": "CWE-787",
+          "name": "Write outside destination capacity",
+          "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length."
+        }
+      },
+      "properties": {
+        "reason": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks."
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "telemetry"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "telemetry"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "telemetry"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "id": "CWE-787",
+          "name": "Write outside destination capacity",
+          "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length."
+        }
+      },
+      "properties": {
+        "reason": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks."
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "buffer"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "buffer"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "buffer"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "id": "CWE-787",
+          "name": "Write outside destination capacity",
+          "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length."
+        }
+      },
+      "properties": {
+        "reason": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks."
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "memcpy"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "memcpy"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "memcpy"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "id": "CWE-787",
+          "name": "Write outside destination capacity",
+          "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length."
+        }
+      },
+      "properties": {
+        "reason": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks."
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "ValveState"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "ValveState"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "ValveState"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "id": "CWE-415",
+          "name": "Repeated release of one heap allocation",
+          "verification_contract": "Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path."
+        }
+      },
+      "properties": {
+        "reason": "Multiple cleanup paths may release one heap allocation more than once. Verify ownership and control-flow exits in the source."
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "reset_valve_cache"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "reset_valve_cache"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "reset_valve_cache"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "id": "CWE-415",
+          "name": "Repeated release of one heap allocation",
+          "verification_contract": "Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path."
+        }
+      },
+      "properties": {
+        "reason": "Multiple cleanup paths may release one heap allocation more than once. Verify ownership and control-flow exits in the source."
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "heap allocation"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "heap allocation"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "heap allocation"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "id": "CWE-415",
+          "name": "Repeated release of one heap allocation",
+          "verification_contract": "Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path."
+        }
+      },
+      "properties": {
+        "reason": "Multiple cleanup paths may release one heap allocation more than once. Verify ownership and control-flow exits in the source."
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "memory management"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "memory management"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "memory management"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "id": "CWE-415",
+          "name": "Repeated release of one heap allocation",
+          "verification_contract": "Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path."
+        }
+      },
+      "properties": {
+        "reason": "Multiple cleanup paths may release one heap allocation more than once. Verify ownership and control-flow exits in the source."
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "free"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "free"
+        }
+      },
+      "type": "BELONGS_TO",
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      },
+      "properties": {}
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "free"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "id": "CWE-415",
+          "name": "Repeated release of one heap allocation",
+          "verification_contract": "Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path."
+        }
+      },
+      "properties": {
+        "reason": "Multiple cleanup paths may release one heap allocation more than once. Verify ownership and control-flow exits in the source."
+      }
+    }
+  ]
+}

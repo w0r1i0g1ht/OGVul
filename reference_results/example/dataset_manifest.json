@@ -1,0 +1,63 @@
+{
+  "sample_count": 4,
+  "counts": {
+    "synthetic_vuln": 2,
+    "synthetic_safe": 2
+  },
+  "load_order": [
+    "Sample_DemoBuffer_vuln",
+    "Sample_DemoRelease_vuln",
+    "Sample_DemoBuffer_safe",
+    "Sample_DemoRelease_safe"
+  ],
+  "samples": {
+    "Sample_DemoBuffer_vuln": {
+      "label": "vulnerable",
+      "cwe_id": "CWE-787",
+      "source_type": "synthetic_vuln",
+      "code_sha256": "4c4510c197185d2fe4a9a4bbc6a95988fd9a8287981bbc77b92988dd768a2e68",
+      "files": {
+        "Sample_DemoBuffer/mutated_code.cpp": "4c4510c197185d2fe4a9a4bbc6a95988fd9a8287981bbc77b92988dd768a2e68",
+        "Sample_DemoBuffer/vuln_info.json": "fabc98cfb4642a1a30321bbe0fa84ef30080490b033ad485baeac45f4a850fbd"
+      }
+    },
+    "Sample_DemoRelease_vuln": {
+      "label": "vulnerable",
+      "cwe_id": "CWE-415",
+      "source_type": "synthetic_vuln",
+      "code_sha256": "97e2dc904785bf4f9c0ef381ea96d42ad35510a1659ba2e7fe9cec934c95e65b",
+      "files": {
+        "Sample_DemoRelease/mutated_code.cpp": "97e2dc904785bf4f9c0ef381ea96d42ad35510a1659ba2e7fe9cec934c95e65b",
+        "Sample_DemoRelease/vuln_info.json": "cf9f873cafb1bfabbf1128ec870707bbddb013a5f2bbee4fb1df827eb16f1936"
+      }
+    },
+    "Sample_DemoBuffer_safe": {
+      "label": "safe",
+      "cwe_id": "CWE-787",
+      "source_type": "synthetic_safe",
+      "code_sha256": "060cdae496e8b7bdd966af90e88359190131730193e765a60a5bc4c8e9991257",
+      "files": {
+        "Sample_DemoBuffer/safe_code.cpp": "060cdae496e8b7bdd966af90e88359190131730193e765a60a5bc4c8e9991257",
+        "Sample_DemoBuffer/vuln_info.json": "fabc98cfb4642a1a30321bbe0fa84ef30080490b033ad485baeac45f4a850fbd"
+      }
+    },
+    "Sample_DemoRelease_safe": {
+      "label": "safe",
+      "cwe_id": "CWE-415",
+      "source_type": "synthetic_safe",
+      "code_sha256": "836b430c1e1d8162eab694376c6205a8562a108b1868e441978991115954896d",
+      "files": {
+        "Sample_DemoRelease/safe_code.cpp": "836b430c1e1d8162eab694376c6205a8562a108b1868e441978991115954896d",
+        "Sample_DemoRelease/vuln_info.json": "cf9f873cafb1bfabbf1128ec870707bbddb013a5f2bbee4fb1df827eb16f1936"
+      }
+    }
+  },
+  "loader_compatible": true,
+  "annotation_normalization": {
+    "enabled": false,
+    "purpose": "inventory only; source annotations were not modified",
+    "single_value_rule": "A one-item cwe_id list is unwrapped only for the loader boundary.",
+    "multiple_value_rule": "A multi-item cwe_id list is retained verbatim; no CWE is selected. An empty private loader value is used only to enumerate the sample.",
+    "affected_samples": {}
+  }
+}

@@ -1,0 +1,9 @@
+# Linux / Python 3.10 / CUDA 12.4; native offline vLLM.
+# Install the CUDA 12.4 PyTorch wheel first as described in README.md.
+# Selected from a working environment, not a full historical lockfile.
+torch==2.6.0
+vllm==0.8.5.post1
+transformers==4.52.4
+pydantic==2.11.4
+neo4j==5.28.7
+PyYAML==6.0.3

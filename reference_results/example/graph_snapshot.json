@@ -1,0 +1,995 @@
+{
+  "nodes": [
+    {
+      "labels": [
+        "CWE",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "Memory boundary control",
+        "id": "CWE-119"
+      }
+    },
+    {
+      "labels": [
+        "CWE",
+        "OGVulExample"
+      ],
+      "properties": {
+        "verification_contract": "Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path.",
+        "name": "Repeated release of one heap allocation",
+        "id": "CWE-415"
+      }
+    },
+    {
+      "labels": [
+        "CWE",
+        "OGVulExample"
+      ],
+      "properties": {
+        "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length.",
+        "name": "Write outside destination capacity",
+        "id": "CWE-787"
+      }
+    },
+    {
+      "labels": [
+        "Domain",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "Protocol"
+      }
+    },
+    {
+      "labels": [
+        "Domain",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "System"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "TelemetryFrame"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "ValveState"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "buffer"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "free"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "heap allocation"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "memcpy"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "memory management"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "payload"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "receive_telemetry"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "reset_valve_cache"
+      }
+    },
+    {
+      "labels": [
+        "Entity",
+        "OGL_Node",
+        "OGVulExample"
+      ],
+      "properties": {
+        "name": "telemetry"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "TelemetryFrame"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "properties": {
+        "reason": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks."
+      },
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length.",
+          "name": "Write outside destination capacity",
+          "id": "CWE-787"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "buffer"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "properties": {
+        "reason": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks."
+      },
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length.",
+          "name": "Write outside destination capacity",
+          "id": "CWE-787"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "memcpy"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "properties": {
+        "reason": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks."
+      },
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length.",
+          "name": "Write outside destination capacity",
+          "id": "CWE-787"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "payload"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "properties": {
+        "reason": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks."
+      },
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length.",
+          "name": "Write outside destination capacity",
+          "id": "CWE-787"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "receive_telemetry"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "properties": {
+        "reason": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks."
+      },
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length.",
+          "name": "Write outside destination capacity",
+          "id": "CWE-787"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "telemetry"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "properties": {
+        "reason": "An externally supplied copy length may exceed the fixed destination buffer capacity. Verify the actual source-code length checks."
+      },
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length.",
+          "name": "Write outside destination capacity",
+          "id": "CWE-787"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "ValveState"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "properties": {
+        "reason": "Multiple cleanup paths may release one heap allocation more than once. Verify ownership and control-flow exits in the source."
+      },
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "verification_contract": "Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path.",
+          "name": "Repeated release of one heap allocation",
+          "id": "CWE-415"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "free"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "properties": {
+        "reason": "Multiple cleanup paths may release one heap allocation more than once. Verify ownership and control-flow exits in the source."
+      },
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "verification_contract": "Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path.",
+          "name": "Repeated release of one heap allocation",
+          "id": "CWE-415"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "heap allocation"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "properties": {
+        "reason": "Multiple cleanup paths may release one heap allocation more than once. Verify ownership and control-flow exits in the source."
+      },
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "verification_contract": "Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path.",
+          "name": "Repeated release of one heap allocation",
+          "id": "CWE-415"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "memory management"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "properties": {
+        "reason": "Multiple cleanup paths may release one heap allocation more than once. Verify ownership and control-flow exits in the source."
+      },
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "verification_contract": "Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path.",
+          "name": "Repeated release of one heap allocation",
+          "id": "CWE-415"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "reset_valve_cache"
+        }
+      },
+      "type": "POTENTIAL_WEAKNESS",
+      "properties": {
+        "reason": "Multiple cleanup paths may release one heap allocation more than once. Verify ownership and control-flow exits in the source."
+      },
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "verification_contract": "Follow each branch and count releases of the same pointer. A return after a release prevents later cleanup on that path.",
+          "name": "Repeated release of one heap allocation",
+          "id": "CWE-415"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "verification_contract": "Locate a dominating destination-capacity check before the copy. A null check alone does not bound the copy length.",
+          "name": "Write outside destination capacity",
+          "id": "CWE-787"
+        }
+      },
+      "type": "CHILD_OF",
+      "properties": {},
+      "target": {
+        "labels": [
+          "CWE",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Memory boundary control",
+          "id": "CWE-119"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "TelemetryFrame"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "TelemetryFrame"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "ValveState"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "ValveState"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "buffer"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "buffer"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "free"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "free"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "heap allocation"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "heap allocation"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "memcpy"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "memcpy"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "memory management"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "memory management"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "payload"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "payload"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "receive_telemetry"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "receive_telemetry"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "reset_valve_cache"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "reset_valve_cache"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "telemetry"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "Protocol"
+        }
+      }
+    },
+    {
+      "source": {
+        "labels": [
+          "Entity",
+          "OGL_Node",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "telemetry"
+        }
+      },
+      "type": "BELONGS_TO",
+      "properties": {},
+      "target": {
+        "labels": [
+          "Domain",
+          "OGVulExample"
+        ],
+        "properties": {
+          "name": "System"
+        }
+      }
+    }
+  ],
+  "content_sha256": "a4923e141f1e2d99e5ddd20804eeac0fdcf0504b8f7b836ce3f458140f1f7fa7"
+}
